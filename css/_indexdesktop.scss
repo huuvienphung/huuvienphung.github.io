@@ -147,10 +147,10 @@
 					li{
 						margin-top: 10px;
 						.vongtron{
-							width: 140px;
-							height: 140px;
+							width: $vongtronlon;
+							height: $vongtronlon;
 							p{
-								line-height: 140px;
+								line-height: $vongtronlon;
 								font-size: 25px;
 							}
 						}

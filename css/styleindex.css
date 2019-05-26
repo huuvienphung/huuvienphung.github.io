@@ -293,7 +293,8 @@ body {
               width: 50%;
               height: 1px;
               transform: translateY(-50%);
-              transform-origin: right; }
+              transform-origin: right;
+              z-index: 6; }
               .skill .ski-2 .kynang ul li .vongtron .xoay:before {
                 content: '';
                 position: absolute;
@@ -306,20 +307,44 @@ body {
                 background-color: #fff;
                 box-shadow: 0 0 15px 0 #008CC0;
                 animation: chop 1s linear infinite; }
+            .skill .ski-2 .kynang ul li .vongtron .over {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              overflow: hidden;
+              left: 0;
+              top: 0;
+              z-index: 3; }
+              .skill .ski-2 .kynang ul li .vongtron .over .xoay2 {
+                width: 50%;
+                height: 50%;
+                background-image: -webkit-linear-gradient(85deg, transparent 5%, #008CC0);
+                transform-origin: 100% 100%;
+                transform: rotate(90deg); }
             .skill .ski-2 .kynang ul li .vongtron p {
               text-align: center;
               line-height: 110px;
               font-size: 18px;
-              font-family: nuni-l; }
+              font-family: nuni-l;
+              z-index: 5; }
           .skill .ski-2 .kynang ul li h5 {
             text-align: center;
             margin-top: 10px; }
           .skill .ski-2 .kynang ul li:nth-child(1) .vongtron .xoay {
             transform: translateY(-50%) rotate(-54deg); }
+          .skill .ski-2 .kynang ul li:nth-child(1) .vongtron .xoay2 {
+            animation: vongtron1 10s linear infinite; }
+          .skill .ski-2 .kynang ul li:nth-child(2) .vongtron .xoay2 {
+            animation: vongtron2 10s linear infinite; }
           .skill .ski-2 .kynang ul li:nth-child(3) .vongtron .xoay {
             transform: translateY(-50%) rotate(-18deg); }
+          .skill .ski-2 .kynang ul li:nth-child(3) .vongtron .xoay2 {
+            animation: vongtron3 10s linear infinite; }
           .skill .ski-2 .kynang ul li:nth-child(4) .vongtron .xoay {
             transform: translateY(-50%) rotate(18deg); }
+          .skill .ski-2 .kynang ul li:nth-child(4) .vongtron .xoay2 {
+            animation: vongtron4 10s linear infinite; }
 
 @-webkit-keyframes xoaypro {
   0% {
@@ -346,6 +371,26 @@ body {
   100% {
     transform: translate(-75%, -50%) scale(1);
     box-shadow: 0 0 15px 0 #008CC0; } }
+@-webkit-keyframes vongtron1 {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(216deg); } }
+@-webkit-keyframes vongtron2 {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(270deg); } }
+@-webkit-keyframes vongtron3 {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(252deg); } }
+@-webkit-keyframes vongtron4 {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(288deg); } }
 @media screen and (min-width: 768px) {
   .thanhbar .tab nav ul {
     width: 50%; }
