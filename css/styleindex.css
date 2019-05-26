@@ -68,7 +68,8 @@ body {
     .thanhbar .tab nav ul {
       height: calc(100vh - 61px);
       background-color: #323232;
-      width: 60%; }
+      width: 60%;
+      overflow-x: hidden; }
       .thanhbar .tab nav ul li a {
         display: block;
         padding: 0.8rem 1rem;

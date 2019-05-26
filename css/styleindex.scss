@@ -96,6 +96,7 @@ body{background-color: $mauden2;}
 				height: calc(100vh - 61px);
 				background-color: $mauden1;
 				width: 60%;
+				overflow-x: hidden;
 				li{
 					a{
 						display: block;
