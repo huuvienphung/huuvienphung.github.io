@@ -1,0 +1,487 @@
+@font-face {
+  src: url(../fontindex/NunitoSans-Regular.ttf);
+  font-family: nuni-r; }
+@font-face {
+  src: url(../fontindex/NunitoSans-Bold.ttf);
+  font-family: nuni-b; }
+@font-face {
+  src: url(../fontindex/NunitoSans-Light.ttf);
+  font-family: nuni-l; }
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body {
+  background-color: #262626; }
+
+.thanhbar {
+  background-color: #323232;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  z-index: 99; }
+  .thanhbar .bavach {
+    line-height: 60px; }
+    .thanhbar .bavach a {
+      position: relative;
+      z-index: 999; }
+      .thanhbar .bavach a:before, .thanhbar .bavach a:after {
+        content: '\f0c9';
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        left: 0;
+        top: 0;
+        color: #008CC0;
+        font-size: 30px;
+        opacity: 1;
+        visibility: visible;
+        transition: .4s; }
+      .thanhbar .bavach a:after {
+        content: '\f00d';
+        font-size: 34px;
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(0); }
+    .thanhbar .bavach a.change:before {
+      opacity: 0;
+      visibility: hidden;
+      transform: rotate(180deg); }
+    .thanhbar .bavach a.change:after {
+      opacity: 1;
+      visibility: visible;
+      transform: rotate(180deg); }
+  .thanhbar .tab {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 61px;
+    transform: translateX(-100%);
+    padding-left: 0;
+    background-color: transparent;
+    transition: transform 0.8s cubic-bezier(0.86, -0.92, 0, 1.54);
+    cursor: pointer; }
+    .thanhbar .tab nav ul {
+      height: calc(100vh - 61px);
+      background-color: #323232;
+      width: 60%; }
+      .thanhbar .tab nav ul li a {
+        display: block;
+        padding: 0.8rem 1rem;
+        text-decoration: none;
+        color: #FFC908;
+        font-family: nuni-r;
+        font-size: 20px;
+        border-bottom: 0.63px solid transparent; }
+      .thanhbar .tab nav ul li a.hientai {
+        border-bottom: 0.63px solid #008CC0; }
+  .thanhbar .tab.xuathien {
+    transform: translateX(0); }
+
+.canhan {
+  margin-top: 67px; }
+  .canhan .me {
+    display: flex;
+    justify-content: center; }
+    .canhan .me .khungto {
+      margin: 50px 0;
+      width: 350px;
+      height: 350px; }
+      .canhan .me .khungto ul {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .canhan .me .khungto ul li:nth-child(1) {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; }
+        .canhan .me .khungto ul li:nth-child(2) {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 50%;
+          height: 2px;
+          animation: xoaypro 10s linear infinite;
+          transform-origin: right; }
+          .canhan .me .khungto ul li:nth-child(2):before {
+            content: '\f13b';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            font-family: "Font Awesome 5 Brands";
+            transform: translateY(-50%) rotate(-90deg);
+            color: #fff;
+            font-size: 30px; }
+        .canhan .me .khungto ul li:nth-child(3) {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%) rotate(-60deg);
+          transform-origin: left;
+          width: 50%;
+          height: 2px;
+          animation: xoaypro2 10s linear infinite; }
+          .canhan .me .khungto ul li:nth-child(3):before {
+            content: '\f38b';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            font-family: "Font Awesome 5 Brands";
+            transform: translateY(-50%) rotate(90deg);
+            color: #fff;
+            font-size: 30px; }
+        .canhan .me .khungto ul li:nth-child(4) {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%) rotate(60deg);
+          transform-origin: left;
+          width: 50%;
+          height: 2px;
+          animation: xoaypro3 10s linear infinite; }
+          .canhan .me .khungto ul li:nth-child(4):before {
+            content: '\f3b9';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            font-family: "Font Awesome 5 Brands";
+            transform: translateY(-50%) rotate(90deg);
+            color: #fff;
+            font-size: 30px; }
+        .canhan .me .khungto ul li:nth-child(5) {
+          width: 70%;
+          height: 70%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%; }
+          .canhan .me .khungto ul li:nth-child(5) img {
+            width: 100%;
+            border-radius: 50%;
+            border: 10px solid transparent;
+            box-shadow: 0px 0px 0 10px #fff; }
+  .canhan .info .khoiinfo {
+    text-align: center;
+    color: #fff; }
+    .canhan .info .khoiinfo h5 {
+      background-color: #008CC0;
+      display: inline-block;
+      padding: 7px 20px;
+      border-radius: 20px;
+      border-bottom-left-radius: 0px;
+      font-family: nuni-r;
+      margin-bottom: 20px; }
+    .canhan .info .khoiinfo h1 {
+      font-family: nuni-b;
+      margin-bottom: 15px; }
+    .canhan .info .khoiinfo h3 {
+      margin-bottom: 10px;
+      font-family: nuni-r; }
+    .canhan .info .khoiinfo ul.lienket {
+      display: flex;
+      width: 100px;
+      justify-content: space-around;
+      margin: 0 auto; }
+      .canhan .info .khoiinfo ul.lienket a {
+        color: #fff; }
+        .canhan .info .khoiinfo ul.lienket a i {
+          font-size: 20px; }
+    .canhan .info .khoiinfo ul.xem li {
+      margin-bottom: 5px;
+      font-family: nuni-l; }
+      .canhan .info .khoiinfo ul.xem li i {
+        padding-right: 7px; }
+
+.isay .anhtoon img {
+  width: 100%; }
+.isay .gioithieu {
+  text-align: center;
+  margin-top: 20px; }
+  .isay .gioithieu h3 {
+    font-family: nuni-r;
+    font-size: 33px; }
+  .isay .gioithieu p {
+    font-family: nuni-l;
+    margin-bottom: 15px; }
+  .isay .gioithieu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; }
+    .isay .gioithieu ul li {
+      padding: 5px 10px;
+      border: 0.63px solid #008CC0;
+      border-radius: 10px;
+      margin: 0 5px 5px; }
+
+.skill {
+  margin-top: 20px;
+  color: #fff; }
+  .skill .ski-1 {
+    display: flex;
+    align-items: center; }
+    .skill .ski-1 .kynang {
+      width: 90%;
+      margin: 0 auto; }
+      .skill .ski-1 .kynang h3 {
+        font-family: nuni-r;
+        font-size: 33px;
+        text-align: center;
+        margin-bottom: 40px; }
+      .skill .ski-1 .kynang .sub {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-family: nuni-l; }
+      .skill .ski-1 .kynang .long {
+        margin: 0 auto;
+        width: 100%;
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.2); }
+        .skill .ski-1 .kynang .long .ngan {
+          background-image: -webkit-linear-gradient(left, transparent, #008CC0);
+          height: 5px;
+          position: relative; }
+          .skill .ski-1 .kynang .long .ngan:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+            background-color: #fff;
+            box-shadow: 0 0 15px 0 #008CC0; }
+  .skill .ski-2 {
+    display: flex;
+    align-items: center; }
+    .skill .ski-2 .kynang {
+      width: 100%; }
+      .skill .ski-2 .kynang h3 {
+        font-family: nuni-r;
+        font-size: 33px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin: 40px 0; }
+      .skill .ski-2 .kynang ul {
+        display: flex;
+        flex-wrap: wrap; }
+        .skill .ski-2 .kynang ul li {
+          width: 50%;
+          margin-top: 5px; }
+          .skill .ski-2 .kynang ul li .vongtron {
+            width: 110px;
+            height: 110px;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            margin: 0 auto;
+            border-radius: 50%;
+            position: relative; }
+            .skill .ski-2 .kynang ul li .vongtron .xoay {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 50%;
+              height: 1px;
+              transform: translateY(-50%);
+              transform-origin: right; }
+              .skill .ski-2 .kynang ul li .vongtron .xoay:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                transform: translate(-75%, -50%);
+                background-color: #fff;
+                box-shadow: 0 0 15px 0 #008CC0;
+                animation: chop 1s linear infinite; }
+            .skill .ski-2 .kynang ul li .vongtron p {
+              text-align: center;
+              line-height: 110px;
+              font-size: 18px;
+              font-family: nuni-l; }
+          .skill .ski-2 .kynang ul li h5 {
+            text-align: center;
+            margin-top: 10px; }
+          .skill .ski-2 .kynang ul li:nth-child(1) .vongtron .xoay {
+            transform: translateY(-50%) rotate(-54deg); }
+          .skill .ski-2 .kynang ul li:nth-child(3) .vongtron .xoay {
+            transform: translateY(-50%) rotate(-18deg); }
+          .skill .ski-2 .kynang ul li:nth-child(4) .vongtron .xoay {
+            transform: translateY(-50%) rotate(18deg); }
+
+@-webkit-keyframes xoaypro {
+  0% {
+    transform: translateY(-50%) rotate(0deg); }
+  100% {
+    transform: translateY(-50%) rotate(360deg); } }
+@-webkit-keyframes xoaypro2 {
+  0% {
+    transform: translateY(-50%) rotate(-60deg); }
+  100% {
+    transform: translateY(-50%) rotate(300deg); } }
+@-webkit-keyframes xoaypro3 {
+  0% {
+    transform: translateY(-50%) rotate(60deg); }
+  100% {
+    transform: translateY(-50%) rotate(420deg); } }
+@-webkit-keyframes chop {
+  0% {
+    transform: translate(-75%, -50%) scale(1);
+    box-shadow: 0 0 15px 0 #008CC0; }
+  50% {
+    transform: translate(-75%, -50%) scale(1.3);
+    box-shadow: 0 0 20px 0 #008CC0; }
+  100% {
+    transform: translate(-75%, -50%) scale(1);
+    box-shadow: 0 0 15px 0 #008CC0; } }
+@media screen and (min-width: 768px) {
+  .thanhbar .tab nav ul {
+    width: 50%; }
+
+  .canhan .info {
+    display: flex;
+    align-items: center; }
+    .canhan .info .khoiinfo {
+      text-align: left; }
+      .canhan .info .khoiinfo ul.lienket {
+        margin: 0; }
+
+  .isay .anhtoon {
+    display: flex;
+    align-items: center; }
+  .isay .gioithieu {
+    text-align: left;
+    margin-top: 10px;
+    display: flex;
+    align-items: center; }
+    .isay .gioithieu .giuakhoi p {
+      width: 100%; }
+    .isay .gioithieu .giuakhoi ul {
+      justify-content: flex-start; }
+
+  .skill {
+    margin: 100px 0; }
+    .skill .ski-1 {
+      align-items: flex-start; }
+      .skill .ski-1 .kynang {
+        width: 100%; }
+        .skill .ski-1 .kynang .sub {
+          font-size: 20px; }
+    .skill .ski-2 .kynang h3 {
+      margin: 0; } }
+@media screen and (min-width: 992px) {
+  .thanhbar {
+    height: 100px;
+    transition: height .4s; }
+    .thanhbar .tab {
+      position: static;
+      transform: translateX(0); }
+      .thanhbar .tab nav ul {
+        height: 100px;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        transition: height .4s; }
+        .thanhbar .tab nav ul li a {
+          display: block;
+          padding: 0.8rem 1rem;
+          text-decoration: none;
+          color: #FFC908;
+          font-family: nuni-b;
+          font-size: 23px;
+          box-sizing: border-box;
+          border: 1px solid transparent; }
+        .thanhbar .tab nav ul li a.hientai, .thanhbar .tab nav ul li:hover a {
+          border: 1px solid #00A0C7; }
+
+  .thanhbar.biendang {
+    height: 60px;
+    background-color: #323232; }
+    .thanhbar.biendang .tab nav ul {
+      margin-top: 1px;
+      height: 59px; }
+
+  .canhan {
+    margin: 100px 0; }
+    .canhan .me .khungto {
+      margin: 100px 0;
+      width: 480px;
+      height: 480px; }
+      .canhan .me .khungto ul li:nth-child(2):before, .canhan .me .khungto ul li:nth-child(3):before, .canhan .me .khungto ul li:nth-child(4):before {
+        font-size: 40px; }
+    .canhan .info .khoiinfo h5 {
+      margin-bottom: 20px;
+      font-size: 25px; }
+    .canhan .info .khoiinfo h1 {
+      font-size: 55px;
+      margin-bottom: 15px; }
+    .canhan .info .khoiinfo h3 {
+      font-size: 40px; }
+    .canhan .info .khoiinfo ul.lienket {
+      display: flex;
+      width: 150px;
+      justify-content: space-around;
+      margin-top: 10px; }
+      .canhan .info .khoiinfo ul.lienket li a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 30px; }
+        .canhan .info .khoiinfo ul.lienket li a:hover {
+          color: #262626;
+          background-color: #fff; }
+    .canhan .info .khoiinfo ul.xem {
+      margin-bottom: 10px; }
+
+  .isay {
+    margin-bottom: 200px; }
+    .isay .gioithieu h3 {
+      font-size: 40px;
+      font-family: nuni-b;
+      margin-bottom: 20px; }
+    .isay .gioithieu p {
+      font-size: 20px;
+      font-family: nuni-l;
+      margin-bottom: 20px; }
+
+  .skill {
+    margin-bottom: 200px; }
+    .skill .ski-1 .kynang h3 {
+      font-size: 40px;
+      font-family: nuni-b;
+      margin: 0; }
+    .skill .ski-1 .kynang .sub {
+      margin-top: 40px; }
+    .skill .ski-2 .kynang h3 {
+      font-size: 40px;
+      font-family: nuni-b;
+      margin-bottom: 15px; }
+    .skill .ski-2 .kynang ul li {
+      margin-top: 10px; }
+      .skill .ski-2 .kynang ul li .vongtron {
+        width: 140px;
+        height: 140px; }
+        .skill .ski-2 .kynang ul li .vongtron p {
+          line-height: 140px;
+          font-size: 25px; }
+      .skill .ski-2 .kynang ul li h5 {
+        margin-top: 20px;
+        font-size: 25px; } }
+
+/*# sourceMappingURL=styleindex.css.map */

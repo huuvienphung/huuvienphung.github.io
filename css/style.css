@@ -1,0 +1,789 @@
+@font-face{
+	src:url(../fonts/FiraSansExtraCondensed-Regular.ttf);
+	font-family: fira;
+}
+body{
+	font-family: segoe ui light;
+}
+ul li{
+	list-style: none;
+}
+ul{
+	padding: 0;
+}
+.nav{
+	width: 100%;
+	height: 60px;
+	background-color: #262626;
+	box-shadow: 0 2px 4px rgba(0,0,0,.5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	transition: height .4s;
+	z-index: 100;
+}
+.nav .row{
+	height: 60px;
+}
+
+/*=================hết thanh menu=========================*/
+.bars a{
+	margin: 0 auto;
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 60px;
+	width: 25px;
+	color: black;
+	display: block;
+}
+.bars a:before, .bars a:after{
+	content: '\f0c9';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+	transition: all .4s;
+	text-align: center;
+	line-height: 60px;
+	opacity: 1;
+	color: #fff;
+}
+.bars a.show:before{
+	transform: rotate(180deg);
+	opacity: 0;
+}
+.bars a:after{
+	content: '\f00d';
+	opacity: 0;
+	transform: rotate(180deg);
+	font-size: 27px;
+}
+.bars a.show:after{
+	transform: scale(1);
+	opacity: 1;
+}
+/*=================hết nút 3 vạch============================*/
+.logo a{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	height: 40px;	
+}
+/*=================hết logo===========================*/
+.icon ul{
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+}
+.icon ul li{
+	list-style: none;
+}
+.icon ul li a{
+	display: block;
+	color: white;
+	font-size: 18px;
+	line-height: 60px;
+}
+/*==================hết phần icon========================*/
+.anhden.col-12{
+	position: absolute;
+	padding: 0;
+	top: 60px;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,.2);
+	z-index: 88;
+	transform: translateX(-100%);
+	cursor: pointer;
+	transition: transform .4s;
+}
+/*====================nền đen========================*/
+.menu.col-7{
+	padding: 0;
+	transform: translateX(-100%);
+	transition: transform .4s;
+	margin-top: 1px;
+	z-index: 99;
+}
+.hemenu{
+	width: 100%;
+	height: 100vh;
+	background-color: #262626;
+	overflow-x: hidden;
+}
+.hemenu li a{
+	display: block;
+	padding: 0.8rem 1rem;
+	text-decoration: none;
+	color: #fff;
+	/*margin-bottom: 0.1rem;*/
+	border-bottom: 0.63px solid gray;
+	background-color: #262626;
+	position: relative;
+	font-family: segoe ui;
+	font-size: 18px;
+}
+.hemenu > li:nth-child(2) > a[href="#"]:before,
+.hemenu > li:nth-child(3) > a[href="#"]:before,
+.hemenu > li:nth-child(4) > a[href="#"]:before{
+	content: '\f107';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	left: 85%;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 25px;
+}
+.hemenu > li > a.active{
+	background-color: #1DAAA3;
+}
+.hemenu > li:nth-child(2) > a[href="#"].active:before,
+.hemenu > li:nth-child(3) > a[href="#"].active:before,
+.hemenu > li:nth-child(4) > a[href="#"].active:before{
+	content: '\f106';
+}
+.hemenu li ul{
+	display: none;
+}
+.menu.quatrai, .anhden.quatrai{
+	transform: translateX(0);
+}
+/*=======================hết phần menu==============================*/
+.slideimages{
+		margin-top: 60px;
+	}
+.banner-box{
+	height: 40vh;
+	position: relative;
+	width: 100%;
+}
+.banner-slider{
+	height: 100%;
+}
+.banner-slider .slick-list, .banner-slider .slick-track{
+	height: 100% !important;
+}
+.banner-slider div{background-size: cover;}
+.banner-slider .b1{background-image: url('../images/1.jpg');}
+.banner-slider .b2{background-image: url('../images/2.jpg');}
+.banner-slider .b3{background-image: url('../images/5.jpg');}
+.banner-slider .b4{background-image: url('../images/4.jpg');}
+.banner-slider div h1{
+	width: 30%;
+	margin: 2rem 0 0 3rem;
+	background-color: rgba(255,255,255,0.4);
+}
+button:focus{outline:none;}
+.banner-box .prev-btn, .banner-box .next-btn{
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 50px;
+	color: white;
+	border: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.banner-box .prev-btn{left: 2%}
+.banner-box .next-btn{right: 2%}
+.banner-box .nav-dots{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+.banner-box .nav-dots ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.banner-box .nav-dots li button{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.8);
+	border: none;
+	text-indent: -9999px;
+	margin:0 0.25rem;
+}
+.banner-box .nav-dots li.slick-active button{
+	background-color: #1DAAA3;
+}
+.banner-slider div .to .btn{
+
+}
+/*.banner-slider div .btn{
+	position: absolute;
+	top: 0;
+	transition: transform .4s;
+}*/
+.banner-slider div.slick-active .btn{
+	animation:chuyendong 1s forwards;
+	
+}
+.banner-slider div.slick-active .anh2{
+	animation:.5s 1s forwards chuyendong;
+}
+
+@-webkit-keyframes chuyendong{
+	0%{
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0);
+		opacity: .7;
+	}
+	
+}
+/*=========================hết phần slider============================*/
+.modau i{
+	font-size: 20px;
+}
+.modau h2{
+	font-family: fira;
+	font-size: 35px;
+}
+.modau p{
+	font-size: 20px;
+}
+a.khoi{
+	width: 100%;
+	min-height: 355px;
+	display: block;
+	text-decoration: none;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+	box-shadow: 0 -0.5px 5px rgba(0,0,0,.3);
+}
+div.hinhanh{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+}
+.hinhanh img{
+	width: 100%;
+	transition: transform .4s;
+}
+.hinhanh .vietsub{
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0 10px;
+	height: 25px;
+	background-color: #1DAAA3;
+	line-height: 25px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: 15px;
+	transition: transform .4s;
+}
+.hinhanh .nosub{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #262626;
+	padding: 0 10px;
+	height: 25px;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 25px;
+	font-weight: bold;
+	transition: transform .4s;
+}
+.khoi .tenphim{
+	font-weight: bold;
+	font-family: segoe ui;
+	color: #262626;
+	font-size: 19px;
+	padding: 2px 4px;
+	
+}
+.khoi .england{
+	font-family:segoe ui;
+	color: black;
+	font-style: italic;
+	font-size: 18px;
+	padding: 2px 4px;
+}
+/*=======================hết phần khối phim========================*/
+.four-nut ul{
+	display: flex;
+	justify-content: space-around;
+
+}
+.four-nut ul li{
+	text-transform: uppercase;
+	font-family: segoe ui;
+	list-style: none;
+}
+.btn-outline-info{
+	font-size: 14px;
+}
+li.active .btn{
+	background-color: #1DAAA3;
+	color: white;
+}
+.four-nd ul{
+	list-style-type: none;
+}
+.bo{
+	position: relative;
+	height: 100%;
+	/*overflow: hidden;*/
+}
+.bo li{
+	position: absolute;
+	top: 0;
+	background-color: white;
+	transition: ease 0.4s;
+	transform: scale(0.2);
+}
+.four-nd ul li{
+	opacity: 0;
+	visibility: hidden;
+}
+.four-nd ul li.hienlen{
+	opacity: 1;
+	transform: scale(1);
+	visibility: visible;
+	position: relative;
+}
+/*==================hết phần nội dung 4 nút lựa chọn======================*/
+.gioithieu{
+	background: url(../images/5.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.col-12{
+	width: 100%;
+}
+.gioithieu h4{
+	margin-top: 50px;
+	font-family: fira;
+	color: #fff;
+	/*text-shadow: 1px 1px 5px red;*/
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.gioithieu h1{
+	margin: 0 auto;
+	font-family: fira;
+	font-size: 50px;
+	color: #fff;
+	/*text-shadow: 1px 1px 5px red;*/
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.gioithieu p{
+	margin-top: 20px;
+	font-family: segoe ui light;
+	font-size: 20px;
+	color: #fff;
+	/*text-shadow: 1px 1px 5px red;*/
+	margin-bottom: 20px;
+}
+.gioithieu form{
+	margin-top: 20px;
+	padding-bottom: 50px;
+}
+input[type="text"]{
+	width: 250px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-bottom: 3px solid #fff;
+	padding: 5px 20px 5px 5px;
+	color: #fff;
+	font-size: 20px;
+	font-family: segoe ui;
+}
+input[type="submit"]{
+	border: none;
+	background-color: white;
+	padding: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 50px;
+	border-radius: 20px;
+	color: #262626;
+}
+input::placeholder{
+	font-family: segoe ui;
+	font-size: 20px;
+	color: #fff;
+	/*text-shadow: 0 2px 2px #fff;*/
+}
+/*=====================phần submit=======================*/
+.thanh .thanhthongtin{
+	height: 50px;
+	display: flex;
+	background-color: #1DAAA3;
+	align-items: center;
+	box-shadow: 0 0.5px 5px black;
+}
+.thanh .thanhthongtin i{
+	color: white;
+	font-size: 30px;
+	margin-left: 20px;
+}
+.thanh .thanhthongtin p{
+	margin: 0;
+	color: white;
+	margin-left: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 5px black;
+}
+/*===========================================================*/
+.footer{
+	background-image: url(../images/3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.footer .phan1, .footer .phan2{
+	display: flex;
+	justify-content: center;
+}
+ .footer .phan2 ul{
+	display: flex;
+	width: 200px;
+	justify-content: space-around;
+ }
+ .footer .phan2 ul a{
+	display: block;
+	font-size: 20px;
+	color: white;
+ }
+.footer .phan1 .laanh img{
+	height: 60px;
+}
+/*==========================*/
+.cuoicung{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.cuoicung i{
+	font-size: 15px;
+	color: white;
+}
+.cuoicung p{
+	margin: 0;
+	font-size: 15px;
+	margin-left: 5px;
+}
+/*==========================================================*/
+
+.nutlen{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s;
+}
+.nutlen.hiennao{
+	opacity: 1;
+	visibility: visible;
+}
+.nutlen i{
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0, .3);
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+@media screen and (min-width: 768px){
+	.khoi .tenphim{
+		font-size: 22px;
+	}
+	a.khoi{
+		min-height: 400px;
+	}
+
+	.hemenu > li > a[href="#"]:before{
+		left: 90%;
+	}
+	/*=================hết menu============================*/
+	.banner-box{
+		height: 60vh;
+	}
+	/*================hết slide==========================*/
+	input[type="text"]{
+		width: 400px;
+		
+	}
+	input[type="submit"]{
+		width: 100px;
+	/*===================hết submit======================*/
+	.btn-outline-info{
+		font-size: 17px;
+	}
+	/*===================================================*/
+	a.khoi{
+		min-height: 450px;
+	}
+}
+@media screen and (min-width: 992px){
+	a.khoi{
+		min-height: 500px;
+	}
+	.nav{
+		height: 100px;
+		transition: height .4s;
+	}
+	.nav.thugon{
+		height: 60px;
+		background-color: rgba(0,0,0,.8);
+	}
+	.nav.thugon .logo a{
+		height: 60px;
+	}
+	.nav.thugon .logo a img{
+		height: 40px;	
+	}
+	.nav.thugon .icon ul li a{
+		font-size: 15px;
+		line-height: 60px;
+	}
+	.nav.thugon .hemenu{
+		margin-top: 0px;
+	}
+	/*======================hết phần thu gọn nav ở desktop=======================*/
+	.logo a{
+		height: 100px;
+	}
+	.logo a img{
+		height: 60px;
+		transition: height .4s;
+	}
+	/*=================hết logo======================*/
+	.icon ul li a{
+		display: block;
+		color: white;
+		font-size: 20px;
+		line-height: 100px;
+		transition: .4s;
+	}
+	/*===================hết icon==================*/
+	.menu.col-7{
+		transition: none;
+		transform: translateX(0);
+		margin-top: 0px;
+	}
+	.hemenu{
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+		height: auto;
+		background-color: transparent;
+		transition: margin-top .4s;
+		margin-top: 20px;
+	}
+	.hemenu > li > a{
+		display: block;
+		border: none;
+		background-color: transparent;
+		width: 100%;
+	}
+	.hemenu > li:nth-child(2) > a[href="#"]:before,
+	.hemenu > li:nth-child(3) > a[href="#"]:before,
+	.hemenu > li:nth-child(4) > a[href="#"]:before{
+		font-size: 20px;
+	}
+	.hemenu li a{
+		min-height: 60px;
+		min-width: 150px;
+		padding: 0 0 0 0.8rem;
+		line-height: 60px;
+		box-sizing: border-box;
+	}
+	.hemenu > li:hover:nth-child(2) > a[href="#"]:before,
+	.hemenu > li:hover:nth-child(3) > a[href="#"]:before,
+	.hemenu > li:hover:nth-child(4) > a[href="#"]:before{
+		content: '\f106';
+	}
+	.hemenu li:hover > ul{
+		display: block;
+	}
+	.hemenu li a:hover{
+		background-color: #1DAAA3;
+	}
+	/*===================hết menu==================*/
+	.slideimages{
+		margin-top: 100px;
+	}
+	/*===================hết slide==================*/
+	input[type="text"]{
+		width: 450px;
+	}
+	.gioithieu p{
+		font-size: 25px;
+	}
+	/*=================hết submit=====================*/
+	.khoi .tenphim{
+		font-size: 28px;
+	}
+	.hinhanh .vietsub{
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+	}
+	.hinhanh .nosub{
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+	}
+
+	a.khoi:hover img{
+		transform: scale(1.2);
+	}
+	/*====================khối phim====================*/
+	.modau h2{
+		font-size: 50px;
+	}
+	.banner-box{
+		height: 70vh;
+	}
+	/*==================================================*/
+	.bxh .tieude{
+		background-color: #1DAAA3;
+		padding:10px 0;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 1px 0 2px black;
+		font-family: segoe ui;
+		font-size: 20px;
+		color: white;
+	}
+	.bxh ._2bxh > ul{
+		display: flex;
+		width: 100%;
+
+	}
+	.bxh ._2bxh > ul > li{
+		width: 50%;
+		text-align: center;
+		padding: 10px 0;
+		cursor: pointer;
+		font-size: 20px;
+		font-family: segoe ui;
+		border: solid 1px #1DAAA3;
+		background-color: white;
+		color: #262626;
+		margin: 0;
+		padding-left: 0;
+	}
+	.bxh ._2bxh{
+		height: 52px;
+	}
+	.bxh ._2bxh ul li.add{
+		border-bottom: none;
+		background-color: #262626;
+		color: white;
+
+	}
+	.bxh ._8bxh > ul{
+		position: relative;
+		width: 100%;
+	}
+	.bxh ._8bxh > ul > li{
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+	/* .bxh ._8bxh > ul > li .ndung1, */ .ndung1{
+		border: solid 1px #1DAAA3;
+		border-top: none;
+		background-color: #262626;
+	}
+	.bxh ._8bxh > ul > li.addd{
+		opacity: 1;
+		visibility: visible;
+		position: relative;
+	}
+
+	/*======================================================*/
+	.bxh .mkhoi2{
+		display: flex;
+		padding: 10px 5px;
+		box-sizing: border-box;
+		border-bottom: 0.5px dashed #1DAAA3;
+		align-items: center;
+	}
+	a{display: block;}
+	.bxh .ndung1 a:hover{text-decoration: none;}
+	.bxh .mkhoi2 .anhvuong{
+		width: 90px; 
+		height: 90px;
+		overflow: hidden;
+		border: solid 0.5px #1DAAA3;
+	}
+	.bxh .mkhoi2 .anhvuong img{
+		width: 100%;
+	}
+	.bxh .mkhoi2 .noidung2{
+		margin-left: 4px;
+		width: 150px;
+		height: auto;
+		box-sizing: border-box;
+	}
+	.bxh .mkhoi2 .noidung2 .tenphim{
+		font-size: 20px;
+		font-weight: bold;
+		color: #fff;
+		margin: 0;
+		/*font-family: segoe ui;*/
+	}
+	.bxh .mkhoi2 .noidung2 .dienvien{
+		font-size: 15px;
+		color: #1DAAA3;
+		margin: 0;
+	}
+	.bxh .mkhoi2 .noidung2 .fa-eye{
+		color: #1DAAA3;
+	}
+	.bxh .mkhoi2 .noidung2 ul{
+		display: flex;
+		color: yellow;
+
+	}
+	.bxh .mkhoi2 .noidung2 ul li{
+		text-shadow: 2px 2px 2px black, -2px -2px 2px black;
+		margin-left: 3px;
+	}
+	/*===================hết mkhoi2 bxh==================================*/
+	.footer .phan1 .laanh img{
+		height: 80px;
+	}
+	/*=======================================================================*/
+	a.khoi{
+		min-height: 500px;
+	}
+}

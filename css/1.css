@@ -1,0 +1,419 @@
+*{margin: 0;padding: 0;}
+
+@font-face{
+	src:url('../fonts/MYRIADPRO-REGULAR.OTF');
+	font-family: mp;
+}
+@font-face{
+	src:url('../fonts/MYRIADPRO-BOLD.OTF');
+	font-family: mpb;
+}
+@font-face{
+	src:url('../fonts/MyriadPro-Light.otf');
+	font-family: mpl;
+}
+
+.khunglogo{
+	margin: auto;
+	width: 80px;
+	/*background: green;*/
+}
+/*========================================*/
+h1.tieude1{
+	text-transform: uppercase;
+	font-family: mpb;
+	color: #3c1d0c;
+	font-size: 30px;
+}
+.noidung1{
+	font-family: mp;
+	color: #3c1d0c;
+	font-size: 20px;
+}
+/*======================================*/
+.khungbanh{
+	width: 100%;
+	height: 100%;
+	/*background: green;*/
+	overflow: hidden;
+}
+.khungbanh img{
+	width: 100%;
+	/*opacity: 0.7;*/
+	position: relative;
+	top: 0;
+	left: -10%;
+}
+/*=======================================*/
+
+.khungform{
+	width: 95%;
+	/*min-height: 450px;*/
+	background:#ba323f;
+	margin: auto;
+}
+input[type="text"]{
+	width: 90%;
+	margin: 10px auto;
+}
+input[type="tel"]{
+	width: 90%;
+	margin: 10px auto;
+}
+input[type="email"]{
+	width: 90%;
+	margin: 10px auto;
+}
+.khungform2{	
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	/*margin: auto;*/
+	border: 4px solid white;
+	padding-bottom: 10px;
+}
+.tdform{
+	width: 70%;
+	padding: 10px 0;
+	margin: auto;
+	text-align: center;
+	font-size: 23px;
+	font-family: mpb;
+	color: white;
+	text-transform: uppercase;
+}
+.gachngang{
+	width: 30%;
+	margin: auto;
+	height: 3px;
+	background: white;
+}
+.ndform{
+	margin: auto;
+	width: 80%;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 16px;
+	font-family: mpl;
+	color: white;
+	text-transform: uppercase;
+
+}
+.btn-light{
+	background: #3c1d0c;
+	border: none;
+	font-family: mp;
+	text-transform: uppercase;
+	color: white;
+}
+/*==============================================*/
+.tieude3{
+	width: 100%;
+	margin: auto;
+	font-family: mpb;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+.thanhngang2{
+	width: 30%;
+	background: white;
+	height: 3px;
+	margin: auto;
+}
+.uudai ul li{
+	margin-left: 45px;
+	width: 85%;
+	list-style: none;
+	font-family: mp;
+	font-size: 22px;
+	color:white;
+}
+i.far{
+	color: white;
+	margin-left: -30px;
+	margin-right: 10px;
+}
+.anhbanh{
+	background: url('../img/anhnen2.jpg');
+	width: 100%;
+	background-repeat:no-repeat; 
+	background-attachment: fixed;
+	padding-bottom: 20px;
+	background-size: cover;
+}
+/*====================================*/
+.tieude5{
+	text-align: center;
+	color: #3c1d0c;
+	font-family: mpb;
+	font-size: 30px;
+	text-transform: uppercase;
+
+}
+.thanhngang3{
+	width: 20%;
+	margin: auto;
+	background: #3c1d0c;
+	height: 3px;
+}
+.card-title{
+	color: #3c1d0c;
+	text-align: center;
+	font-family: mpb;
+}
+.card-text{
+	color: #3c1d0c;
+	font-family: mpl;
+	font-size: 20px;
+}
+.card-img-top{
+	border-radius: 50%;
+	width: 50%;
+	margin: auto;
+}
+/*==================================*/
+.anhanh{
+	background-image: url('../img/anhanh2.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+.trai ul li{
+	width: 95%;
+	margin: auto;
+	list-style: none;
+	color: white;
+	font-family: mpl;
+	font-size: 20px;
+}
+.phai{
+	width: 100%;
+	/*background: green;*/
+	margin:auto;
+	display: flex;
+	justify-content: center;
+
+}
+.anhlogo{
+	height: 50px;
+	width: 50px;
+}
+.anhlogo img{
+	width: 100%;
+}
+.anhlogo.hinhtron{
+	width: 50px;
+	height: 50px;
+	background: white;
+	border-radius: 50%;
+	margin-left: 20px;
+	text-align: center;	
+}
+.hinhtron i{
+	font-size: 35px;
+	line-height: 47px;
+}
+.phai a{
+	text-decoration: none;
+	display: block;
+	color: black;
+}
+.duoi{
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.3);
+}
+.duoi .fas{
+	margin-right: 5px;
+}
+/*=================================================================*/
+i.fa-angle-up{
+	font-size: 45px;
+	color: #3c1d0c;
+	opacity: 0.7;
+	background: white;
+	width: 40px;
+	border-radius: 30%;
+	text-align: center;
+	cursor: pointer;
+	position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 999;
+}
+i.fa-angle-up.addcuon{
+	opacity: 0.7;
+	visibility: visible;
+	position: fixed;
+	right:30px;
+	bottom:30px;
+	z-index: 999;
+
+}
+/*===================================================================================*/
+.anhload{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background:white;
+	background: url('../img/anhnen2.jpg');
+	background-size: cover;
+	z-index: 1000;
+}
+.khoiload{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	margin-top: -40px;
+	margin-left: -190px;
+}
+.khoiload img{
+	height: 80px;
+}
+.anhload h1{
+	color: white;
+	font-size: 90px; 
+	text-align: center;
+	float: left;
+	justify-content: center;
+}
+
+@media screen and (min-width: 576px)
+{
+.khungform{
+	width: 350px;
+
+}
+
+}
+@media screen and (min-width: 768px)
+{
+h1.tieude1{
+	width: 110%;
+	text-transform: uppercase;
+	font-family: mpb;
+	color: #3c1d0c;
+	font-size: 30px;
+}
+.noidung1{
+	width: 110%;
+	font-family: mp;
+	color: #3c1d0c;
+	font-size: 20px;
+}	
+.khungbanh{
+	width: 100%;
+	height: 100%;
+	/*background: green;*/
+}
+.khungbanh img{
+	width: 110%;
+	/*opacity: 0.5;*/
+	position: relative;
+	top: 0;
+	left: -10%;
+}
+.khungform{
+	position: relative;
+	top: -50px;
+	left: 0;
+	width: 320px;
+
+}
+.uudai ul li{
+	font-size: 20px;
+}
+.phai{
+	width: 100%;
+	/*background: green;*/
+	margin-top: 50px;
+
+}
+
+}
+@media screen and (min-width: 992px)
+{
+.khunglogo{
+	width: 100px;
+	/*background: green;*/
+}
+.khungbanh img{
+	width: 110%;
+	/*opacity: 0.5;*/
+	position: relative;
+	top: 0;
+	left: -10%;
+}
+	h1.tieude1{
+		font-size: 45px;
+		width: 100%;
+		padding-left: 25px;
+	}
+	.noidung1{
+	font-size: 27px;
+	width: 100%;
+	padding-left: 25px;
+
+}
+.khungform{
+	top: -100px;
+	width: 350px;
+	margin: auto;
+
+}
+.tieude3{
+	font-size: 35px;
+	margin-top: 50px;
+}
+.uudai ul li{
+	margin-left: 50px;
+	width: 85%;
+	font-size: 27px;
+	color:white;
+}
+
+.tdform{
+	font-size: 30px;
+}
+.ndform{
+	font-size: 20px;
+}
+/*============================*/
+i.fa-angle-up:hover{
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+.card-img-top{
+	width: 60%;
+}
+.card img:hover{
+	margin-top: -13px;
+	width: 65%;
+}
+.anhlogo:hover{
+	transform: scale(1.3);
+	transition: 0.2s;
+}
+}
+@media screen and (min-width: 1200px)
+{
+.khungform{
+	top: -100px;
+	width: 400px;
+	margin: auto;
+	
+}
+	h1.tieude1{
+		font-size: 50px;
+		
+	}
+	.noidung1{
+	font-size: 32px;
+
+}
+}

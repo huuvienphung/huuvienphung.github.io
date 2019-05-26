@@ -1,0 +1,746 @@
+*{margin: 0;padding: 0;}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+html{
+	margin: 0;
+	padding: 0;
+}
+/*============phần thanh tab đứng yên================*/
+.tab{
+	margin: auto;
+	width: 100%;
+	height: 70px;
+	background: rgb(255,147,30);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.ovuong{
+	margin-top: 5px;
+	margin-left: 80px;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	background: white;
+	overflow: hidden;
+}
+.ovuong img{
+	/*background: green;*/
+	width:160px;
+	height: auto;
+	margin-left: -46px;
+	margin-top: -6px;
+}
+.logo{
+	/*background: green;*/
+	width: 56.7px;
+	margin: auto;
+	margin-top: -76px;
+	padding-right: 30px;
+}
+.logo img{
+	/*background: orange;*/
+	height: 90px;
+	width: auto;
+	display: block;
+}
+.login{
+	/*background: green;*/
+	width: 10%;
+	height: 30px;
+	margin-top: -73px;
+	margin-left: 90%;
+}
+.login img{
+	/*background: blue;*/
+	width: 30px;
+	display: block;
+	margin-right: 30%;
+	cursor: pointer;
+}
+.market{
+	/*background: blue;*/
+	width: 10%;
+	height: 31px;
+	margin-top: 4px;
+	margin-left: 90%;
+}
+.market img{
+	/*background: green;*/
+	width: 30px;
+	display: block;
+	cursor: pointer;
+}
+/*===================phần nút 3 vạch=================*/
+.menu{
+	/*background: blue;*/
+	width: 35px;
+	height: 31px;
+	cursor: pointer;
+
+	position: absolute;
+	top: 19.5px;
+	left: 22.5px;
+	z-index: 100;
+
+	
+	position: fixed;
+}
+
+.khoi1, .khoi2, .khoi3{
+	width: 35px;
+	height: 5px;
+	margin-bottom: 8px;
+	border-radius: 5px;
+	background:white;
+	transition:0.1s;
+}
+.khoi1.cheo{transform:translate(0,9px) rotate(45deg);}
+.khoi2.cheo{transform:translate(0,-4px) rotate(-45deg);}
+.khoi3.cheo{opacity: 0;}
+/*================phần menu bên trái================*/
+.menutrai{
+	width:50%;
+	height: 100%;
+	background:rgb(255,147,30);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	visibility: visible;
+	opacity:0;
+	transform: translateX(-200%);
+	transition: ease 0.4s;
+	padding-top: 80px;
+}
+.menutrai.them{
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(0);
+}
+.choosen a{
+	box-sizing: border-box;
+	padding-left: 8px;
+	width: 100%;
+	/*background: green;*/
+	padding-bottom: 3px;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 15px;
+	border-bottom: 0.63px solid rgba(255,255,255,0.5);
+	color:white;
+	font-family: segoe ui light;
+	color:white;
+	font-size: 20px;
+}
+/*============bảng thông báo đăng nhập + market =============*/
+.tablelogin, .tablemarket, .tablebuy{
+	width: 50%;
+	height: 100px;
+	background: rgb(255,147,30);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 106;
+	margin: 3px;
+	border-radius: 5px;
+	margin: 200px 25%;
+	transition:0.4s;
+	transform:scale(0.5);
+	opacity: 0;
+	visibility: hidden;
+}
+.tablelogin.bangdangnhap, .tablemarket.bangtui, .tablebuy.bangmua{
+	opacity: 1;
+	transform:scale(1);
+	visibility: visible;
+}
+.thongbao{
+	padding: 2px;
+	text-align: center;
+	font-family: segoe ui light;
+	font-size: 18px;
+	color:white;
+}
+.content{
+	text-align: center;
+	padding: 2px 0;
+	font-family: segoe ui light;
+	color:black;
+	background: white;
+	padding: 0 5px;
+	margin: 0 2px;
+	padding-bottom: 1px;
+}
+.close{
+	text-align: center;
+	font-family: segoe ui light;
+	cursor: pointer;
+	color:white;
+	margin-top: 2px;
+}
+
+/*=============== phần bóng mờ màu đen ===============*/
+.opacityblack{
+	background: black;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	opacity: 0;
+	visibility: hidden;
+}
+.opacityblack.themnua{
+	visibility: visible;
+	opacity: 0.7;
+	transition:0.4s;
+}
+.opacityblacksmall{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 105;
+	left: 0;
+	top: 0;
+	background: black;
+	opacity: 0;
+	visibility:hidden;
+}
+.opacityblacksmall.smallblack{
+	opacity: 0.7;
+	visibility: visible;
+}
+/*==========phần search/tiềm kiếm-nút giỏ hàng========*/
+.lookfor {
+	background: rgba(255,147,30,0.8);
+	position: absolute;
+	left: 0;
+	top: 70px;
+	z-index: 2;
+	width: 100%;
+	height: 40px;
+}
+input[type="search"]{
+	
+	width: 70%;
+	border-radius: 15px;
+	padding: 6px 32px 6px 5px;
+	border: 1px solid white;
+	margin-left: 15%;
+	margin-top:4.5px;
+}
+input[type="submit"]{
+	border: none;
+	width: 24px;
+	height: 24px;
+	background: transparent;
+	text-indent: -9999px;
+	margin-left: -40px;
+	background-image: url('../img/web-jpg.png');
+}
+/*============= phần background slide =================*/
+.background{
+	height: 355px;
+	width: 100%;
+	background: rgb(255,147,30);
+}
+.anhslide{
+	position: relative;
+	width: 100%;
+	top: 50px;
+	height: 300px;
+	width: 360px;
+	overflow: hidden;
+	background: rgba(0,0,0,0.5);
+	margin: auto;
+}
+.slide{
+	background: cover;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity:0;
+	z-index: 1;
+	visibility: hidden;
+}
+.slide.action{
+	opacity: 1;
+	visibility: visible;
+}
+
+.nutslide{
+	position: relative;
+	left: 0;
+	top:7%;
+	width: 360px;
+	margin:auto;
+	text-align: center;
+	z-index: 1;
+}
+.next{
+	position: absolute;
+	top: -110px;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+.prev{
+	position: absolute;
+	top: -110px;
+	left: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+.nutslide ul{
+	display: inline-block;
+}
+.nutslide li{
+	list-style: none;
+	float: left;
+	background: rgba(255,255,255,0.6);
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	margin-right: 9px;
+	border: 1px solid rgba(0,0,0,0);
+	text-indent: -9999px;
+	z-index: 2;
+	cursor: pointer;
+}
+li.xanh{
+	background: rgb(255,147,30);
+	border: 1px solid rgba(255,255,255,0.7);
+}
+.slide.hidden-left{
+	animation:hidden-left 0.5s forwards;
+}
+@-webkit-keyframes hidden-left{
+	0%{
+		left:0;
+		visibility: visible;
+		opacity: 1;
+	}
+	100%{
+		left:-100%;
+		visibility: hidden;
+		opacity: 0.5;
+	}
+}
+.slide.appear-right{
+	animation: appear-right 0.5s forwards;
+}
+@-webkit-keyframes appear-right{
+	0%{
+		left:100%;
+		visibility: hidden;
+		opacity: 0;
+	}
+	100%{
+		left:0;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.slide.hidden-right{
+	animation: hidden-right 0.5s forwards;
+}
+@-webkit-keyframes hidden-right{
+	0%{
+		left:0;
+		visibility: visible;
+		opacity: 1;
+	}
+	100%{
+		left:100%;
+		visibility: hidden;
+		opacity: 0.5;
+	}
+}
+.slide.appear-left{
+	animation:appear-left 0.5s forwards;
+}
+@-webkit-keyframes appear-left{
+	0%{
+		left:-100%;
+		visibility: hidden;
+		opacity: 0;
+	}
+	100%{
+		left:0;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+/*=============4 nút lựa chọn======================*/
+.nutchon{
+	width: 100%;
+	height: 120px;
+	background: white;
+	margin-top:10px; 
+}
+.nen{
+	width: 290px;
+	height: 120px;
+	margin: auto;
+	display: flex;
+	overflow: hidden;
+	/*background: blue*/
+}
+.nutto1, .nutto3{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	left: 0px;
+	/*background: violet;*/
+	border-radius:50%; 
+	cursor: pointer;
+	overflow: hidden;
+}
+.nutto2, .nutto4{
+	position: relative;
+	width: 120px;
+	height: 120px;
+	/*background: red;*/
+	right:-50px;
+	border-radius:50%; 
+	cursor: pointer;
+	overflow: hidden;
+}
+.chuto{
+
+	position: absolute;
+	top:45%;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-family: segoe ui light;
+	color:#f05a22;
+	font-size: 18px;
+	opacity: 0;
+	visibility: hidden;
+	font-weight: bold;
+}
+.chuto.xoay{
+	animation: xoay 1s forwards;
+	opacity: 1;
+	visibility: visible;
+}
+@-webkit-keyframes xoay{
+	0%{
+		transform: scale(0.8);
+		font-size: 15px;
+		opacity: 1;
+		visibility: visible;
+	}
+	100%{
+		transform: scale(1.1);
+		font-size: 20px;
+		opacity: 1;
+		visibility: visible;
+	}
+
+}
+.nut{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.gradient{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 120px;
+	height: 120px;
+	background-image: -webkit-linear-gradient(90deg,rgba(255,147,30,0) 0%,white 50%,rgba(255,147,30,0) 100%);
+	
+	opacity: 0;
+	visibility: hidden;
+}
+.gradient.xoay{
+	animation: xo-ay 1s forwards;
+	opacity:0.7;
+	visibility: visible;
+}
+@-webkit-keyframes xo-ay{
+	0%{
+		/*transform: scale(0.8);*/
+		opacity: 0;
+		visibility: hidden;
+	}
+	100%{
+		/*transform: scale(1.1);*/
+		opacity: 1;
+		visibility: visible;
+	}
+
+}
+/*============ nội dung ==============*/
+.motkhoi{
+	width: 100%;
+}
+.tdmotkhoi1, .tdmotkhoi2, .tdmotkhoi3, .tdmotkhoi4{
+	width: 358px;
+	margin: auto;
+	text-align: center;
+	border:1px solid rgba(255,147,30);
+	background: rgba(255,147,30);
+	font-family: segoe ui;
+	padding: 5px 0;
+	margin-top: 5px;
+	color:white;
+	font-size: 20px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.ndmotkhoi1, .ndmotkhoi2, .ndmotkhoi3, .ndmotkhoi4{
+	width: 360px;
+	margin: auto;
+	/*background: green;*/
+	background: white;
+	height: 700px;
+	overflow: hidden;
+}
+ .ndmotkhoi2, .ndmotkhoi3, .ndmotkhoi4{
+ 	height: 650px;
+ }
+.ndmotkhoi1.dai{
+	height: 1350px;
+}
+.khoi{
+	position: relative;
+	width: 100%;
+	top: 10px;
+	height: 150px;
+	/*background: white;*/
+	display: flex;
+	margin-bottom: 15px;
+}
+.image{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 150px;
+	overflow: hidden;
+}
+.nd{
+	position: absolute;
+	left: 50%;
+	top:0;
+}
+.name{
+	font-family: segoe ui;
+	font-size: 26px;
+	color: #f05a22;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.explain{
+	font-family: segoe ui;
+	font-size: 15px;
+	padding-left: 10px;
+	color:black;
+	font-style: italic;
+	padding-right: 5px;
+}
+.cot{
+	font-family: segoe ui;
+	font-size: 20px;
+	color: #f05a22;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.buy{
+	margin-left: 5px;
+	border:solid;
+	background: rgba(255,147,30);
+	color: white;
+	border-radius: 15px;
+	font-family: segoe ui;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	cursor: pointer;
+	width: 110px;
+}
+.name7{
+	font-size: 23px;
+	font-family: segoe ui;
+	color: #f05a22;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.nutload{
+	margin: auto;
+	border: 1px solid rgba(255,147,30);
+	width: 30%;
+	text-align: center;
+	cursor: pointer;
+	background: rgba(255,147,30);
+	border: none;
+	color: white;
+	font-family: segoe ui;
+	padding-bottom: 5px;
+	padding-top: 2px;
+}
+.load{
+	width: 100%;
+	height: 700;
+	background: white;
+}
+
+.tdmotkhoi1, .tdmotkhoi3{
+	background: white;
+	color: rgb(255,147,30);
+}
+.dilen{
+	position: fixed;
+	right:20px;
+	bottom: 20px;
+	z-index: 10;
+	background: rgba(255,147,30,0.5);
+	color:white;
+	border-radius: 15px;
+	width: 42px;
+	text-align: center;
+	height: 40px;
+	padding-top: 5px;
+	cursor: pointer;
+}
+.foot{
+	position: relative;
+	top: 10px;
+	margin: auto;
+	width: 360px;
+	height: 280px;
+	background: rgb(255,147,30);
+	overflow: hidden;
+}
+.ftrai{
+	position: absolute;
+	width: 55%;
+	height: 140px;
+	/*background: green;*/
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.fphai{
+	position: absolute;
+	width: 45%;
+	height: 140px;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	/*background: blue*/
+}
+.fnoidung{
+	width: 98%;
+	height: 45px;
+	color:white;
+	font-family: segoe ui;
+	padding:10px 10px;
+	/*background: blue;*/
+}
+.fchuto{
+	font-size: 18px;
+	font-weight: bold;
+}
+.fchunho{
+	font-size: 13px;
+	font-family:segoe ui;
+}
+.ficon img{
+	padding: 2px 3px;
+	cursor: pointer;
+}
+.info{
+	font-family: segoe ui;
+	color: white;
+	font-size: 14px;
+	position: absolute;
+	top: 160px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	/*background: green;*/
+}
+.fo{
+	box-sizing: border-box;
+	cursor: pointer;
+	width: 30%;
+	height: 50px;
+	margin-top: 2px;
+	padding-left: 15px;
+	/*background: blue;*/
+	float:left;
+}
+
+
+.logo2{
+	width: 100%;
+	/*width: 100%;*/
+	height: 200px;
+	background: none;
+	margin: auto;
+	left: 0;
+	top: 30%;
+	position: fixed;
+	z-index: 104;
+	opacity: 0;
+	visibility: hidden;
+}
+.opacityblackbig{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 105;
+	left: 0;
+	top: 0;
+	background: black;
+	opacity: 0;
+	visibility:hidden;
+}
+.opacityblackbig.addlogo{
+	opacity: 0.7;
+	visibility: visible;
+}
+.logo2 img{
+	position: relative;
+	display: block;
+	margin: auto;
+	z-index: 106;
+}
+.logo2.xuathien{
+	visibility: visible;
+	opacity: 1;
+}
+.thanhloadtop{
+	width: 0%;
+	position: fixed;
+	height: 10px;
+	z-index: 108;
+	background: rgb(255,147,30);
+	left: 0;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.thanhloadtop.chay{
+	animation: chay 3s forwards;
+}
+@-webkit-keyframes chay{
+	0%{width: 0%;visibility: visible;opacity: 1;}
+	100%{width: 100%;visibility: visible;opacity: 1;}
+}

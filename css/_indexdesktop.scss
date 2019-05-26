@@ -1,0 +1,166 @@
+@media screen and (min-width: 992px){
+	.thanhbar{
+		height: 100px;
+		transition: height .4s;
+		.tab{
+			position: static;
+			transform: translateX(0);
+			nav{
+				ul{
+					height: 100px;
+					background-color: transparent;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 90%;
+					margin: auto;
+					transition: height .4s;
+					li{
+						a{
+							display: block;
+							padding: 0.8rem 1rem;
+							text-decoration: none;
+							color: #FFC908;
+							font-family: $font-b;
+							font-size: 23px;
+							box-sizing: border-box;
+							border: 1px solid transparent;
+						}
+						a.hientai, &:hover a{
+							border: 1px solid #00A0C7;
+						}
+					}
+				}
+			}
+		}
+	}
+	.thanhbar.biendang{
+		height: 60px;
+		background-color: #323232;
+		.tab{
+			nav{
+				ul{
+					margin-top: 1px;
+					height: 59px;
+				}
+			}
+		}
+	}//hết thanh menutop=================
+	.canhan{
+		margin: 100px 0;
+		.me{
+			.khungto{
+				margin: 100px 0;
+				width: 480px;
+				height: 480px;
+				ul{
+					li{
+						&:nth-child(2):before,
+						&:nth-child(3):before,
+						&:nth-child(4):before{
+							font-size: 40px;
+						}
+					}
+				}
+			}
+		}
+		.info{
+			.khoiinfo{
+				h5{
+					margin-bottom: 20px;
+					font-size: 25px;
+				}
+				h1{
+					font-size: 55px;
+					margin-bottom: 15px;
+				}
+				h3{
+					font-size: 40px;
+				}
+				ul.lienket{
+					display: flex;
+					width: 150px;
+					justify-content: space-around;
+					margin-top: 10px;
+					li{
+						a{
+							display: block;
+							width: 30px;
+							height: 30px;
+							border-radius: 5px;
+							text-align: center;
+							line-height: 30px;
+							&:hover{
+								color: $mauden2;
+								background-color: $mautrang;
+							}
+						}
+					}
+				}
+				ul.xem{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}//hết phần thông tin bên trái
+	.isay{
+		margin-bottom: 200px;
+		.gioithieu{
+			h3{
+				font-size: 40px;
+				font-family: $font-b;
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 20px;
+				font-family: $font-l;
+				margin-bottom: 20px;
+			}
+		}
+	}//hết phần cuộn chuột 2
+	.skill{
+		margin-bottom: 200px;
+		.ski-1{
+			.kynang{
+				h3{
+					font-size: 40px;
+					font-family: $font-b;
+					margin: 0;
+				}
+				.sub{
+					margin-top: 40px;
+				}
+				.long{
+					.ngan{
+					}
+				}
+			}
+		}
+		.ski-2{
+			.kynang{
+				h3{
+					font-size: 40px;
+					font-family: $font-b;
+					margin-bottom: 15px;
+				}
+				ul{
+					li{
+						margin-top: 10px;
+						.vongtron{
+							width: 140px;
+							height: 140px;
+							p{
+								line-height: 140px;
+								font-size: 25px;
+							}
+						}
+						h5{
+							margin-top: 20px;
+							font-size: 25px;
+						}
+					}
+				}
+			}
+		}
+	}//hết kỹ năng 1
+}
