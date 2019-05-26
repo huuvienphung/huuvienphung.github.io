@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 1</title>
+	<script src=></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>  <!-- 2 file sau đây là file thư viện -->
+	<script type="text/javascript" src="js/jquery-migrate.min.js"></script> 
+	<script type="text/javascript" src="js/TweenMax.min.js"></script> <!-- Hiệu ứng chuyển động khi xuất hiện của các phần tử -->
+	<script src="js/jquery.easing.1.3.js"></script> <!-- chuyển động gia tốc -->
+	<script type="text/javascript" src="js/fancybox2/jquery.mousewheel-3.0.6.pack.js"></script> <!-- 3 file ef: fancybox show ảnh -->
+	<script type="text/javascript" src="js/fancybox2/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancybox2/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="js/9-pushmenu.js"></script> <!-- file viết js -->
+	<link rel="stylesheet" href="css/9-pushmenu.css"><!--  file viết css -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- ============phần thanh tab đứng yên================ -->
+	<nav class="menutren">
+		<div class="tab">
+			<div class="ovuong">
+				<a href="9-pushmenu.html"><img src="img/Artboard 3.png" alt=""></a>
+			</div>
+			<div class="logo">
+				<a href="9-pushmenu.html"><img src="img/Artboard 7.png" alt=""></a>
+			</div>
+			<div class="login"><img src="img/Artboard 2.png" alt=""></div>
+			<div class="market"><img src="img/Artboard 6.png" alt=""></div>
+		</div>
+	</nav>
+	<!-- ===================phần nút 3 vạch================= -->
+	<div class="menu">
+		<div class="khoi1"></div>
+		<div class="khoi2"></div>
+		<div class="khoi3"></div>
+	</div>
+	<!-- ================phần menu bên trái================ -->
+	<div class="menutrai">
+		<ul>
+			<li class="choosen"><a href="#">Trang chủ</a></li>
+			<li class="choosen"><a href="#">Giới thiệu</a></li>
+			<li class="choosen"><a href="#">Dịch vụ</a></li>
+			<li class="choosen"><a href="#">Tuyển dụng</a></li>
+		</ul>
+	</div>
+	<!-- ============phần bảng thông báo đăng nhập =========-->
+	<div class="tablelogin">
+		<div class="thongbao">Đăng nhập</div>
+		<div class="content">Dịch vụ đang nâng cấp mời bạn quay lại sau!</div>
+		<div class="close">close</div>
+	</div>
+	<!-- ============phần bảng thông báo giỏ hàng ==========-->
+	<div class="tablemarket">
+		<div class="thongbao">Giỏ hàng</div>
+		<div class="content">Không thể thực hiện. Bạn chưa đăng nhập!</div>
+		<div class="close">close</div>
+	</div>
+	<!-- ============phần bảng thông báo giỏ hàng ==========-->
+	<div class="tablebuy">
+		<div class="thongbao">Thông báo</div>
+		<div class="content">Kích vào giỏ hàng, để xem chi tiết hơn!</div>
+		<div class="close">close</div>
+	</div>
+	<!--=============== phần bóng mờ màu đen ===============-->
+	<div class="opacityblack"></div>
+	<div class="opacityblacksmall"></div>
+	<!-- ===============phần search/tiềm kiếm===============-->
+	<div class="lookfor">
+		<form action="">
+			<input type="search">
+			<input type="submit" value="Tìm">
+		</form>
+	</div>
+	<!--============= phần background slide =================-->
+	<div class="background">
+		<div class="anhslide">
+			<div class="slide action"><a href="img/slide1.jpg" rel="fancybox"><img src="img/slide1.jpg" alt=""></a></div>
+			<div class="slide"><a href="img/slide2.jpg" rel="fancybox"><img src="img/slide2.jpg" alt=""></a></div>
+			<div class="slide"><a href="img/slide3.jpg" rel="fancybox"><img src="img/slide3.jpg" alt=""></a></div>
+			<div class="slide"><a href="img/slide4.jpg" rel="fancybox"><img src="img/slide4.jpg" alt=""></a></div>
+		</div>
+		<div class="nutslide">
+			<div class="next"><img src="img/next1.png" alt=""></div>
+			<div class="prev"><img src="img/prev1.png" alt=""></div>
+			<ul>
+				<li class="xanh">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+	</div>
+	<!-- ==============phần menu lựa chọn====================== -->
+	<div class="nutchon">
+		<div class="nen">
+			<div class="nutto1">
+				<img class="nut" src="img/nut1.jpg" alt="">
+				<div class="chuto">Cả ngày</div>
+				<div class="gradient"></div>
+			</div>
+		
+			<div class="nutto2">
+				<img class="nut" src="img/nut2.jpg" alt="">
+				<div class="chuto">Thực đơn tối</div>
+				<div class="gradient"></div>
+			</div>
+		</div>
+	</div>
+	<div class="nutchon">
+		<div class="nen">
+			<div class="nutto3">
+				<img class="nut" src="img/nut3.jpg" alt="">
+				<div class="chuto">Đồ uống</div>
+				<div class="gradient"></div>
+			</div>
+		
+			<div class="nutto4">
+				<img class="nut" src="img/nut4.jpg" alt="">
+				<div class="chuto">Mua online</div>
+				<div class="gradient"></div>
+			</div>
+		</div>
+	</div>
+	<!-- ===================nội dung lựa chọn khối món ăn======================= -->
+	<div class="motkhoi">
+		<div class="tdmotkhoi1">CẢ NGÀY</div>
+		<div class="ndmotkhoi1">
+			<div class="khoi">
+				<div class="image"><a href="img/show1.jpg"><img src="img/cangay1.jpg" alt=""></a></div>
+				<div class="nd">
+						<div class="name">Gà sốt</div>
+						<div class="explain">Gà trang trại nhập khẩu nước ngoài.</div>
+						<div class="cot">399.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+				</div>
+			</div>
+			<div class="khoi">
+				<div class="image"><a href="img/show2.jpg"><img src="img/cangay2.jpg" alt=""></a></div>
+				<div class="nd">
+					<div class="name">Sườn nướng</div>
+					<div class="explain">Thịt bò tươi nướng cùng sốt gia vị.  </div>
+					<div class="cot">199.000đ</div>
+					<div class="buy">Thêm vào giỏ</div>
+				</div>
+			</div>
+			<div class="khoi">
+				<div class="image"><a href="img/show3.jpg"><img src="img/cangay3.jpg" alt=""></a></div>
+				<div class="nd">
+					<div class="name">Sườn sụn</div>
+					<div class="explain">Được đầu bếp chế biến sụn giòn và mềm</div>
+					<div class="cot">199.000đ</div>
+					<div class="buy">Thêm vào giỏ</div>
+				</div>
+			</div>
+			<div class="khoi">
+				<div class="image"><a href="img/show4.jpg"><img src="img/cangay4.jpg" alt=""></a></div>
+				<div class="nd">
+					<div class="name">Mực nướng</div>
+					<div class="explain">Hải sản tươi sống đầy đủ các loại.</div>
+					<div class="cot">299.000đ</div>
+					<div class="buy">Thêm vào giỏ</div>
+				</div>
+			</div>
+			<div class="load">
+				<div class="khoi">
+					<div class="image"><a href="img/show5.jpg"><img src="img/cangay5.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Đùi gà nướng</div>
+						<div class="explain">Đùi gà nướng cùng sốt gia vị đặc biệt.</div>
+						<div class="cot">199.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show6.jpg"><img src="img/cangay6.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Xiên nướng</div>
+						<div class="explain">Xiên que tự nướng ướp sắn gia vị đặc biệt.</div>
+						<div class="cot">199.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show7.jpg"><img src="img/cangay7.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name7">Cơm thịt nướng</div>
+						<div class="explain">Gạo thơm kết hợp với thịt bằm nhỏ.</div>
+						<div class="cot">99.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show8.jpg"><img src="img/cangay8.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Gà lát dĩa</div>
+						<div class="explain">Chế biến theo ẩm thực nước ngoài.</div>
+						<div class="cot">299.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+			</div>
+			<div class="nutload">load nội dung</div>
+		</div>
+		<div class="tdmotkhoi2">THỰC ĐƠN TỐI</div>
+		<div class="ndmotkhoi2">
+			<div class="khoi">
+					<div class="image"><a href="img/show5.jpg"><img src="img/cangay5.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Đùi gà nướng</div>
+						<div class="explain">Đùi gà nướng cùng sốt gia vị đặc biệt.</div>
+						<div class="cot">199.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show6.jpg"><img src="img/cangay6.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Xiên nướng</div>
+						<div class="explain">Xiên que tự nướng ướp sắn gia vị đặc biệt.</div>
+						<div class="cot">199.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show7.jpg"><img src="img/cangay7.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name7">Cơm thịt nướng</div>
+						<div class="explain">Gạo thơm kết hợp với thịt bằm nhỏ.</div>
+						<div class="cot">99.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show8.jpg"><img src="img/cangay8.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Gà lát dĩa</div>
+						<div class="explain">Chế biến theo ẩm thực nước ngoài.</div>
+						<div class="cot">299.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+		</div>
+		<div class="tdmotkhoi3">ĐỒ UỐNG</div>
+		<div class="ndmotkhoi3">
+				<div class="khoi">
+					<div class="image"><a href="img/showdu1.jpg"><img src="img/douong1.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name7">Mojito-cocktail</div>
+						<div class="explain">Hương liệu chanh tự nhiên giải khát mùa hè.</div>
+						<div class="cot">39.000đ/1ly</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+
+				<div class="khoi">
+					<div class="image"><a href="img/showdu2.jpg"><img src="img/douong2.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Ly Coca</div>
+						<div class="explain">Hương vị coca thoải mái thưởng thức.</div>
+						<div class="cot">9.000đ/1ly</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/showdu3.jpg"><img src="img/douong3.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name7">Nước cam</div>
+						<div class="explain">Cam trái nhập khẩu vắt tự nhiên  .</div>
+						<div class="cot">9.000đ/1ly</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/showdu4.jpg"><img src="img/douong4.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Beer</div>
+						<div class="explain">Bia tươi được hội anh em chứng nhận.</div>
+						<div class="cot">19.000đ/1chai</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+		</div>
+		<div class="tdmotkhoi4">MUA ONLINE</div>
+		<div class="ndmotkhoi4">
+			<div class="khoi">
+					<div class="image"><a href="img/show5.jpg"><img src="img/cangay5.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Đùi gà nướng</div>
+						<div class="explain">Đùi gà nướng cùng sốt gia vị đặc biệt.</div>
+						<div class="cot">199.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show6.jpg"><img src="img/cangay6.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Xiên nướng</div>
+						<div class="explain">Xiên que tự nướng ướp sắn gia vị đặc biệt.</div>
+						<div class="cot">199.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show7.jpg"><img src="img/cangay7.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name7">Cơm thịt nướng</div>
+						<div class="explain">Gạo thơm kết hợp với thịt bằm nhỏ.</div>
+						<div class="cot">99.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+				<div class="khoi">
+					<div class="image"><a href="img/show8.jpg"><img src="img/cangay8.jpg" alt=""></a></div>
+					<div class="nd">
+						<div class="name">Gà lát dĩa</div>
+						<div class="explain">Chế biến theo ẩm thực nước ngoài.</div>
+						<div class="cot">299.000đ</div>
+						<div class="buy">Thêm vào giỏ</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="dilen">back top</div>
+	<div class="foot">
+		<div class="ftrai">
+			<div class="fnoidung">
+				<div class="fchuto">Địa chỉ:</div>
+				<div class="fchunho">36/2, D2, quận Bình Thạnh, Tp.Hồ CHí Minh</div>
+			</div>
+			<div class="fnoidung">
+				<div class="fchuto">Giờ mở cửa:</div>
+				<div class="fchunho">Thứ 2- thứ 6: 6:00 pm- 23:55 pm<br \>Thứ 7, chủ nhật: 10:00 am- 23:55 pm</div>
+			</div>
+		</div>	
+		<div class="fphai">
+			<div class="fnoidung">
+				<div class="fchuto">Liên hệ:</div>
+				<div class="fchunho">(+84)988892220</div>
+			</div>
+			<div class="fnoidung">
+				<div class="fchuto">Tương tác:</div>
+				<div class="ficon">
+					<img src="img/icon2.png" alt="">
+					<img src="img/icon3.png" alt="">
+					<img src="img/icon1.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="info">
+			<div class="fo">Câu hỏi thường gặp</div>
+			<div class="fo">Góp ý</div>
+			<div class="fo">Tuyển dụng</div>
+			<div class="fo">Hướng dẫn người sử dụng</div>
+			<div class="fo">Quyền riêng tư</div>
+		</div>
+	</div>
+	<div class="logo2">
+		<div class="opacityblackbig"></div>
+		<img class="" src="img/alogo.png" alt="">
+	</div>
+	<div class="thanhloadtop"></div>
+</body>
+</html>
