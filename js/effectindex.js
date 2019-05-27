@@ -98,7 +98,6 @@ $(function() {
 		var danhmuc=$(this).data('chon');
 		console.log(danhmuc);
 		$('.sanpham .sp .box').each(function() {
-			$(this).addClass('bienmat');
 			if($(this).hasClass(danhmuc))
 			{
 				$(this).removeClass('bienmat');
