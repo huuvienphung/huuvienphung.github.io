@@ -521,7 +521,7 @@ body{background-color: $mauden2;}
 				columns: 2;
 				column-gap: 15px;
 				.box{
-					transition: .4s;
+					transition: all .4s;
 					padding: 2px;
 					background-color: $mautrang;
 					margin-bottom: 15px;
@@ -530,6 +530,7 @@ body{background-color: $mauden2;}
 					@include xuathien;
 					position: static;
 					transform: scale(1);
+					transform-origin: 0% 0%;
 					a{
 						img{
 							max-width: 100%;

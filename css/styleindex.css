@@ -398,7 +398,7 @@ body {
       columns: 2;
       column-gap: 15px; }
       .sanpham .sp .cuon .boxbig .box {
-        transition: .4s;
+        transition: all .4s;
         padding: 2px;
         background-color: #fff;
         margin-bottom: 15px;
@@ -407,7 +407,8 @@ body {
         opacity: 1;
         visibility: visible;
         position: static;
-        transform: scale(1); }
+        transform: scale(1);
+        transform-origin: 0% 0%; }
         .sanpham .sp .cuon .boxbig .box a img {
           max-width: 100%;
           border-radius: 10px; }
