@@ -126,7 +126,7 @@ $(function() {
 		else{
 			clearInterval(xoay);
 		}
-	},110);
+	},50);
 	var chay2 = 0;
 	xoay2 = setInterval(function(){
 		if(chay2 < 61){
@@ -137,7 +137,7 @@ $(function() {
 		else{
 			clearInterval(xoay2);
 		}
-	},120);
+	},40);
 	var chay3 = 0;
 	xoay3 = setInterval(function(){
 		if(chay3 < 71){
@@ -148,7 +148,7 @@ $(function() {
 		else{
 			clearInterval(xoay3);
 		}
-	},100);
+	},40);
 	
 
 });
