@@ -98,16 +98,15 @@ $(function() {
 		var danhmuc=$(this).data('chon');
 		console.log(danhmuc);
 		$('.sanpham .sp .box').each(function() {
+			$(this).addClass('bienmat');
 			if($(this).hasClass(danhmuc))
 			{
-				$(this).addClass('xuathien');
 				$(this).removeClass('bienmat');
 
 			}
 			else
 			{
 				$(this).addClass('bienmat');
-				$(this).removeClass('xuathien');
 			}
 		});
 		return false;

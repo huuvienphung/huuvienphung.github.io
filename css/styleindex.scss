@@ -521,23 +521,21 @@ body{background-color: $mauden2;}
 				columns: 2;
 				column-gap: 15px;
 				.box{
-					transition: .6s;
+					transition: .4s;
 					padding: 2px;
 					background-color: $mautrang;
 					margin-bottom: 15px;
 					break-inside: avoid;
 					border-radius: 10px;
+					@include xuathien;
+					position: static;
+					transform: scale(1);
 					a{
 						img{
 							max-width: 100%;
 							border-radius: 10px;
 						}
 					}
-				}
-				.box.xuathien{
-					@include xuathien;
-					position: static;
-					transform: scale(1);
 				}
 				.box.bienmat{
 					@include bienmat;
