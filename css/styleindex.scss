@@ -322,9 +322,10 @@ body{background-color: $mauden2;}
 				width: 100%;
 				height: 5px;
 				background-color: rgba(255,255,255,.2);
-				.ngan{
+				.ngan1 , .ngan2, .ngan3, .ngan4{
 					background-image: -webkit-linear-gradient(left,transparent,$mauxanh);
 					height: 5px;
+					width: 5%;
 					position: relative;
 					&:before{
 						content: '';
@@ -548,7 +549,7 @@ body{background-color: $mauden2;}
 	}
 		
 }//hết phần cuộn chuột thứ 5
-.lienlac{
+.badi{
 	color: #fff;
 	.want h3{
 		font-family: $font-r;
@@ -749,7 +750,7 @@ body{background-color: $mauden2;}
 				}
 			} 
 	}//hết phần cuộn chuột thứ 5
-	.lienlac{
+	.badi{
 		.contact{
 			.lienlac{
 				p{

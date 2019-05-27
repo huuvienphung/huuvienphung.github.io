@@ -13,18 +13,20 @@ $(function() {
 	//=========================================
 	var trangthai = 1;
 	var vitri1 = $('.canhan').offset().top, vt1 = vitri1 -200;
-	var vitri2 = $('.isay').offset().top, vt2 = vitri2 -300;
-	var vitri3 = $('.skill').offset().top, vt3 = vitri3 -200;
-	var vitri4 = $('.school').offset().top, vt4 = vitri4 -200;
-	var vitri5 = $('.sanpham').offset().top, vt5 = vitri5 -200;
-	var vitri6 = $('.lienlac').offset().top, vt6 = vitri6 -200;
+	var vitri2 = $('#vt2').offset().top, vt2 = vitri2 -200;
+	var vitri3 = $('#vt3').offset().top, vt3 = vitri3 -200;
+	var vitri4 = $('#vt4').offset().top, vt4 = vitri4 -200;
+	var vitri5 = $('#vt5').offset().top, vt5 = vitri5 -200;
+	var vitri6 = $('#vt6').offset().top, vt6 = vitri6 -300;
 	$(window).scroll(function(event) {
 		if($(window).scrollTop()>=200){
 			if (trangthai == 1) {
 				$('.thanhbar').addClass('biendang');
 				trangthai = 2;
 			}
-		}else{
+		}
+		else
+		{
 			if (trangthai == 2) {
 				$('.thanhbar').removeClass('biendang');
 				trangthai = 1;
@@ -67,19 +69,19 @@ $(function() {
 		$('body,html').animate({ scrollTop: vitri1}, 900,"easeInOutQuint");
 	});
 	$('.tab ul li:nth-child(2)').click(function(event) {
-		$('body,html').animate({ scrollTop: vitri2 - 100}, 900,"easeInOutQuint");
+		$('body,html').animate({ scrollTop: vitri2}, 900,"easeInOutQuint");
 	});
 	$('.tab ul li:nth-child(3)').click(function(event) {
-		$('body,html').animate({ scrollTop: vitri3 - 100}, 900,"easeInOutQuint");
+		$('body,html').animate({ scrollTop: vitri3}, 900,"easeInOutQuint");
 	});
 	$('.tab ul li:nth-child(4)').click(function(event) {
-		$('body,html').animate({ scrollTop: vitri4 - 100}, 900,"easeInOutQuint");
+		$('body,html').animate({ scrollTop: vitri4}, 900,"easeInOutQuint");
 	});
 	$('.tab ul li:nth-child(5)').click(function(event) {
-		$('body,html').animate({ scrollTop: vitri5 - 100}, 900,"easeInOutQuint");
+		$('body,html').animate({ scrollTop: vitri5}, 900,"easeInOutQuint");
 	});
 	$('.tab ul li:nth-child(6)').click(function(event) {
-		$('body,html').animate({ scrollTop: vitri6 - 100}, 900,"easeInOutQuint");
+		$('body,html').animate({ scrollTop: vitri6}, 900,"easeInOutQuint");
 	});
 	
 	//=============================================
@@ -110,5 +112,43 @@ $(function() {
 		});
 		return false;
 	});
+	//===============================================
+	var chay = 0;
+	xoay = setInterval(function(){
+		if(chay < 76){
+			$('.kynang .chay1').text(chay +'%');
+			$('.kynang .ngan1').css('width', chay +'%');
+			$('.kynang .chay2').text(chay +'%');
+			$('.kynang .ngan2').css('width', chay +'%');
+			
+			chay = chay + 1;
+		}
+		else{
+			clearInterval(xoay);
+		}
+	},110);
+	var chay2 = 0;
+	xoay2 = setInterval(function(){
+		if(chay2 < 61){
+			$('.kynang .chay3').text(chay2 +'%');
+			$('.kynang .ngan3').css('width', chay2 +'%');
+			chay2++;
+		}
+		else{
+			clearInterval(xoay2);
+		}
+	},120);
+	var chay3 = 0;
+	xoay3 = setInterval(function(){
+		if(chay3 < 71){
+			$('.kynang .chay4').text(chay3 +'%');
+			$('.kynang .ngan4').css('width', chay3 +'%');
+			chay3++;
+		}
+		else{
+			clearInterval(xoay3);
+		}
+	},100);
+	
 
 });

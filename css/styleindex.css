@@ -244,11 +244,12 @@ body {
       width: 100%;
       height: 5px;
       background-color: rgba(255, 255, 255, 0.2); }
-      .skill .ski-1 .kynang .long .ngan {
+      .skill .ski-1 .kynang .long .ngan1, .skill .ski-1 .kynang .long .ngan2, .skill .ski-1 .kynang .long .ngan3, .skill .ski-1 .kynang .long .ngan4 {
         background-image: -webkit-linear-gradient(left, transparent, #008CC0);
         height: 5px;
+        width: 5%;
         position: relative; }
-        .skill .ski-1 .kynang .long .ngan:before {
+        .skill .ski-1 .kynang .long .ngan1:before, .skill .ski-1 .kynang .long .ngan2:before, .skill .ski-1 .kynang .long .ngan3:before, .skill .ski-1 .kynang .long .ngan4:before {
           content: '';
           position: absolute;
           right: 0;
@@ -417,13 +418,13 @@ body {
         position: absolute;
         transform: scale(0); }
 
-.lienlac {
+.badi {
   color: #fff; }
-  .lienlac .want h3 {
+  .badi .want h3 {
     font-family: nuni-r;
     font-size: 33px;
     margin: 30px 0; }
-  .lienlac .contact .lienlac {
+  .badi .contact .lienlac {
     margin-top: 20px;
     width: 100%;
     padding: 15px;
@@ -431,21 +432,21 @@ body {
     box-shadow: -1rem 0 3rem black;
     box-sizing: border-box;
     text-align: center; }
-    .lienlac .contact .lienlac .khoivuong {
+    .badi .contact .lienlac .khoivuong {
       width: 110px;
       height: 110px;
       margin: 15px auto;
       border-radius: 50%;
       border: 1px solid #008CC0; }
-      .lienlac .contact .lienlac .khoivuong i {
+      .badi .contact .lienlac .khoivuong i {
         text-align: center;
         line-height: 110px;
         display: block;
         font-size: 25px; }
-    .lienlac .contact .lienlac h5 {
+    .badi .contact .lienlac h5 {
       font-family: nuni-l;
       font-size: 23px; }
-    .lienlac .contact .lienlac p {
+    .badi .contact .lienlac p {
       font-family: nuni-l;
       font-size: 18px; }
 
@@ -547,7 +548,7 @@ body {
       .sanpham .sp .cuon .boxbig .box {
         padding: 5px; }
 
-  .lienlac .contact .lienlac p {
+  .badi .contact .lienlac p {
     font-size: 15px; } }
 @media screen and (min-width: 992px) {
   .thanhbar {
@@ -678,12 +679,12 @@ body {
     .sanpham .sp .cuon .boxbig {
       columns: 4; }
 
-  .lienlac .want h3 {
+  .badi .want h3 {
     font-family: nuni-b;
     font-size: 40px; }
-  .lienlac .contact .lienlac h5 {
+  .badi .contact .lienlac h5 {
     font-size: 27px; }
-  .lienlac .contact .lienlac p {
+  .badi .contact .lienlac p {
     font-size: 23px; } }
 
 /*# sourceMappingURL=styleindex.css.map */
