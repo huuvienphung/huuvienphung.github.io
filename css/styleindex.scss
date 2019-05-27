@@ -301,7 +301,6 @@ body{background-color: $mauden2;}
 	margin-top: 20px;
 	color: $mautrang;
 	.ski-1{
-		@include canhtam;
 		.kynang{
 			width: 90%;
 			margin: 0 auto;
@@ -454,6 +453,142 @@ body{background-color: $mauden2;}
 		}
 	}//hết kỹ năng 2
 }//hết phần cuộn chuột thứ 3=========================
+.school{
+	color: #fff;
+	h3{
+		font-family: $font-r;
+		font-size: 33px;
+		text-align: center;
+		margin: 30px 0;
+	}
+	.canhgiua{
+		width: 100%;
+		padding: 15px;
+		background-color: $mauden1;
+		box-shadow: -1rem 0 3rem black;
+		box-sizing: border-box;
+		h4{
+			font-family: $font-r;
+			font-size: 25px;
+			span{
+				color: $mauxanh;
+				font-family: $font-b;
+			}
+		}
+		span{
+			font-family: $font-r;
+			color: $mauxanh;
+		}
+		p{
+			font-family:  $font-l;
+			margin-bottom: 15px;
+		}
+	}
+}//hết phần cuộn chuột thứ 4=========================
+.sanpham{
+	color: #fff;
+	.change h3{
+		font-family: $font-r;
+		font-size: 33px;
+		margin: 30px 0;
+	}
+	.choose ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		li{
+			list-style: none;
+			padding: 10px 20px 5px;
+			a{
+				color: $mautrang;
+				font-family: $font-l;
+				font-size: 20px;
+			}
+		}
+		li a.act{
+			border-bottom: 1px solid $mauxanh;
+		}
+		li:hover a{
+			text-decoration: none;
+		}
+	}
+	.sp{
+		.cuon{
+			min-height: 100px;
+			overflow-x: hidden;
+			.boxbig{
+				columns: 2;
+				column-gap: 15px;
+				.box{
+					transition: .6s;
+					padding: 2px;
+					background-color: $mautrang;
+					margin-bottom: 15px;
+					break-inside: avoid;
+					border-radius: 10px;
+					a{
+						img{
+							max-width: 100%;
+							border-radius: 10px;
+						}
+					}
+				}
+				.box.xuathien{
+					@include xuathien;
+					position: static;
+					transform: scale(1);
+				}
+				.box.bienmat{
+					@include bienmat;
+					position: absolute;
+					transform: scale(0);
+				}
+			}
+		}
+	}
+		
+}//hết phần cuộn chuột thứ 5
+.lienlac{
+	color: #fff;
+	.want h3{
+		font-family: $font-r;
+	    font-size: 33px;
+	    margin: 30px 0;
+	}
+	.contact{
+		.lienlac{
+			margin-top: 20px;
+		    width: 100%;
+		    padding: 15px;
+		    background-color: #323232;
+		    box-shadow: -1rem 0 3rem black;
+		    box-sizing: border-box;
+		    text-align: center;
+		    .khoivuong{
+		    	width: $vongtronnho;
+		    	height: $vongtronnho;
+		    	margin: 15px auto;
+		    	border-radius: 50%;
+		    	border: 1px solid $mauxanh;
+		    	i{
+		    		text-align: center;
+		    		line-height: $vongtronnho;
+		    		display: block;
+		    		font-size: 25px;
+		    	}
+		    }
+		    h5{
+		    	font-family: $font-l;
+    			font-size: 23px;
+		    }
+		    p{
+		    	font-family: $font-l;
+    			font-size: 18px;
+		    }
+		    
+		}
+	}
+}
 @-webkit-keyframes xoaypro{
 	0%{
 		transform: translateY(-50%) rotate(0deg);
@@ -582,7 +717,43 @@ body{background-color: $mauden2;}
 		.ski-2{
 			.kynang{
 				h3{
+					font-size: 31px;
 					margin: 0;
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+	.school .group h3{
+		font-size: 32px;
+	}
+	.sanpham{
+		.change h3{
+		}
+		.choose ul{
+			margin-bottom: 40px;
+			li{
+				a{
+					font-family: $font-l;
+					font-size: 20px;
+				}
+			}
+		}
+		.sp .cuon{
+				height: auto;
+				.boxbig{
+					columns: 3;
+					.box{
+						padding: 5px;
+					}
+				}
+			} 
+	}//hết phần cuộn chuột thứ 5
+	.lienlac{
+		.contact{
+			.lienlac{
+				p{
+					font-size: 15px;
 				}
 			}
 		}

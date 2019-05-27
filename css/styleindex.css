@@ -225,43 +225,40 @@ body {
 .skill {
   margin-top: 20px;
   color: #fff; }
-  .skill .ski-1 {
-    display: flex;
-    align-items: center; }
-    .skill .ski-1 .kynang {
-      width: 90%;
-      margin: 0 auto; }
-      .skill .ski-1 .kynang h3 {
-        font-family: nuni-r;
-        font-size: 33px;
-        text-align: center;
-        margin-bottom: 40px; }
-      .skill .ski-1 .kynang .sub {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        font-family: nuni-l; }
-      .skill .ski-1 .kynang .long {
-        margin: 0 auto;
-        width: 100%;
+  .skill .ski-1 .kynang {
+    width: 90%;
+    margin: 0 auto; }
+    .skill .ski-1 .kynang h3 {
+      font-family: nuni-r;
+      font-size: 33px;
+      text-align: center;
+      margin-bottom: 40px; }
+    .skill .ski-1 .kynang .sub {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-family: nuni-l; }
+    .skill .ski-1 .kynang .long {
+      margin: 0 auto;
+      width: 100%;
+      height: 5px;
+      background-color: rgba(255, 255, 255, 0.2); }
+      .skill .ski-1 .kynang .long .ngan {
+        background-image: -webkit-linear-gradient(left, transparent, #008CC0);
         height: 5px;
-        background-color: rgba(255, 255, 255, 0.2); }
-        .skill .ski-1 .kynang .long .ngan {
-          background-image: -webkit-linear-gradient(left, transparent, #008CC0);
-          height: 5px;
-          position: relative; }
-          .skill .ski-1 .kynang .long .ngan:before {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 50%;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            transform: translate(50%, -50%);
-            background-color: #fff;
-            box-shadow: 0 0 15px 0 #008CC0; }
+        position: relative; }
+        .skill .ski-1 .kynang .long .ngan:before {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          transform: translate(50%, -50%);
+          background-color: #fff;
+          box-shadow: 0 0 15px 0 #008CC0; }
   .skill .ski-2 {
     display: flex;
     align-items: center; }
@@ -346,6 +343,112 @@ body {
           .skill .ski-2 .kynang ul li:nth-child(4) .vongtron .xoay2 {
             animation: vongtron4 10s linear infinite; }
 
+.school {
+  color: #fff; }
+  .school h3 {
+    font-family: nuni-r;
+    font-size: 33px;
+    text-align: center;
+    margin: 30px 0; }
+  .school .canhgiua {
+    width: 100%;
+    padding: 15px;
+    background-color: #323232;
+    box-shadow: -1rem 0 3rem black;
+    box-sizing: border-box; }
+    .school .canhgiua h4 {
+      font-family: nuni-r;
+      font-size: 25px; }
+      .school .canhgiua h4 span {
+        color: #008CC0;
+        font-family: nuni-b; }
+    .school .canhgiua span {
+      font-family: nuni-r;
+      color: #008CC0; }
+    .school .canhgiua p {
+      font-family: nuni-l;
+      margin-bottom: 15px; }
+
+.sanpham {
+  color: #fff; }
+  .sanpham .change h3 {
+    font-family: nuni-r;
+    font-size: 33px;
+    margin: 30px 0; }
+  .sanpham .choose ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .sanpham .choose ul li {
+      list-style: none;
+      padding: 10px 20px 5px; }
+      .sanpham .choose ul li a {
+        color: #fff;
+        font-family: nuni-l;
+        font-size: 20px; }
+    .sanpham .choose ul li a.act {
+      border-bottom: 1px solid #008CC0; }
+    .sanpham .choose ul li:hover a {
+      text-decoration: none; }
+  .sanpham .sp .cuon {
+    min-height: 100px;
+    overflow-x: hidden; }
+    .sanpham .sp .cuon .boxbig {
+      columns: 2;
+      column-gap: 15px; }
+      .sanpham .sp .cuon .boxbig .box {
+        transition: .6s;
+        padding: 2px;
+        background-color: #fff;
+        margin-bottom: 15px;
+        break-inside: avoid;
+        border-radius: 10px; }
+        .sanpham .sp .cuon .boxbig .box a img {
+          max-width: 100%;
+          border-radius: 10px; }
+      .sanpham .sp .cuon .boxbig .box.xuathien {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        transform: scale(1); }
+      .sanpham .sp .cuon .boxbig .box.bienmat {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        transform: scale(0); }
+
+.lienlac {
+  color: #fff; }
+  .lienlac .want h3 {
+    font-family: nuni-r;
+    font-size: 33px;
+    margin: 30px 0; }
+  .lienlac .contact .lienlac {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: #323232;
+    box-shadow: -1rem 0 3rem black;
+    box-sizing: border-box;
+    text-align: center; }
+    .lienlac .contact .lienlac .khoivuong {
+      width: 110px;
+      height: 110px;
+      margin: 15px auto;
+      border-radius: 50%;
+      border: 1px solid #008CC0; }
+      .lienlac .contact .lienlac .khoivuong i {
+        text-align: center;
+        line-height: 110px;
+        display: block;
+        font-size: 25px; }
+    .lienlac .contact .lienlac h5 {
+      font-family: nuni-l;
+      font-size: 23px; }
+    .lienlac .contact .lienlac p {
+      font-family: nuni-l;
+      font-size: 18px; }
+
 @-webkit-keyframes xoaypro {
   0% {
     transform: translateY(-50%) rotate(0deg); }
@@ -425,7 +528,27 @@ body {
         .skill .ski-1 .kynang .sub {
           font-size: 20px; }
     .skill .ski-2 .kynang h3 {
-      margin: 0; } }
+      font-size: 31px;
+      margin: 0;
+      margin-bottom: 40px; }
+
+  .school .group h3 {
+    font-size: 32px; }
+
+  .sanpham .choose ul {
+    margin-bottom: 40px; }
+    .sanpham .choose ul li a {
+      font-family: nuni-l;
+      font-size: 20px; }
+  .sanpham .sp .cuon {
+    height: auto; }
+    .sanpham .sp .cuon .boxbig {
+      columns: 3; }
+      .sanpham .sp .cuon .boxbig .box {
+        padding: 5px; }
+
+  .lienlac .contact .lienlac p {
+    font-size: 15px; } }
 @media screen and (min-width: 992px) {
   .thanhbar {
     height: 100px;
@@ -461,73 +584,106 @@ body {
       margin-top: 1px;
       height: 61px; }
 
-  .canhan {
-    margin: 100px 0; }
-    .canhan .me .khungto {
-      margin: 100px 0;
-      width: 480px;
-      height: 480px; }
-      .canhan .me .khungto ul li:nth-child(2):before, .canhan .me .khungto ul li:nth-child(3):before, .canhan .me .khungto ul li:nth-child(4):before {
-        font-size: 40px; }
-    .canhan .info .khoiinfo h5 {
-      margin-bottom: 20px;
-      font-size: 25px; }
-    .canhan .info .khoiinfo h1 {
-      font-size: 55px;
-      margin-bottom: 15px; }
-    .canhan .info .khoiinfo h3 {
+  .canhan .me .khungto {
+    margin: 100px 0;
+    width: 480px;
+    height: 480px; }
+    .canhan .me .khungto ul li:nth-child(2):before, .canhan .me .khungto ul li:nth-child(3):before, .canhan .me .khungto ul li:nth-child(4):before {
       font-size: 40px; }
-    .canhan .info .khoiinfo ul.lienket {
-      display: flex;
-      width: 150px;
-      justify-content: space-around;
-      margin-top: 10px; }
-      .canhan .info .khoiinfo ul.lienket li a {
-        display: block;
-        width: 30px;
-        height: 30px;
-        border-radius: 5px;
-        text-align: center;
-        line-height: 30px; }
-        .canhan .info .khoiinfo ul.lienket li a:hover {
-          color: #262626;
-          background-color: #fff; }
-    .canhan .info .khoiinfo ul.xem {
-      margin-bottom: 10px; }
+  .canhan .info .khoiinfo h5 {
+    margin-bottom: 20px;
+    font-size: 25px; }
+  .canhan .info .khoiinfo h1 {
+    font-size: 55px;
+    margin-bottom: 15px; }
+  .canhan .info .khoiinfo h3 {
+    font-size: 40px; }
+  .canhan .info .khoiinfo ul.lienket {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    margin-top: 10px; }
+    .canhan .info .khoiinfo ul.lienket li a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 30px; }
+      .canhan .info .khoiinfo ul.lienket li a:hover {
+        color: #262626;
+        background-color: #fff; }
+  .canhan .info .khoiinfo ul.xem {
+    margin-bottom: 10px; }
 
-  .isay {
-    margin-bottom: 200px; }
-    .isay .gioithieu h3 {
-      font-size: 40px;
-      font-family: nuni-b;
-      margin-bottom: 20px; }
-    .isay .gioithieu p {
-      font-size: 20px;
-      font-family: nuni-l;
-      margin-bottom: 20px; }
+  .isay .gioithieu h3 {
+    font-size: 40px;
+    font-family: nuni-b;
+    margin-bottom: 20px; }
+  .isay .gioithieu p {
+    font-size: 20px;
+    font-family: nuni-l;
+    margin-bottom: 20px; }
+  .isay .gioithieu ul li {
+    font-size: 20px; }
 
-  .skill {
-    margin-bottom: 200px; }
-    .skill .ski-1 .kynang h3 {
-      font-size: 40px;
+  .skill .ski-1 .kynang h3 {
+    font-size: 40px;
+    font-family: nuni-b;
+    margin: 0; }
+  .skill .ski-1 .kynang .sub {
+    margin-top: 40px; }
+  .skill .ski-2 .kynang h3 {
+    font-size: 40px;
+    font-family: nuni-b;
+    margin-bottom: 15px; }
+  .skill .ski-2 .kynang ul li {
+    margin-top: 10px; }
+    .skill .ski-2 .kynang ul li .vongtron {
+      width: 140px;
+      height: 140px; }
+      .skill .ski-2 .kynang ul li .vongtron p {
+        line-height: 140px;
+        font-size: 25px; }
+    .skill .ski-2 .kynang ul li h5 {
+      margin-top: 20px;
+      font-size: 25px; }
+
+  .school h3, .school .group h3 {
+    font-family: nuni-b;
+    font-size: 40px; }
+  .school .canhgiua {
+    padding: 20px; }
+    .school .canhgiua h4 {
+      font-family: nuni-r;
+      font-size: 30px; }
+      .school .canhgiua h4 span {
+        font-size: 30px; }
+    .school .canhgiua span {
+      font-size: 20px; }
+    .school .canhgiua p {
+      font-size: 20px; }
+
+  .sanpham {
+    color: #fff; }
+    .sanpham .change h3 {
       font-family: nuni-b;
-      margin: 0; }
-    .skill .ski-1 .kynang .sub {
-      margin-top: 40px; }
-    .skill .ski-2 .kynang h3 {
-      font-size: 40px;
-      font-family: nuni-b;
-      margin-bottom: 15px; }
-    .skill .ski-2 .kynang ul li {
-      margin-top: 10px; }
-      .skill .ski-2 .kynang ul li .vongtron {
-        width: 140px;
-        height: 140px; }
-        .skill .ski-2 .kynang ul li .vongtron p {
-          line-height: 140px;
-          font-size: 25px; }
-      .skill .ski-2 .kynang ul li h5 {
-        margin-top: 20px;
-        font-size: 25px; } }
+      font-size: 40px; }
+    .sanpham .choose ul li a {
+      font-family: nuni-r;
+      font-size: 25px; }
+    .sanpham .choose ul li:hover a {
+      border-bottom: 1px solid #008CC0;
+      text-decoration: none; }
+    .sanpham .sp .cuon .boxbig {
+      columns: 4; }
+
+  .lienlac .want h3 {
+    font-family: nuni-b;
+    font-size: 40px; }
+  .lienlac .contact .lienlac h5 {
+    font-size: 27px; }
+  .lienlac .contact .lienlac p {
+    font-size: 23px; } }
 
 /*# sourceMappingURL=styleindex.css.map */

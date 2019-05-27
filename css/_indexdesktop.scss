@@ -47,7 +47,6 @@
 		}
 	}//hết thanh menutop=================
 	.canhan{
-		margin: 100px 0;
 		.me{
 			.khungto{
 				margin: 100px 0;
@@ -104,7 +103,6 @@
 		}
 	}//hết phần thông tin bên trái
 	.isay{
-		margin-bottom: 200px;
 		.gioithieu{
 			h3{
 				font-size: 40px;
@@ -116,10 +114,12 @@
 				font-family: $font-l;
 				margin-bottom: 20px;
 			}
+			ul li{
+				font-size: 20px;
+			}
 		}
 	}//hết phần cuộn chuột 2
 	.skill{
-		margin-bottom: 200px;
 		.ski-1{
 			.kynang{
 				h3{
@@ -163,4 +163,68 @@
 			}
 		}
 	}//hết kỹ năng 1
+	.school{
+		h3, .group h3{
+			font-family: $font-b;
+			font-size: 40px;
+		}
+		.canhgiua{
+			padding: 20px;
+			h4{
+				font-family: $font-r;
+				font-size: 30px;
+				span{
+					font-size: 30px;
+				}
+			}
+			span{
+				font-size: 20px;
+			}
+			p{
+				font-size: 20px;
+			}
+		}
+	}//hết phần cuộn chuột thứ 4=========================
+	.sanpham{
+		color: #fff;
+		.change h3{
+			font-family: $font-b;
+			font-size: 40px;
+		}
+		.choose ul{
+			li{
+				a{
+				font-family: $font-r;
+				font-size: 25px;
+				}
+			}
+			li:hover a{
+				border-bottom: 1px solid $mauxanh;
+				text-decoration: none;
+			}
+		}
+		.sp .cuon{
+				.boxbig{
+					columns: 4;
+			}
+		}
+	}//hết phần cuộn chuột thứ 5
+	.lienlac{
+		.want{
+			h3{
+				font-family: $font-b;
+				font-size: 40px;
+			}
+		}
+		.contact{
+			.lienlac{
+				h5{
+					font-size: 27px;
+				}
+				p{
+					font-size: 23px;
+				}
+			}
+		}	
+	}
 }
