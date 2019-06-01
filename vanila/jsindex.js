@@ -107,15 +107,9 @@ for (var i = 0; i < nutchon.length; i++) {
 		// sap xep
 		for (var i = 0; i < box.length; i++) {
 			if(box[i].classList.contains(atr)) {
-				// box[i].style.display = 'block';
-				box[i].style.transform = 'scale(1)';
-				box[i].style.position = 'static';
-				box[i].style.opacity = '1'
+				box[i].style.display = 'block';
 			} else {
-				// box[i].style.display = 'none';
-				box[i].style.transform = 'scale(.3)';
-				box[i].style.position = 'absolute';
-				box[i].style.opacity = '0'
+				box[i].style.display = 'none';
 			}
 		}
 	})
