@@ -1,0 +1,754 @@
+@font-face{
+	src:url(../fontindex/NunitoSans-Regular.ttf);
+	font-family: nuni-r;
+}
+@font-face{
+	src:url(../fontindex/NunitoSans-Bold.ttf);
+	font-family: nuni-b;
+}
+@font-face{
+	src:url(../fontindex/NunitoSans-Light.ttf);
+	font-family: nuni-l;
+}
+$mauden1: #323232;
+$mauden2: #262626;
+$mauxanh: #008CC0;
+$mauvang: #FFC908;
+$mautrang: #fff;
+
+$font-r: nuni-r;
+$font-b: nuni-b;
+$font-l: nuni-l;
+
+$vongtronnho: 110px;
+$vongtronlon: 140px;
+
+
+@mixin canhtam() {
+	display: flex;
+	align-items: center;
+}
+@mixin xuathien() {
+	opacity: 1;
+	visibility: visible;
+}
+@mixin bienmat() {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+*{margin:0;padding: 0;list-style: none;}
+body{background-color: $mauden2;}
+
+.thanhbar{
+	background-color: $mauden1;
+	height: 60px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 1px 5px rgba(0,0,0,.4);
+	z-index: 99;
+	.bavach{
+		line-height: 60px;
+		a{
+			position: relative;
+			z-index: 999;
+			&:before, &:after{
+				content: '\f0c9';
+				position: absolute;
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				left: 0;
+				top: 0;
+				color: $mauxanh; 
+				font-size: 30px;
+				@include xuathien;
+				transition: .4s;
+			}
+			&:after{
+				content: '\f00d';
+				font-size: 34px;
+				@include bienmat;
+				transform: rotate(0);
+			}
+		}
+		a.change{
+			&:before{
+				@include bienmat;
+				transform: rotate(180deg);
+			}
+			&:after{
+				@include xuathien;
+			 	transform: rotate(180deg);
+			}
+		}
+	}//hết phần nút 3 vạch=================================
+	.tab{
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 61px;
+		transform: translateX(-100%);
+		padding-left: 0;
+		background-color: transparent;
+		transition: transform .8s cubic-bezier(0.86,-0.92, 0, 1.54);
+		cursor: pointer;
+		nav{
+			ul{
+				height: calc(100vh - 61px);
+				background-color: $mauden1;
+				width: 60%;
+				overflow-x: hidden;
+				li{
+					a{
+						display: block;
+						padding: 0.8rem 1rem;
+						text-decoration: none;
+						color: $mauvang;
+						font-family: $font-r;
+						font-size: 20px;
+						border-bottom: 0.63px solid transparent;
+					}
+					a.hientai{
+						border-bottom: 0.63px solid $mauxanh;
+					}
+				}
+			}
+		}	
+	}
+	.tab.xuathien{
+		transform: translateX(0);
+	}//hết phần nav
+}//hết phần thanh menu nav============================
+.canhan{
+	margin-top:67px;
+	.me{
+		display: flex;
+		justify-content: center;
+		.khungto{
+			margin: 50px 0;
+			width: 350px;
+			height: 350px;
+			ul{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				li{
+					&:nth-child(1){
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+					}
+					&:nth-child(2){
+						position: absolute;
+						left: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 50%;
+						height: 2px;
+						animation: xoaypro 10s linear infinite;
+						transform-origin: right;
+						&:before{
+							content: '\f13b';
+							position: absolute;
+							top: 50%;
+							left: 0;
+							font-family: "Font Awesome 5 Brands";
+							transform: translateY(-50%) rotate(-90deg);
+							color: $mautrang;
+							font-size: 30px;
+						}
+					}
+					&:nth-child(3){
+						position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%) rotate(-60deg);
+						transform-origin: left;
+						width: 50%;
+						height: 2px;
+						animation: xoaypro2 10s linear infinite;
+						&:before{
+							content: '\f38b';
+							position: absolute;
+							top: 50%;
+							right: 0;
+							font-family: "Font Awesome 5 Brands";
+							transform: translateY(-50%) rotate(90deg);
+							color: $mautrang;
+							font-size: 30px;
+						}
+					}
+					&:nth-child(4){
+						position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%) rotate(60deg);
+						transform-origin: left;
+						width: 50%;
+						height: 2px;
+						animation: xoaypro3 10s linear infinite;
+						&:before{
+							content: '\f3b9';
+							position: absolute;
+							top: 50%;
+							right: 0;
+							font-family: "Font Awesome 5 Brands";
+							transform: translateY(-50%) rotate(90deg);
+							color: $mautrang;
+							font-size: 30px;
+						}
+					}
+					&:nth-child(5){
+						width: 70%;
+						height: 70%;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%,-50%);
+						border-radius: 50%;
+						img{
+							width: 100%;
+							border-radius: 50%;
+							border:10px solid transparent;
+							box-shadow: 0px 0px 0 10px $mautrang;
+						}
+					}
+				}
+			}
+		}
+	}//hết phần logo giao diện==================
+	.info{
+		.khoiinfo{
+			text-align: center;
+			color: $mautrang;
+			h5{
+				background-color: $mauxanh;
+				display: inline-block;
+				padding: 7px 20px;
+				border-radius: 20px;
+				border-bottom-left-radius: 0px;
+				font-family: $font-r;
+				margin-bottom: 20px;
+			}
+			h1{
+				font-family: $font-b;
+				margin-bottom: 15px;
+			}
+			h3{
+				margin-bottom: 10px;
+				font-family: $font-r;
+			}
+			ul.lienket{
+				display: flex;
+				width: 100px;
+				justify-content: space-around;
+				margin: 0 auto;
+				a{
+					color: $mautrang;
+					i{	
+						font-size: 20px;
+					}
+				}
+			}
+			ul.xem{
+				li{
+					margin-bottom: 5px;
+					font-family: $font-l;
+					i{
+						padding-right: 7px;
+					}
+				}
+			}
+		}
+	}//phần thông tin cá nhân
+}// hết phần cuộn chuột thứ nhất======================
+.isay{
+	.anhtoon{
+		img{
+			width: 100%;
+		}
+	}//hết phần ảnh hoạt hình
+	.gioithieu{
+		text-align: center;
+		margin-top: 20px;
+		h3{
+			font-family: $font-r;
+			font-size: 33px;
+		}
+		p{
+			font-family: $font-l;
+			margin-bottom: 15px;
+		}
+		ul{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			width: 100%;
+			li{
+				padding: 5px 10px;
+				border: 0.63px solid $mauxanh;
+				border-radius: 10px;
+				margin: 0 5px 5px;
+			}
+		}
+	}//hết phần nói về kỹ năng cá nhân
+}//hết phần cuộn chuột thứ 2=========================
+.skill{
+	margin-top: 20px;
+	color: $mautrang;
+	.ski-1{
+		.kynang{
+			width: 90%;
+			margin: 0 auto;
+			h3{
+				font-family: $font-r;
+				font-size: 33px;
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			.sub{
+				margin-top: 20px;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				font-family: $font-l;
+			}
+			.long{
+				margin: 0 auto;
+				width: 100%;
+				height: 5px;
+				background-color: rgba(255,255,255,.2);
+				.ngan{
+					background-image: -webkit-linear-gradient(left,transparent,$mauxanh);
+					height: 5px;
+					width: 5%;
+					position: relative;
+					&:before{
+						content: '';
+						position: absolute;
+						right: 0;
+						top: 50%;
+						width: 15px;
+						height: 15px;
+						border-radius: 50%;
+						transform: translate(50%,-50%);
+						background-color: $mautrang;
+						box-shadow: 0 0 15px 0 $mauxanh;
+					}
+				}
+			}
+		}
+	}//hết kỹ năng 1
+	.ski-2{
+		@include canhtam;
+		.kynang{
+			width: 100%;
+			h3{
+				font-family: $font-r;
+				font-size: 33px;
+				text-align: center;
+				margin-bottom: 10px;
+				margin: 40px 0;
+
+			}
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+				li{
+					width: 50%;
+					margin-top: 5px;
+					.vongtron{
+						width: $vongtronnho;
+						height: $vongtronnho;
+						border:5px solid rgba(255,255,255,.2);
+						margin: 0 auto;
+						border-radius: 50%;
+						position: relative;
+						.xoay{
+							position: absolute;
+							left: 0;
+							top: 50%;
+							width: 50%;
+							height: 1px;
+							transform: translateY(-50%);
+							transform-origin: right;
+							z-index: 6;
+							&:before{
+								content: '';
+								position: absolute;
+								left: 0;
+								top: 50%;
+								width: 15px;
+								height: 15px;
+								border-radius: 50%;
+								transform: translate(-75%,-50%);
+								background-color: $mautrang;
+								box-shadow: 0 0 15px 0 $mauxanh;
+								animation: chop 1s linear infinite;
+							}
+						}
+						.over{
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							border-radius: 50%;
+							overflow: hidden;
+							left: 0;
+							top: 0;
+							z-index: 3;
+							.xoay2{
+								width: 50%;
+								height: 50%;
+								background-image: -webkit-linear-gradient(85deg ,transparent 5%,$mauxanh);
+								transform-origin: 100% 100%;
+								transform: rotate(90deg);
+							}
+						}
+						p{
+							text-align: center;
+							line-height: $vongtronnho;
+							font-size: 18px;
+							font-family: $font-l;
+							z-index: 5;
+						}
+					}
+					h5{
+						text-align: center;
+						margin-top: 10px;
+					}
+					&:nth-child(1) .vongtron{
+						.xoay{
+							transform: translateY(-50%) rotate(-54deg);
+						}
+						.xoay2{
+							animation: vongtron1 10s linear infinite;
+						}
+					}
+					&:nth-child(2) .vongtron{
+						.xoay2{
+							animation: vongtron2 10s linear infinite;
+						}
+					}
+					&:nth-child(3) .vongtron{
+						.xoay{
+							transform: translateY(-50%) rotate(-18deg);
+						}
+						.xoay2{
+							animation: vongtron3 10s linear infinite;
+						}
+					}
+					&:nth-child(4) .vongtron{
+						.xoay{
+							transform: translateY(-50%) rotate(18deg);
+						}
+						.xoay2{
+							animation: vongtron4 10s linear infinite;
+						}
+					}
+				}
+			}	
+		}
+	}//hết kỹ năng 2
+}//hết phần cuộn chuột thứ 3=========================
+.school{
+	color: #fff;
+	h3{
+		font-family: $font-r;
+		font-size: 33px;
+		text-align: center;
+		margin: 30px 0;
+	}
+	.canhgiua{
+		width: 100%;
+		padding: 15px;
+		background-color: $mauden1;
+		box-shadow: -1rem 0 3rem black;
+		box-sizing: border-box;
+		h4{
+			font-family: $font-r;
+			font-size: 25px;
+			span{
+				color: $mauxanh;
+				font-family: $font-b;
+			}
+		}
+		span{
+			font-family: $font-r;
+			color: $mauxanh;
+		}
+		p{
+			font-family:  $font-l;
+			margin-bottom: 15px;
+		}
+	}
+}//hết phần cuộn chuột thứ 4=========================
+.sanpham{
+	color: #fff;
+	.change h3{
+		font-family: $font-r;
+		font-size: 33px;
+		margin: 30px 0;
+	}
+	.choose ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		li{
+			list-style: none;
+			padding: 10px 20px 5px;
+			a{
+				color: $mautrang;
+				font-family: $font-l;
+				font-size: 20px;
+			}
+		}
+		li a.act{
+			border-bottom: 1px solid $mauxanh;
+		}
+		li:hover a{
+			text-decoration: none;
+		}
+	}
+	.sp{
+		.cuon{
+			min-height: 100px;
+			overflow-x: hidden;
+			.boxbig{
+				columns: 2;
+				column-gap: 15px;
+				.box{
+					transition: all .4s;
+					padding: 2px;
+					background-color: $mautrang;
+					margin-bottom: 15px;
+					break-inside: avoid;
+					border-radius: 10px;
+					transform-origin: 50% 50%;
+					a{
+						img{
+							max-width: 100%;
+							border-radius: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+		
+}//hết phần cuộn chuột thứ 5
+.badi{
+	color: #fff;
+	.want h3{
+		font-family: $font-r;
+	    font-size: 33px;
+	    margin: 30px 0;
+	}
+	.contact{
+		.lienlac{
+			margin-top: 20px;
+		    width: 100%;
+		    padding: 15px;
+		    background-color: #323232;
+		    box-shadow: -1rem 0 3rem black;
+		    box-sizing: border-box;
+		    text-align: center;
+		    .khoivuong{
+		    	width: $vongtronnho;
+		    	height: $vongtronnho;
+		    	margin: 15px auto;
+		    	border-radius: 50%;
+		    	border: 1px solid $mauxanh;
+		    	i{
+		    		text-align: center;
+		    		line-height: $vongtronnho;
+		    		display: block;
+		    		font-size: 25px;
+		    	}
+		    }
+		    h5{
+		    	font-family: $font-l;
+    			font-size: 23px;
+		    }
+		    p{
+		    	font-family: $font-l;
+    			font-size: 18px;
+		    }
+		    
+		}
+	}
+}
+@-webkit-keyframes xoaypro{
+	0%{
+		transform: translateY(-50%) rotate(0deg);
+	}
+	100%{
+		transform: translateY(-50%) rotate(360deg);
+	}
+}//chuyển động của li thứ 2
+@-webkit-keyframes xoaypro2{
+	0%{
+		transform: translateY(-50%) rotate(-60deg);
+	}
+	100%{
+		transform: translateY(-50%) rotate(300deg);
+	}	
+}//chuyển động của li thứ 3
+@-webkit-keyframes xoaypro3{
+	0%{
+		transform: translateY(-50%) rotate(60deg);
+	}
+	100%{
+		transform: translateY(-50%) rotate(420deg);
+	}	
+}//chuyển động của li thứ 4
+@-webkit-keyframes chop{
+	0%{
+		transform: translate(-75%,-50%) scale(1);
+		box-shadow: 0 0 15px 0 $mauxanh;
+	}
+	50%{
+		transform: translate(-75%,-50%) scale(1.3);
+		box-shadow: 0 0 20px 0 $mauxanh;
+	}
+	100%{
+		transform: translate(-75%,-50%) scale(1);
+		box-shadow: 0 0 15px 0 $mauxanh;
+	}
+	
+}
+@-webkit-keyframes vongtron1{
+	0%{
+		transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(216deg);
+	}
+	
+}
+@-webkit-keyframes vongtron2{
+	0%{
+		transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(270deg);
+	}
+	
+}
+@-webkit-keyframes vongtron3{
+	0%{
+		transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(252deg);
+	}
+	
+}
+@-webkit-keyframes vongtron4{
+	0%{
+		transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(288deg);
+	}
+	
+}
+
+@media screen and (min-width: 768px){
+	.thanhbar .tab{
+					nav{
+						ul{
+							width: 50%;
+						}
+					}
+	}
+	.canhan{
+		.info{
+			@include canhtam;
+			.khoiinfo{
+				text-align: left;
+				ul.lienket{
+					margin: 0;
+				}
+			}
+		}
+	}
+	.isay{
+		.anhtoon{
+			@include canhtam;
+		}
+		.gioithieu{
+			text-align: left;
+			margin-top:10px;
+			display: flex;
+			align-items: center;
+			.giuakhoi{
+				p{
+					width: 100%;
+				}
+				ul{
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+	.skill{
+		margin: 100px 0;
+		.ski-1{
+			align-items: flex-start;
+			.kynang{
+				width: 100%;
+				.sub{
+					font-size: 20px;
+				}
+			}
+		}
+		.ski-2{
+			.kynang{
+				h3{
+					font-size: 31px;
+					margin: 0;
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+	.school .group h3{
+		font-size: 32px;
+	}
+	.sanpham{
+		.change h3{
+		}
+		.choose ul{
+			margin-bottom: 40px;
+			li{
+				a{
+					font-family: $font-l;
+					font-size: 20px;
+				}
+			}
+		}
+		.sp .cuon{
+				height: auto;
+				.boxbig{
+					columns: 3;
+					.box{
+						padding: 5px;
+					}
+				}
+			} 
+	}//hết phần cuộn chuột thứ 5
+	.badi{
+		.contact{
+			.lienlac{
+				p{
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+@import "cssdesktop";
