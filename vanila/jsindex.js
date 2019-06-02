@@ -66,14 +66,16 @@ window.addEventListener('scroll', function() {
 		}
 		itemNav[0].classList.add('hientai');
 	}
-	if (window.pageYOffset > mangIndex[5] - 100){
-			for (let i = 0; i < itemNav.length; i++) {
+
+
+	if (window.pageYOffset > itemTo[5].offsetTop - 100) {
+			for (var i = 0; i < itemNav.length; i++) {
 				itemNav[i].classList.remove('hientai');
 			}
 			itemNav[5].classList.add('hientai');
 	}
 	for (var i = 1; i < 5; i++) {
-		if (window.pageYOffset > mangIndex[i] - 100 && window.pageYOffset < mangIndex[(i+1)] - 100){
+		if (window.pageYOffset > mangIndex[i] - 150 && window.pageYOffset < itemTo[i+1].offsetTop - 150){
 				for (let j = 0; j < itemNav.length; j++) {
 					itemNav[j].classList.remove('hientai');
 				}
