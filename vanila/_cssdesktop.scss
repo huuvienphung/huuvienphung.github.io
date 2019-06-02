@@ -203,10 +203,23 @@
 				text-decoration: none;
 			}
 		}
-		.sp .cuon{
-				.boxbig{
-					columns: 4;
+		.sp{
+			.grid{
+				.box{
+					width: 25%;
+					a{
+						img{						
+						}
+					}	
+				}
+				.box.web{
+					a{
+						h2{
+						}
+					}
+				}
 			}
+
 		}
 	}//hết phần cuộn chuột thứ 5
 	.badi{

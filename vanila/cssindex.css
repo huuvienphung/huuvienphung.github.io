@@ -391,23 +391,21 @@ body {
       border-bottom: 1px solid #008CC0; }
     .sanpham .choose ul li:hover a {
       text-decoration: none; }
-  .sanpham .sp .cuon {
-    min-height: 100px;
-    overflow-x: hidden; }
-    .sanpham .sp .cuon .boxbig {
-      columns: 2;
-      column-gap: 15px; }
-      .sanpham .sp .cuon .boxbig .box {
-        transition: all .4s;
-        padding: 2px;
-        background-color: #fff;
-        margin-bottom: 15px;
-        break-inside: avoid;
-        border-radius: 10px;
-        transform-origin: 50% 50%; }
-        .sanpham .sp .cuon .boxbig .box a img {
-          max-width: 100%;
-          border-radius: 10px; }
+  .sanpham .sp .grid .box {
+    width: 50%; }
+    .sanpham .sp .grid .box a {
+      display: block;
+      padding: 5px; }
+      .sanpham .sp .grid .box a img {
+        width: 100%;
+        border-radius: 10px; }
+  .sanpham .sp .grid .box.web a {
+    color: #262626; }
+    .sanpham .sp .grid .box.web a h2 {
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px 0; }
 
 .badi {
   color: #fff; }
@@ -532,12 +530,8 @@ body {
     .sanpham .choose ul li a {
       font-family: nuni-l;
       font-size: 20px; }
-  .sanpham .sp .cuon {
-    height: auto; }
-    .sanpham .sp .cuon .boxbig {
-      columns: 3; }
-      .sanpham .sp .cuon .boxbig .box {
-        padding: 5px; }
+  .sanpham .sp .grid .box {
+    width: 33.333%; }
 
   .badi .contact .lienlac p {
     font-size: 15px; } }
@@ -667,8 +661,8 @@ body {
     .sanpham .choose ul li:hover a {
       border-bottom: 1px solid #008CC0;
       text-decoration: none; }
-    .sanpham .sp .cuon .boxbig {
-      columns: 4; }
+    .sanpham .sp .grid .box {
+      width: 25%; }
 
   .badi .want h3 {
     font-family: nuni-b;

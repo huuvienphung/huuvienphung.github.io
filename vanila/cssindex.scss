@@ -514,25 +514,26 @@ body{background-color: $mauden2;}
 		}
 	}
 	.sp{
-		.cuon{
-			min-height: 100px;
-			overflow-x: hidden;
-			.boxbig{
-				columns: 2;
-				column-gap: 15px;
-				.box{
-					transition: all .4s;
-					padding: 2px;
-					background-color: $mautrang;
-					margin-bottom: 15px;
-					break-inside: avoid;
-					border-radius: 10px;
-					transform-origin: 50% 50%;
-					a{
-						img{
-							max-width: 100%;
-							border-radius: 10px;
-						}
+		.grid{
+			.box{
+				width: 50%;
+				a{
+					display: block;
+					padding: 5px;
+					img{
+						width: 100%;
+						border-radius: 10px;
+					}
+				}	
+			}
+			.box.web{
+				a{
+					color: #262626;
+					h2{
+						background-color: #fff;
+						border-radius: 10px;
+						text-align: center;
+						padding: 20px 0;
 					}
 				}
 			}
@@ -731,15 +732,24 @@ body{background-color: $mauden2;}
 				}
 			}
 		}
-		.sp .cuon{
-				height: auto;
-				.boxbig{
-					columns: 3;
-					.box{
-						padding: 5px;
+		.sp{
+			.grid{
+				.box{
+					width: 33.333%;
+					a{
+						img{						
+						}
+					}	
+				}
+				.box.web{
+					a{
+						h2{
+						}
 					}
 				}
-			} 
+			}
+		}
+
 	}//hết phần cuộn chuột thứ 5
 	.badi{
 		.contact{

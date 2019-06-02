@@ -10,7 +10,6 @@ var change = document.getElementById('change');
 var box = document.getElementsByClassName('box');
 var chay = document.getElementsByClassName('chay');
 var ngan = document.getElementsByClassName('ngan');
-
 // nut ba vach
 bavach.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -86,34 +85,33 @@ window.addEventListener('scroll', function() {
 	
 })
 // lua chon danh sach
-
-for (var i = 0; i < nutchon.length; i++) {
-	nutchon[i].addEventListener('click', function(e) {
+var elem = document.querySelector('.grid');
+	var iso = new Isotope( elem, {
+	  // options
+	  itemSelector: '.box',
+	  layoutMode: 'fitRows'
+	});
+	var iso = new Isotope( '.grid', {
+		  // options
+	});
+	var bonut = document.getElementById('bonut');
+	bonut.addEventListener('click', (e) => {
 		e.preventDefault();
-
-		// thay doi bottom a
+		if(!matchesSelector(e.target, 'a')) {
+			return;
+		}
 		for (let i = 0; i < nutchon.length; i++) {
 			nutchon[i].classList.remove('act');
 		}
 		e.target.classList.add('act');
 
-		// thay doi h3
 		var x = e.target.textContent;
 		change.textContent = x;
 
-		// lay phan data-chon
-		var atr = e.target.getAttribute('data-chon');
-
-		// sap xep
-		for (var i = 0; i < box.length; i++) {
-			if(box[i].classList.contains(atr)) {
-				box[i].style.display = 'block';
-			} else {
-				box[i].style.display = 'none';
-			}
-		}
+		var text = e.target.getAttribute('href');
+	  	iso.arrange({ filter: text });
 	})
-}
+
 // chay du lieu
 
    function gomlai(gioihan, chay, ngan) {
@@ -133,3 +131,4 @@ for (var i = 0; i < nutchon.length; i++) {
 	for (var i = 0; i < a.length; i++) {
 		gomlai(a[i], chay[i], ngan[i]);
 	}
+	
