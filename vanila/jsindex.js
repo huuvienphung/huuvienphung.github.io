@@ -85,16 +85,18 @@ window.addEventListener('scroll', function() {
 	
 })
 // lua chon danh sach
-var elem = document.querySelector('.grid');
+	var elem = document.querySelector('.grid');	
+	var bonut = document.getElementById('bonut');
+
 	var iso = new Isotope( elem, {
-	  // options
 	  itemSelector: '.box',
 	  layoutMode: 'fitRows'
 	});
-	var iso = new Isotope( '.grid', {
-		  // options
+	var iso = new Isotope( '.grid', {});
+	imagesLoaded( elem ).on( 'progress', function() {
+	  iso.layout();
 	});
-	var bonut = document.getElementById('bonut');
+	
 	bonut.addEventListener('click', (e) => {
 		e.preventDefault();
 		if(!matchesSelector(e.target, 'a')) {
@@ -110,6 +112,7 @@ var elem = document.querySelector('.grid');
 
 		var text = e.target.getAttribute('href');
 	  	iso.arrange({ filter: text });
+
 	})
 
 // chay du lieu
