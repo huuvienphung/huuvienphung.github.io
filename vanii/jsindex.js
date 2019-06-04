@@ -136,47 +136,4 @@ window.addEventListener('scroll', function() {
 	for (var i = 0; i < a.length; i++) {
 		gomlai(a[i], chay[i], ngan[i]);
 	}
-// phần fancybox
-var getImg = document.querySelectorAll('.box a img');
-console.log(getImg);
-
-const  div = document.createElement('div');
-div.className = 'fancy';
-
-const cheox = document.createElement('i');
-cheox.className = 'fas fa-times';
-
-var duoi = document.querySelector('.box');
-console.log(duoi);
-
-div.style.display = 'none';
-
-div.appendChild(cheox);
-elem.insertBefore(div, duoi); // chen div vao
-
-var showImg = document.createElement('img');
-elem.insertBefore(showImg, div); //chen img vao grid
-
-showImg.style.display = 'none';
-
-getImg.forEach((img) => {
-	img.addEventListener('click', (e) => {
-		e.preventDefault();
-
-		var href = e.target.parentElement.getAttribute('href');
-		showImg.setAttribute('src', href);
-
-		div.style.display = 'block';
-		showImg.style.display = 'block';
-	})
-})
-
-div.addEventListener('click', (e) => {
-	e.preventDefault();
-
-	div.style.display = 'none';
-	showImg.style.display = 'none';
-})
-
-
 	
