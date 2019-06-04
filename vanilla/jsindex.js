@@ -137,7 +137,7 @@ window.addEventListener('scroll', function() {
 		gomlai(a[i], chay[i], ngan[i]);
 	}
 // phần fancybox
-var getImg = document.querySelectorAll('.box a img');
+var getImg = document.querySelectorAll('.box > a > img');
 console.log(getImg);
 
 const  div = document.createElement('div');
@@ -177,6 +177,47 @@ div.addEventListener('click', (e) => {
 	div.style.display = 'none';
 	showImg.style.display = 'none';
 })
+//view pro
+const view = document.getElementById('pulse');
+const viewPro = document.getElementById('viewpro');
+var uul = document.querySelectorAll('#viewpro ul li a');
+console.log(uul);
+view.addEventListener('click', (e) => {
+	e.preventDefault();
+	viewPro.classList.toggle('tenten');
+})
 
+uul.forEach((li, id) => {
+	li.addEventListener('click', (e) => {
+		e.preventDefault();
+
+		var key = e.target.getAttribute('href');
+		if(key == '2') {
+			document.body.style.backgroundColor = '#6610f2';
+		}
+		if(key == '1') {
+			document.body.style.backgroundColor = '#262626';
+		}if(key == '3') {
+			document.body.style.backgroundColor = '#6f42c1';
+		}if(key == '4') {
+			document.body.style.backgroundColor = '#e83e8c';
+		}if(key == '5') {
+			document.body.style.backgroundColor = '#dc3545';
+		}if(key == '6') {
+			document.body.style.backgroundColor = '#28a745';
+		}if(key == '7') {
+			document.body.style.backgroundColor = '#20c997';
+		}if(key == '8') {
+			document.body.style.backgroundColor = '#fd7e14';
+		}
+
+	})
+})
+
+const ameri = document.querySelector('.ameri');
+console.log(ameri);
+ameri.addEventListener('mousemove', (e) => {
+	document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},${e.offsetX})`;
+})
 
 	
