@@ -92,7 +92,7 @@
         font-family: Nunito-b; }
   .top .search {
     background-color: #70C397;
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: transform .4s; }
     .top .search form {
       width: 80%;
@@ -150,31 +150,40 @@
         border: 1px solid #70C397; } }
 @media screen and (min-width: 992px) {
   .top {
-    height: 100px; }
-    .top .hamburger {
-      height: 100px; }
+    height: 100px;
+    transition: height .3s; }
     .top .logo img {
-      height: 90px; }
+      height: 90px;
+      transition: height .3s; }
     .top .search form {
-      height: 100px; }
+      height: 100px;
+      transition: height .3s; }
       .top .search form input[type="search"] {
         padding: 10px 35px 10px 15px;
+        border-radius: 20px;
+        transition: 0.3s; }
+    .top .cart a#cart i {
+      font-size: 30px; }
+    .top .cart a#cart small {
+      width: 20px;
+      height: 22px;
+      line-height: 22px;
+      right: -15px;
+      top: -13px;
+      border-radius: 5px;
+      font-size: 17px;
+      transition: .3s; }
+
+  .top.cuon {
+    height: 60px; }
+    .top.cuon .logo img {
+      height: 57px; }
+    .top.cuon .search form {
+      height: 60px; }
+      .top.cuon .search form input[type="search"] {
+        padding: 5px 35px 5px 10px;
         border-radius: 20px; }
-    .top .cart a#cart {
-      display: block;
-      position: relative;
-      width: 28px;
-      height: 28px;
-      color: #fff; }
-      .top .cart a#cart i {
-        font-size: 30px; }
-      .top .cart a#cart small {
-        width: 20px;
-        height: 22px;
-        line-height: 22px;
-        right: -15px;
-        top: -13px;
-        border-radius: 5px;
-        font-size: 17px; } }
+    .top.cuon .cart a#cart small {
+      top: -10px; } }
 
 /*# sourceMappingURL=style.css.map */

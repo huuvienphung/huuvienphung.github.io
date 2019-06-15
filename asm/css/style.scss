@@ -125,7 +125,7 @@ $den: #000;
 	}
 	.search{
 		background-color: $xanhnhat;
-		transform: translateX(100%);
+		transform: translateX(150%);
 		transition: transform .4s;
 		form{
 			width: 80%;
@@ -197,31 +197,27 @@ $den: #000;
 @media screen and (min-width: 992px){
 	.top{
 		height: 100px;
-		.hamburger{
-			height: 100px;
-		}
+		transition: height .3s;
 		.logo{
 			img{
 				height: 90px;
+				transition: height .3s;
 			}
 		}
 		.search{
 			form{
 				height: 100px;
+				transition: height .3s;
 				input[type="search"]{
 					padding: 10px 35px 10px 15px;
 					border-radius: 20px;
-
+					transition: .3s
+					
 				}
 			}
 		}
 		.cart{
 			a#cart{
-				display: block;
-				position: relative;
-				width: 28px;
-				height: 28px;
-				color: $trang;
 				i{
 					font-size: 30px;
 				}
@@ -233,10 +229,36 @@ $den: #000;
 					top: -13px;
 					border-radius: 5px;
 					font-size: 17px;
+					transition: .3s;
 				}
 			}
 		}
 		
+	}
+	.top.cuon{
+		height: 60px;
+		.logo{
+			img{
+				height: 57px;
+			}
+		}
+		.search{
+			form{
+				height: 60px;
+				input[type="search"]{
+					padding: 5px 35px 5px 10px;
+					border-radius: 20px;
+					
+				}
+			}
+		}
+		.cart{
+			a#cart{
+				small{
+					top: -10px;
+				}
+			}
+		}
 	}
 }
 
