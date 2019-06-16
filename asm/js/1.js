@@ -54,13 +54,15 @@ window.addEventListener('scroll', function() {
 				trangthai = 2;
 				var body = document.body.offsetWidth;
 				if (body > 992) {
-					logo.setAttribute('src','image20/logo8.png');
+					// logo.setAttribute('src','image20/logo8.png');
+					nav.classList.add('lentren');
 				}
 			}
 		} else if(trangthai == 2) {
 			header.classList.remove('cuon');
 			trangthai = 1;
 			logo.setAttribute('src', src)
+			nav.classList.remove('lentren');
 		}
 });
 // cuộn header

@@ -84,44 +84,6 @@ body {
         left: 1px; }
   .top .logo img {
     height: 60px; }
-  .top .nav {
-    position: fixed;
-    width: 100%;
-    height: calc(100vh - 61px);
-    top: 61px;
-    left: 0;
-    box-sizing: border-box;
-    padding: 0;
-    transform: translateX(-100%);
-    transition: .4s;
-    background-color: rgba(51, 51, 51, 0.1); }
-    .top .nav.chayra {
-      transform: translateX(0); }
-    .top .nav nav {
-      width: 100%;
-      background-color: #333;
-      width: 70%;
-      overflow-x: hidden;
-      height: 100%; }
-      .top .nav nav ul li a {
-        display: block;
-        padding: 0.8rem 1rem;
-        text-decoration: none;
-        color: #fff;
-        font-family: Nunito-l;
-        border-bottom: 0.63px solid rgba(255, 255, 255, 0.3);
-        background-color: rgba(19, 19, 19, 0.7);
-        width: 100%;
-        position: relative; }
-        .top .nav nav ul li a.active {
-          background-color: #df0000; }
-      .top .nav nav ul li ul.abc {
-        display: none; }
-        .top .nav nav ul li ul.abc li .item2 {
-          background-color: #333;
-          padding: 0.8rem 1.7rem; }
-        .top .nav nav ul li ul.abc li ul li a {
-          padding: 0.8rem 2.2rem; }
   .top .timkiem {
     display: flex;
     align-items: center;
@@ -191,7 +153,47 @@ body {
   .top .search.xuathien {
     transform: translateX(0); }
 
-.top .nav > nav > ul li:nth-child(3) a.item1:before, .top .nav > nav > ul li:nth-child(4) a.item1:before {
+.nav {
+  position: fixed;
+  z-index: 300;
+  width: 100%;
+  height: calc(100vh - 61px);
+  top: 61px;
+  left: 0;
+  box-sizing: border-box;
+  padding: 0;
+  transform: translateX(-100%);
+  transition: .4s;
+  background-color: rgba(51, 51, 51, 0.1); }
+  .nav.chayra {
+    transform: translateX(0); }
+  .nav nav {
+    width: 100%;
+    background-color: #333;
+    width: 70%;
+    overflow-x: hidden;
+    height: 100%; }
+    .nav nav ul li a {
+      display: block;
+      padding: 0.8rem 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-family: Nunito-l;
+      border-bottom: 0.63px solid rgba(255, 255, 255, 0.3);
+      background-color: rgba(19, 19, 19, 0.7);
+      width: 100%;
+      position: relative; }
+      .nav nav ul li a.active {
+        background-color: #df0000; }
+    .nav nav ul li .abc {
+      display: none; }
+      .nav nav ul li .abc ul li .item2 {
+        background-color: #333;
+        padding: 0.8rem 1.7rem; }
+      .nav nav ul li .abc ul li ul li a {
+        padding: 0.8rem 2.2rem; }
+
+.nav > nav > ul li:nth-child(3) a.item1:before, .nav > nav > ul li:nth-child(4) a.item1:before {
   content: '\f107';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -200,7 +202,7 @@ body {
   top: 50%;
   color: #fff;
   transform: translate(-50%, -50%); }
-.top .nav > nav > ul li:nth-child(3) a.item1.active:before, .top .nav > nav > ul li:nth-child(4) a.item1.active:before {
+.nav > nav > ul li:nth-child(3) a.item1.active:before, .nav > nav > ul li:nth-child(4) a.item1.active:before {
   content: '\f106';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -232,7 +234,10 @@ body {
     align-items: center;
     box-shadow: none; }
     .top .search form {
-      width: 100%; } }
+      width: 100%; }
+
+  .nav nav {
+    width: 50%; } }
 @media screen and (min-width: 992px) {
   .top {
     position: relative;
@@ -267,8 +272,9 @@ body {
   .top.cuon {
     position: fixed;
     height: 60px;
-    background-color: #333;
-    box-shadow: 0 5px 5px rgba(19, 19, 19, 0.3); }
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(19, 19, 19, 0.3);
+    box-shadow: none; }
     .top.cuon .logo img {
       height: 57px; }
     .top.cuon .search form {
@@ -277,8 +283,84 @@ body {
         padding: 5px 35px 5px 10px;
         border-radius: 20px; }
     .top.cuon .cart a {
-      color: #89c766; }
+      color: #6d549d; }
       .top.cuon .cart a small {
-        top: -10px; } }
+        top: -10px; }
+
+  .nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 100%;
+    z-index: 50;
+    background-color: transparent; }
+    .nav.lentren {
+      position: fixed;
+      top: 60px; }
+    .nav nav {
+      width: 100%;
+      overflow: hidden;
+      background-color: #131313; }
+      .nav nav ul.top1 {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        margin: 0; }
+        .nav nav ul.top1 li.li1:hover .abc {
+          display: block; }
+        .nav nav ul.top1 li.li1:hover a.item1 {
+          background-color: #df0000; }
+        .nav nav ul.top1 li.li1 a.item1 {
+          text-decoration: none;
+          position: static;
+          border: none;
+          color: #fff;
+          font-family: Nunito-r;
+          text-align: center;
+          background-color: transparent; }
+          .nav nav ul.top1 li.li1 a.item1.active {
+            background-color: #df0000; }
+        .nav nav ul.top1 li.li1 .abc {
+          display: none; }
+          .nav nav ul.top1 li.li1 .abc ul.top2 {
+            display: flex;
+            position: fixed;
+            z-index: 200; }
+            .nav nav ul.top1 li.li1 .abc ul.top2 li .item2 {
+              display: block;
+              background-color: #333;
+              border-bottom: 1px solid #fff;
+              width: 150px;
+              padding: .8rem 1rem;
+              box-sizing: border-box;
+              height: 65px;
+              color: #fff;
+              font-family: Nunito-r; }
+            .nav nav ul.top1 li.li1 .abc ul.top2 li ul li a.item3 {
+              width: 150px;
+              display: block;
+              padding: .4rem 1rem;
+              box-sizing: border-box;
+              background-color: #333;
+              color: #89c766;
+              font-family: Nunito-r;
+              border-bottom: 0.63px solid #333; }
+              .nav nav ul.top1 li.li1 .abc ul.top2 li ul li a.item3:hover {
+                background-color: #333;
+                color: #fff; }
+
+  .nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li .item2 {
+    transform: translateX(-220px);
+    width: 180px; }
+
+  .nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li ul li a.item3 {
+    transform: translateX(-220px);
+    width: 180px; }
+
+  .nav > nav > ul li:nth-child(3) a.item1:before, .nav > nav > ul li:nth-child(4) a.item1:before {
+    content: ''; }
+  .nav > nav > ul li:nth-child(3) a.item1.active:before, .nav > nav > ul li:nth-child(4) a.item1.active:before {
+    content: ''; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,11 +20,9 @@ $font-b: Nunito-b;
 $font-l: Nunito-l;
 $font-li: Nunito-li;
 
-$xanhdam: #163A31;
 $xanhnhat: #89c766;
 $trang: #fff;
 $den: #131313;
-$vang: #FFC300;
 $do: #df0000;
 $xam: #333;
 $tim: #6d549d;
@@ -97,7 +95,6 @@ body{ background-image: url(../image20/bg.png); }
 			&:before{
 				width: 50%;
 				animation: before .4s forwards;
-				// transform-origin: 50% 100%;
 				top: -9px;
 				left: 4%;
 			}
@@ -112,59 +109,6 @@ body{ background-image: url(../image20/bg.png); }
 	.logo{
 		img{
 			height: 60px;
-		}
-	}
-	.nav{
-		position: fixed;
-		width: 100%;
-		height: calc(100vh - 61px);
-		top: 61px;
-		left: 0;
-		box-sizing: border-box;
-		padding: 0;
-		transform: translateX(-100%);
-		transition: .4s;
-		background-color: rgba($xam, .1);
-		&.chayra{
-			transform: translateX(0);
-		}
-		nav{
-			width: 100%;
-			background-color: $xam;
-			width: 70%;
-			overflow-x: hidden;
-			height: 100%;
-			ul {
-				li {
-					a{
-						display: block;
-						padding: 0.8rem 1rem;
-						text-decoration: none;
-						color: $trang;
-						font-family: $font-l;
-						border-bottom: 0.63px solid rgba($trang, .3);
-						background-color: rgba($den, .7);
-						width: 100%;
-						position: relative;
-						&.active{
-							background-color: $do;
-						}
-					}
-					ul.abc{
-						display: none;
-						li {
-							.item2{
-								background-color: $xam;
-								padding: 0.8rem 1.7rem;
-							}
-							ul li a{
-								padding: 0.8rem 2.2rem;
-							}
-						}
-						
-					}
-				} 
-			}  
 		}
 	}
 	.timkiem{
@@ -249,8 +193,65 @@ body{ background-image: url(../image20/bg.png); }
 		transform: translateX(0);
 	}
 }
+
+	.nav{
+		position: fixed;
+		z-index: 300;
+		width: 100%;
+		height: calc(100vh - 61px);
+		top: 61px;
+		left: 0;
+		box-sizing: border-box;
+		padding: 0;
+		transform: translateX(-100%);
+		transition: .4s;
+		background-color: rgba($xam, .1);
+		&.chayra{
+			transform: translateX(0);
+		}
+		nav{
+			width: 100%;
+			background-color: $xam;
+			width: 70%;
+			overflow-x: hidden;
+			height: 100%;
+			ul {
+				li {
+					a{
+						display: block;
+						padding: 0.8rem 1rem;
+						text-decoration: none;
+						color: $trang;
+						font-family: $font-l;
+						border-bottom: 0.63px solid rgba($trang, .3);
+						background-color: rgba($den, .7);
+						width: 100%;
+						position: relative;
+						&.active{
+							background-color: $do;
+						}
+					}
+					.abc{
+						display: none;
+						ul{
+							li {
+								.item2{
+									background-color: $xam;
+									padding: 0.8rem 1.7rem;
+								}
+								ul li a{
+									padding: 0.8rem 2.2rem;
+								}
+							}
+						}
+					}
+				} 
+			}  
+		}
+	}
+
 // ==============phần css tự do===================
-.top .nav > nav > ul {
+.nav > nav > ul {
 	li:nth-child(3), li:nth-child(4) {
 		a.item1:before{
 			content: '\f107';
@@ -301,7 +302,15 @@ body{ background-image: url(../image20/bg.png); }
 				}
 			}
 		}
+		
 	}
+
+	.nav{
+		nav{
+			width: 50%;
+		}
+	}
+	
 }
 @media screen and (min-width: 992px){
 	.top{
@@ -348,13 +357,17 @@ body{ background-image: url(../image20/bg.png); }
 					}
 				}
 			}
+			
 		}
 		}
 		.top.cuon{
 			position: fixed;
 			height: 60px;
-			background-color: $xam;
+			background-color: $trang;
 			box-shadow: 0 5px 5px rgba($den, .3);
+			.container{
+			}
+			box-shadow: none;
 			.logo{
 				img{
 					height: 57px;
@@ -372,13 +385,121 @@ body{ background-image: url(../image20/bg.png); }
 			}
 			.cart{
 				a{
-					color: $xanhnhat;
+					color: $tim;
 					small{
 						top: -10px;
 					}
 				}
 			}
 	}
+
+		.nav{
+			position: relative;
+			width: 100%;
+			height: auto;
+			top: 0;
+			left: 100%;
+			z-index: 50;
+			// transform: translateX(0);
+			background-color: transparent;
+			&.lentren{
+				position: fixed;
+				top: 60px;
+			}
+			&.chayra{
+			}
+			nav{
+				width: 100%;
+				overflow: hidden;
+				background-color: $den;
+				ul.top1{
+					display: flex;
+					align-items: baseline;
+					justify-content: center;
+					margin: 0;
+					li.li1{
+						&:hover{
+							.abc{
+								display: block;
+							}
+							a.item1{
+								background-color: $do;
+							}
+						}
+						a.item1{
+							text-decoration: none;
+							position: static;
+							border: none;
+							color: $trang;
+							font-family: $font-r;
+							text-align: center;
+							background-color: transparent;
+							&.active{
+								background-color: $do;
+							}
+						}
+						.abc{
+							display: none;
+							ul.top2{
+								display: flex;
+								position: fixed;
+								z-index: 200;
+								li{
+									.item2{
+										display: block;
+										background-color: $xam;
+										border-bottom: 1px solid $trang;
+										width: 150px;
+										padding: .8rem 1rem;
+										box-sizing: border-box;
+										height: 65px;
+										color: $trang;
+										font-family: $font-r;
+									}
+									ul {
+										li {
+											a.item3{
+												width: 150px;
+												display: block;
+												padding: .4rem 1rem;
+												box-sizing: border-box;
+												background-color: $xam;
+												color: $xanhnhat;
+												font-family: $font-r;
+												border-bottom: .63px solid $xam;
+												&:hover{
+													background-color: $xam;
+													color: $trang;
+												}
+											}
+										}
+									} 
+								}
+
+							}
+						} 
+					}
+				}  
+			}
+		}
+		.nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li .item2 {
+			transform: translateX(-220px);
+			width: 180px;
+		}
+		.nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li ul li a.item3 {
+			transform: translateX(-220px);
+			width: 180px;
+		}
+.nav > nav > ul {
+	li:nth-child(3), li:nth-child(4) {
+		a.item1:before{
+			content: '';
+		}
+		a.item1.active:before{
+			content: '';
+		}
+	}
+}
 }
 
 
