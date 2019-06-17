@@ -63,7 +63,7 @@ window.addEventListener('scroll', function() {
 		} else if(trangthai == 2) {
 			header.classList.remove('cuon');
 			trangthai = 1;
-			logo.setAttribute('src', src)
+			// logo.setAttribute('src', src)
 			nav.classList.remove('lentren');
 		}
 });
@@ -124,7 +124,6 @@ function filterName() {
 // phần search tìm kiếm form
 
 var iconuser = document.querySelector('.cart .fa-user');
-console.log(iconuser);
 var user = document.getElementById('user');
 var dangnhap = document.getElementById('dangnhap');
 
@@ -145,5 +144,27 @@ document.getElementById('delete').addEventListener('click', e => {
 	dangnhap.style.display = 'none';
 })
 // phần form user
+
+var cart = document.querySelector('.fa-cart-plus');
+var giohang = document.getElementById('giohang');
+
+cart.addEventListener('click', e => {
+	e.preventDefault();
+
+	nenden.classList.remove('change');
+	nav.classList.remove('chayra');
+	bavach.classList.remove('xoay');
+	form.classList.remove('xuathien');
+	search.style.display = 'block';
+	giohang.style.display = 'block';
+});
+var delete2 = document.getElementById('delete2');
+
+delete2.addEventListener('click', e => {
+	e.preventDefault();
+	giohang.style.display = 'none';
+
+})
+// phần giỏ hàng
 
 
