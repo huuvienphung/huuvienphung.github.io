@@ -9,6 +9,7 @@ bavach.addEventListener('click', e => {
 	nenden.classList.remove('change');
 	search.firstElementChild.style.display = 'block';
 	form.classList.remove('xuathien');
+	user.classList.remove('uhien');
 });
 nav.addEventListener('click', e => {
 	e.preventDefault();
@@ -31,6 +32,7 @@ function load(e) {
 	nenden.classList.add('change');
 	nav.classList.remove('chayra');
 	bavach.classList.remove('xoay');
+	user.classList.remove('uhien');
 }
 
 nenden.addEventListener('click', e => {
@@ -89,6 +91,7 @@ var filter = document.getElementById('filter');
 var names = document.getElementById('names');
 
 names.style.display = 'none';
+
 filter.addEventListener('keyup', filterName);
 filter.addEventListener('focus', filterAppear);
 filter.addEventListener('blur', filterHidden);
@@ -116,5 +119,22 @@ function filterName() {
 	}
 }
 // phần search tìm kiếm form
+
+var iconuser = document.querySelector('.fa-user');
+var user = document.getElementById('user');
+
+iconuser.addEventListener('click', e => {
+	e.preventDefault();	
+	user.classList.toggle('uhien');
+	nenden.classList.remove('change');
+	nav.classList.remove('chayra');
+	bavach.classList.remove('xoay');
+	form.classList.remove('xuathien');
+	search.style.display = 'block';
+});
+document.body.addEventListener('dblclick', e => {
+	user.classList.remove('uhien');
+});
+// phần form user
 
 

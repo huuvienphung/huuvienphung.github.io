@@ -126,7 +126,58 @@ body{ background-image: url(../image20/bg.png); }
 	.cart{
 		@include canhtam();
 		justify-content: space-around;
-		a{
+		#user{
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			width: 70%;
+			height: 70%;
+			border: 10px solid rgba($trang, .2);
+			border-radius: 5px;
+			box-shadow: 10px 10px 15px rgba($den, .5);
+			visibility: visible;
+			opacity: 0;
+			&.uhien{
+				opacity: 1;
+				visibility: visible;
+			}
+			.nd{
+				.inputbox{
+					position: relative;
+					margin: 0px 5px 20px 5px;
+					i{
+						position: absolute;
+						top: 13px;
+						left: 5px;
+					}
+				}
+				width: 100%;
+				background-color: $trang;
+				height: 100%;
+				h5{
+					font-family: $font-b;
+					font-size: 28px;
+					padding:30px 10px; 
+				}
+				input{
+					width: 100%;
+					padding: .375rem .75rem .375rem 1.5rem;
+				}
+				button{
+					border-radius: 15px;
+					background-color: $tim;
+					border-color: $tim;
+					margin-left: 10px;
+				}
+				a.ofform{
+					display: block;
+					padding: 5px 10px;
+					text-decoration: underline;
+				}
+			}
+		}
+		a.iconpro{
 			display: block;
 			position: relative;
 			width: 28px;
@@ -333,9 +384,23 @@ body{ background-image: url(../image20/bg.png); }
 				}
 			}
 		}
-		
 	}
+	.top .cart #user{
+		display: flex;
+	}
+	.top .cart #user .nd {
+	    width: 50%;
+	    overflow: hidden;
+	    margin: 0;
+	    padding: 5px;
+	}
+	.top .cart #user .img {
+	    width: 50%;
+	    overflow: hidden;
+	    background-size: cover;
+	    background-position: center;
 
+	}
 	.nav{
 		nav{
 			width: 50%;
@@ -389,7 +454,7 @@ body{ background-image: url(../image20/bg.png); }
 				}
 			}
 			.cart{
-				a{
+				a.iconpro{
 					color: $tim;
 					i{
 						font-size: 30px;
@@ -564,6 +629,12 @@ body{ background-image: url(../image20/bg.png); }
 					}
 				}  
 			}
+		}
+		.top .cart #user{
+			width: 50%;
+		}
+		.top .cart #user .nd {
+			padding: 15px;
 		}
 		.nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li .item2 {
 			transform: translateX(-220px);
