@@ -276,7 +276,7 @@ body{ background-image: url(../image20/bg.png); }
 
 // ==============phần css tự do===================
 #user{
-	position: absolute;
+	position: relative;
 	z-index: 400;
 	left: 50%;
 	top: 50%;
@@ -286,11 +286,13 @@ body{ background-image: url(../image20/bg.png); }
 	border: 10px solid rgba($trang, .2);
 	border-radius: 5px;
 	box-shadow: 10px 10px 15px rgba($den, .5);
-	visibility: visible;
-	opacity: 0;
-	&.uhien{
-		opacity: 1;
-		visibility: visible;
+	#delete{
+		position: absolute;
+		right: 15px;
+		top: 5px;
+		z-index: 5000;
+		color: $tim;
+		font-size: 35px;
 	}
 	.nd{
 		.inputbox{

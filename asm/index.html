@@ -12,26 +12,30 @@
 <body>
 	<img id="nen" src="image20/abc.png" alt="">
 	<div id="nenden"></div>
-	<div id="user" class="dangnhap">
-		<div class="img d-none d-md-block" style="background-image: url(image20/anh1.jpg);">
-		</div>
-		<div class="nd">
-			<h5>Đăng nhập</h5>
-			<form action="" id="formdn">
-				<div class="inputbox">
-					<input type="text" class="form-control" name="" id="tendn" placeholder="Nhập tên...">
-					<i class="fas fa-user"></i>
-				</div>
-				<div class="inputbox">
-					<input type="password" class="form-control" name="" id="passdn" placeholder="Nhập password...">
-					<i class="fas fa-lock"></i>
-				</div>
+	<div id="dangnhap" style="position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,.2); z-index: 450; display: none;">
+		<div id="user" >
+			<a id="delete" href="#"><i  class="fas fa-times"></i></a>
+			<div class="img d-none d-md-block" style="background-image: url(image20/anh1.jpg);">
+			</div>
+			<div class="nd">
+				<h5>Đăng nhập</h5>
+				<form action="" id="formdn">
+					<div class="inputbox">
+						<input type="text" class="form-control" name="" id="tendn" placeholder="Nhập tên...">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="inputbox">
+						<input type="password" class="form-control" name="" id="passdn" placeholder="Nhập password...">
+						<i class="fas fa-lock"></i>
+					</div>
 
-				<button type="submit" class="btn btn-primary">Đăng Nhập</button>
-				<a class="ofform" href="#">Quên mật khẩu</a>
-			</form>
+					<button type="submit" class="btn btn-primary">Đăng Nhập</button>
+					<a class="ofform" href="#">Quên mật khẩu</a>
+				</form>
+			</div>
 		</div>
 	</div>
+	
 	<div class="top" id="top">
 		<div class="container">
 			<div class="row">

@@ -126,19 +126,24 @@ function filterName() {
 var iconuser = document.querySelector('.cart .fa-user');
 console.log(iconuser);
 var user = document.getElementById('user');
+var dangnhap = document.getElementById('dangnhap');
 
 iconuser.addEventListener('click', e => {
-	e.preventDefault();	
-	user.classList.toggle('uhien');
+	e.preventDefault();
 	nenden.classList.remove('change');
 	nav.classList.remove('chayra');
 	bavach.classList.remove('xoay');
 	form.classList.remove('xuathien');
 	search.style.display = 'block';
+	dangnhap.style.display = 'block';
 });
 document.body.addEventListener('dblclick', e => {
-	user.classList.remove('uhien');
+	dangnhap.style.display = 'none';
 });
+document.getElementById('delete').addEventListener('click', e => {
+	e.preventDefault();
+	dangnhap.style.display = 'none';
+})
 // phần form user
 
 

@@ -214,7 +214,7 @@ body {
         padding: 0.8rem 2.2rem; }
 
 #user {
-  position: absolute;
+  position: relative;
   z-index: 400;
   left: 50%;
   top: 50%;
@@ -223,12 +223,14 @@ body {
   height: 70vh;
   border: 10px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  box-shadow: 10px 10px 15px rgba(19, 19, 19, 0.5);
-  visibility: visible;
-  opacity: 0; }
-  #user.uhien {
-    opacity: 1;
-    visibility: visible; }
+  box-shadow: 10px 10px 15px rgba(19, 19, 19, 0.5); }
+  #user #delete {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    z-index: 5000;
+    color: #6d549d;
+    font-size: 35px; }
   #user .nd {
     width: 100%;
     background-color: #fff;
