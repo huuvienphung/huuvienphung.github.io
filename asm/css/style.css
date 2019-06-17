@@ -97,48 +97,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around; }
-    .top .cart #user {
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 70%;
-      height: 70%;
-      border: 10px solid rgba(255, 255, 255, 0.2);
-      border-radius: 5px;
-      box-shadow: 10px 10px 15px rgba(19, 19, 19, 0.5);
-      visibility: visible;
-      opacity: 0; }
-      .top .cart #user.uhien {
-        opacity: 1;
-        visibility: visible; }
-      .top .cart #user .nd {
-        width: 100%;
-        background-color: #fff;
-        height: 100%; }
-        .top .cart #user .nd .inputbox {
-          position: relative;
-          margin: 0px 5px 20px 5px; }
-          .top .cart #user .nd .inputbox i {
-            position: absolute;
-            top: 13px;
-            left: 5px; }
-        .top .cart #user .nd h5 {
-          font-family: Nunito-b;
-          font-size: 28px;
-          padding: 30px 10px; }
-        .top .cart #user .nd input {
-          width: 100%;
-          padding: .375rem .75rem .375rem 1.5rem; }
-        .top .cart #user .nd button {
-          border-radius: 15px;
-          background-color: #6d549d;
-          border-color: #6d549d;
-          margin-left: 10px; }
-        .top .cart #user .nd a.ofform {
-          display: block;
-          padding: 5px 10px;
-          text-decoration: underline; }
     .top .cart a.iconpro {
       display: block;
       position: relative;
@@ -255,6 +213,50 @@ body {
       .nav nav ul li .abc ul li ul li a {
         padding: 0.8rem 2.2rem; }
 
+#user {
+  position: absolute;
+  z-index: 400;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70vh;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px rgba(19, 19, 19, 0.5);
+  visibility: visible;
+  opacity: 0; }
+  #user.uhien {
+    opacity: 1;
+    visibility: visible; }
+  #user .nd {
+    width: 100%;
+    background-color: #fff;
+    height: 100%; }
+    #user .nd .inputbox {
+      position: relative;
+      margin: 0px 5px 20px 5px; }
+      #user .nd .inputbox i {
+        position: absolute;
+        top: 13px;
+        left: 5px; }
+    #user .nd h5 {
+      font-family: Nunito-b;
+      font-size: 28px;
+      padding: 30px 10px; }
+    #user .nd input {
+      width: 100%;
+      padding: .375rem .75rem .375rem 1.5rem; }
+    #user .nd button {
+      border-radius: 15px;
+      background-color: #6d549d;
+      border-color: #6d549d;
+      margin-left: 10px; }
+    #user .nd a.ofform {
+      display: block;
+      padding: 5px 10px;
+      text-decoration: underline; }
+
 .nav > nav > ul li:nth-child(3) a.item1:before, .nav > nav > ul li:nth-child(4) a.item1:before {
   content: '\f107';
   font-family: "Font Awesome 5 Free";
@@ -301,16 +303,16 @@ body {
       width: 100%;
       top: 62px; }
 
-  .top .cart #user {
+  #user {
     display: flex; }
 
-  .top .cart #user .nd {
+  #user .nd {
     width: 50%;
     overflow: hidden;
     margin: 0;
     padding: 5px; }
 
-  .top .cart #user .img {
+  #user .img {
     width: 50%;
     overflow: hidden;
     background-size: cover;
@@ -465,10 +467,10 @@ body {
             .nav nav ul.top1 li.li1 .abc ul.top2 li ul li:last-child a.item3 {
               border-bottom: 4px solid #6d549d; }
 
-  .top .cart #user {
+  #user {
     width: 50%; }
 
-  .top .cart #user .nd {
+  #user .nd {
     padding: 15px; }
 
   .nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li .item2 {
