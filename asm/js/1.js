@@ -84,7 +84,37 @@ items.forEach(function(item, idx) {
 		}
 	})
 })
+// phần itemlet 
+var filter = document.getElementById('filter');
+var names = document.getElementById('names');
 
-// phần item
+names.style.display = 'none';
+filter.addEventListener('keyup', filterName);
+filter.addEventListener('focus', filterAppear);
+filter.addEventListener('blur', filterHidden);
+
+function filterHidden() {
+	names.style.display = 'none';
+}
+function filterAppear() {
+	names.style.display = 'block';
+}
+function filterName() {
+	let filterValue = document.getElementById('filter').value.toUpperCase();
+
+	let ul = document.getElementById('names');
+	let li = ul.querySelectorAll('li.collection-item');
+
+	for (let i = 0; i < li.length; i++) {
+		let a = li[i].getElementsByTagName('a')[0];
+
+		if (a.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+			li[i].style.display = '';
+		} else {
+			li[i].style.display = 'none';
+		}
+	}
+}
+// phần search tìm kiếm form
 
 

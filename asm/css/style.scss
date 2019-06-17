@@ -156,7 +156,9 @@ body{ background-image: url(../image20/bg.png); }
 		transform: translateX(150%);
 		transition: transform .4s;
 		box-shadow: 0 5px 5px rgba($den, .3);
+		position: relative;
 		form{
+			position: relative;
 			width: 80%;
 			margin: 0 auto;
 			display: flex;
@@ -185,6 +187,27 @@ body{ background-image: url(../image20/bg.png); }
 				color: $tim;
 				margin-left: -32px;
 				font-size: 20px;
+			}
+		}
+		ul#names{
+			z-index: 1000;
+			position: absolute;
+			width: 70%;
+			top:50px;
+			height: 100vh;
+			overflow-x: hidden;
+			left: 50%;
+			transform: translateX(-50%);
+			li{
+				background-color: $trang;
+			    line-height: 1.5rem;
+			    padding: 10px 20px;
+			    margin: 0;
+			    border-bottom: 1px solid rgba($xam, .5);
+				padding-left: 30px;
+				a{
+					color: $den;
+				}
 			}
 		}
 
@@ -301,6 +324,14 @@ body{ background-image: url(../image20/bg.png); }
 				input[type="search"]{
 				}
 			}
+			ul#names{
+				width: 100%;
+				top:62px;
+				li{
+					a{
+					}
+				}
+			}
 		}
 		
 	}
@@ -319,6 +350,7 @@ body{ background-image: url(../image20/bg.png); }
 		background-color: transparent;
 		box-shadow: none;
 		transition: top .1s;
+		z-index: 301;
 		.container{
 				// background-color: $trang;
 			.logo{
@@ -336,6 +368,23 @@ body{ background-image: url(../image20/bg.png); }
 						border-radius: 20px;
 						transition: .3s
 						
+					}
+				}
+				ul#names{
+					width: 100%;
+					top:100px;
+					height: auto;
+					overflow:hidden;
+					li{
+						background-color: #fff;
+					    line-height: 1.5rem;
+					    padding: 10px 20px;
+					    margin: 0;
+					    border-bottom: 1px solid #e0e0e0;
+						padding-left: 30px;
+						a{
+							color: $den;
+						}
 					}
 				}
 			}
@@ -382,6 +431,14 @@ body{ background-image: url(../image20/bg.png); }
 						
 					}
 				}
+				ul#names{
+					top:60px;
+					li{
+						a{
+						}
+					}
+				}
+
 			}
 			.cart{
 				a{
@@ -394,23 +451,22 @@ body{ background-image: url(../image20/bg.png); }
 	}
 
 		.nav{
-			position: relative;
-			width: 100%;
+			position: fixed;
 			height: auto;
-			top: 0;
+			top: 100px;
 			left: 100%;
-			z-index: 50;
+			z-index: 300;
 			// transform: translateX(0);
 			background-color: transparent;
+			transition: top .3s;
 			&.lentren{
-				position: fixed;
 				top: 60px;
 			}
 			&.chayra{
 			}
 			nav{
 				width: 100%;
-				overflow: hidden;
+				// overflow: hidden;
 				background-color: $den;
 				ul.top1{
 					display: flex;
@@ -428,12 +484,29 @@ body{ background-image: url(../image20/bg.png); }
 						}
 						a.item1{
 							text-decoration: none;
-							position: static;
+							position: relative;
 							border: none;
 							color: $trang;
 							font-family: $font-r;
 							text-align: center;
 							background-color: transparent;
+							&:before{
+								content: '';
+								position: absolute;
+								left: 0;
+								top: 0;
+								width: 100%;
+								height: 100%;
+								background-color: $do;
+								z-index: -1;
+								transform: scaleX(0);
+								transform-origin: right;
+								transition: transform 0.5s ease-in-out;
+							}
+							&:hover:before{
+									transform-origin: left;
+									transform: scaleX(1);
+							}
 							&.active{
 								background-color: $do;
 							}
@@ -447,14 +520,15 @@ body{ background-image: url(../image20/bg.png); }
 								li{
 									.item2{
 										display: block;
-										background-color: $xam;
-										border-bottom: 1px solid $trang;
+										background-color: $tim;
+										border-bottom: 1px solid rgba($tim,.5);
 										width: 150px;
 										padding: .8rem 1rem;
 										box-sizing: border-box;
 										height: 65px;
 										color: $trang;
 										font-family: $font-r;
+
 									}
 									ul {
 										li {
@@ -463,13 +537,22 @@ body{ background-image: url(../image20/bg.png); }
 												display: block;
 												padding: .4rem 1rem;
 												box-sizing: border-box;
-												background-color: $xam;
-												color: $xanhnhat;
+												background-color: $trang;
+												color: $den;
 												font-family: $font-r;
-												border-bottom: .63px solid $xam;
+												border: 0.63px solid transparent;
+												border-bottom: .63px solid rgba($tim, .3);
 												&:hover{
-													background-color: $xam;
+													border: .63px solid transparent;
+													background-color: $do;
 													color: $trang;
+													// box-shadow: -1rem 0 8rem rgba($do, 1);
+													z-index: 200;
+												}
+											}
+											&:last-child{
+												a.item3{
+													border-bottom: 4px solid $tim;
 												}
 											}
 										}
@@ -490,13 +573,16 @@ body{ background-image: url(../image20/bg.png); }
 			transform: translateX(-220px);
 			width: 180px;
 		}
+
 .nav > nav > ul {
 	li:nth-child(3), li:nth-child(4) {
 		a.item1:before{
 			content: '';
+			transform: translate(0,0);
 		}
 		a.item1.active:before{
 			content: '';
+			transform: translate(0,0);
 		}
 	}
 }

@@ -122,8 +122,10 @@ body {
     background-color: #89c766;
     transform: translateX(150%);
     transition: transform .4s;
-    box-shadow: 0 5px 5px rgba(19, 19, 19, 0.3); }
+    box-shadow: 0 5px 5px rgba(19, 19, 19, 0.3);
+    position: relative; }
     .top .search form {
+      position: relative;
       width: 80%;
       margin: 0 auto;
       display: flex;
@@ -150,6 +152,24 @@ body {
         color: #6d549d;
         margin-left: -32px;
         font-size: 20px; }
+    .top .search ul#names {
+      z-index: 1000;
+      position: absolute;
+      width: 70%;
+      top: 50px;
+      height: 100vh;
+      overflow-x: hidden;
+      left: 50%;
+      transform: translateX(-50%); }
+      .top .search ul#names li {
+        background-color: #fff;
+        line-height: 1.5rem;
+        padding: 10px 20px;
+        margin: 0;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+        padding-left: 30px; }
+        .top .search ul#names li a {
+          color: #131313; }
   .top .search.xuathien {
     transform: translateX(0); }
 
@@ -235,6 +255,9 @@ body {
     box-shadow: none; }
     .top .search form {
       width: 100%; }
+    .top .search ul#names {
+      width: 100%;
+      top: 62px; }
 
   .nav nav {
     width: 50%; } }
@@ -244,7 +267,8 @@ body {
     height: 100px;
     background-color: transparent;
     box-shadow: none;
-    transition: top .1s; }
+    transition: top .1s;
+    z-index: 301; }
     .top .container .logo img {
       height: 90px;
       transition: height .3s; }
@@ -255,6 +279,20 @@ body {
         padding: 10px 35px 10px 15px;
         border-radius: 20px;
         transition: 0.3s; }
+    .top .container .search ul#names {
+      width: 100%;
+      top: 100px;
+      height: auto;
+      overflow: hidden; }
+      .top .container .search ul#names li {
+        background-color: #fff;
+        line-height: 1.5rem;
+        padding: 10px 20px;
+        margin: 0;
+        border-bottom: 1px solid #e0e0e0;
+        padding-left: 30px; }
+        .top .container .search ul#names li a {
+          color: #131313; }
     .top .container .cart a {
       color: #6d549d; }
       .top .container .cart a i {
@@ -282,25 +320,25 @@ body {
       .top.cuon .search form input[type="search"] {
         padding: 5px 35px 5px 10px;
         border-radius: 20px; }
+    .top.cuon .search ul#names {
+      top: 60px; }
     .top.cuon .cart a {
       color: #6d549d; }
       .top.cuon .cart a small {
         top: -10px; }
 
   .nav {
-    position: relative;
-    width: 100%;
+    position: fixed;
     height: auto;
-    top: 0;
+    top: 100px;
     left: 100%;
-    z-index: 50;
-    background-color: transparent; }
+    z-index: 300;
+    background-color: transparent;
+    transition: top .3s; }
     .nav.lentren {
-      position: fixed;
       top: 60px; }
     .nav nav {
       width: 100%;
-      overflow: hidden;
       background-color: #131313; }
       .nav nav ul.top1 {
         display: flex;
@@ -313,12 +351,27 @@ body {
           background-color: #df0000; }
         .nav nav ul.top1 li.li1 a.item1 {
           text-decoration: none;
-          position: static;
+          position: relative;
           border: none;
           color: #fff;
           font-family: Nunito-r;
           text-align: center;
           background-color: transparent; }
+          .nav nav ul.top1 li.li1 a.item1:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #df0000;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s ease-in-out; }
+          .nav nav ul.top1 li.li1 a.item1:hover:before {
+            transform-origin: left;
+            transform: scaleX(1); }
           .nav nav ul.top1 li.li1 a.item1.active {
             background-color: #df0000; }
         .nav nav ul.top1 li.li1 .abc {
@@ -329,8 +382,8 @@ body {
             z-index: 200; }
             .nav nav ul.top1 li.li1 .abc ul.top2 li .item2 {
               display: block;
-              background-color: #333;
-              border-bottom: 1px solid #fff;
+              background-color: #6d549d;
+              border-bottom: 1px solid rgba(109, 84, 157, 0.5);
               width: 150px;
               padding: .8rem 1rem;
               box-sizing: border-box;
@@ -342,13 +395,18 @@ body {
               display: block;
               padding: .4rem 1rem;
               box-sizing: border-box;
-              background-color: #333;
-              color: #89c766;
+              background-color: #fff;
+              color: #131313;
               font-family: Nunito-r;
-              border-bottom: 0.63px solid #333; }
+              border: 0.63px solid transparent;
+              border-bottom: 0.63px solid rgba(109, 84, 157, 0.3); }
               .nav nav ul.top1 li.li1 .abc ul.top2 li ul li a.item3:hover {
-                background-color: #333;
-                color: #fff; }
+                border: .63px solid transparent;
+                background-color: #df0000;
+                color: #fff;
+                z-index: 200; }
+            .nav nav ul.top1 li.li1 .abc ul.top2 li ul li:last-child a.item3 {
+              border-bottom: 4px solid #6d549d; }
 
   .nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li .item2 {
     transform: translateX(-220px);
@@ -359,8 +417,10 @@ body {
     width: 180px; }
 
   .nav > nav > ul li:nth-child(3) a.item1:before, .nav > nav > ul li:nth-child(4) a.item1:before {
-    content: ''; }
+    content: '';
+    transform: translate(0, 0); }
   .nav > nav > ul li:nth-child(3) a.item1.active:before, .nav > nav > ul li:nth-child(4) a.item1.active:before {
-    content: ''; } }
+    content: '';
+    transform: translate(0, 0); } }
 
 /*# sourceMappingURL=style.css.map */
