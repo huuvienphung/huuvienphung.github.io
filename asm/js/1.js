@@ -87,6 +87,21 @@ items.forEach(function(item, idx) {
 		}
 	})
 })
+var itemu2 = document.querySelectorAll('.item2');
+
+console.log(itemu2);
+itemu2.forEach(function(itemu, idx) {
+	itemu.addEventListener('click', e => {
+		e.preventDefault();
+		
+
+		var top3 = document.querySelectorAll('.top3');
+		for (var i = 0; i < top3.length; i++) {
+			top3[i].style.display = 'none';
+		}
+		e.target.nextElementSibling.style.display = 'block';
+	})
+});
 // phần itemlet 
 var filter = document.getElementById('filter');
 var names = document.getElementById('names');
@@ -103,7 +118,7 @@ function filterHidden() {
 	names.style.visibility = 'hidden';
 }
 function filterAppear() {
-	names.style.display = 'block';
+	names.style.display = 'none';
 	names.style.visibility = 'visible';
 }
 function filterName() {
@@ -116,7 +131,8 @@ function filterName() {
 		let a = li[i].getElementsByTagName('a')[0];
 
 		if (a.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
-			li[i].style.display = '';
+			names.style.display = 'block';
+			li[i].style.display = 'block';
 		} else {
 			li[i].style.display = 'none';
 		}
@@ -169,7 +185,7 @@ delete2.addEventListener('click', e => {
 // phần giỏ hàng
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
-  // options
+  // optio
   cellAlign: 'left',
   // contain: true,
   wrapAround: true,
