@@ -96,6 +96,7 @@ items.forEach(function(item, idx) {
 		for (var i = 0; i < itemu.length; i++) {
 			itemu[i].style.display = 'none';
 		}
+
 		if (e.target.nextElementSibling != null) {
 			e.target.nextElementSibling.style.display = 'block';
 		}
@@ -108,7 +109,6 @@ itemu2.forEach(function(itemu, idx) {
 	itemu.addEventListener('click', e => {
 		e.preventDefault();
 		
-
 		var top3 = document.querySelectorAll('.top3');
 		for (var i = 0; i < top3.length; i++) {
 			top3[i].style.display = 'none';

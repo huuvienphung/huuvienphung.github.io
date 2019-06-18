@@ -14,10 +14,21 @@
 	src:url(../fonts/Nunito-LightItalic.ttf);
 	font-family: Nunito-li;
 }
+@font-face{
+	src:url(../fonts/Nunito-Black.ttf);
+	font-family: Nunito-black;
+}
+@font-face{
+	src:url(../fonts/Nunito-SemiBold.ttf);
+	font-family: Nunito-Semi;
+}
+
 $font-r: Nunito-r;
 $font-b: Nunito-b;
 $font-l: Nunito-l;
 $font-li: Nunito-li;
+$font-bl: Nunito-black;
+$font-bs: Nunito-Semi;
 
 $xanhnhat: #89c766;
 $trang: #fff;
@@ -33,6 +44,7 @@ $tim: #6d549d;
 
 *{margin: 0;padding: 0;list-style: none;}
 body{ background-image: url(../image20/bg.png); }
+
 #nen{
 	position: absolute;
 	left: 0;
@@ -240,9 +252,9 @@ body{ background-image: url(../image20/bg.png); }
 			height: 100%;
 			ul.top1{
 				li {
-					a{
+					a.item1{
 						display: block;
-						padding: 0.8rem 1rem;
+						padding: 0.8rem .5rem 0.8rem 1rem;
 						text-decoration: none;
 						color: $trang;
 						font-family: $font-l;
@@ -259,17 +271,23 @@ body{ background-image: url(../image20/bg.png); }
 						ul.top2{
 							li {
 								.item2{
-									background-color: rgba($den, .6);
-									padding: 0.8rem 2.5rem;
+									font-family: $font-l;
+									text-decoration: none;
+									display: block;
+									background-color: $xam;
+									padding:  0.8rem .5rem 0.8rem 2.5rem;
 									color: $trang;
 								}
 								ul{
 									display: none;
 									li a{
+										font-family: $font-l;
+										text-decoration: none;
+										display: block;
 										background-color: rgba($den, .3);
-										padding: 0.8rem 4rem;
+										padding:  0.8rem .5rem 0.8rem 4rem;
 										color: $trang;
-										border-bottom: 0.63px solid $xam;
+										// border-bottom: 0.63px solid $xam;
 									}
 								}
 							}
@@ -470,9 +488,11 @@ body{ background-image: url(../image20/bg.png); }
 	}
 }
 // =========================================đây là slide
-.slide{margin-top: 65px;
+.slide{margin-top: 75px; 
 	
 }
+.slide .khoislide{background-color: $trang;}
+
 .carousel-cell {
 	width: 100%;
 	// height: 500px;
@@ -481,11 +501,44 @@ body{ background-image: url(../image20/bg.png); }
 		height: 100% !important;
 	}
 }
+.lion img{width: 100%}
+.liontext div{@include canhtam();justify-content: center;margin:20px 0 20px 0;
+	z-index: 50; position: relative;}
+.liontext h5{display:inline-block;margin: 0;text-align:center;font-family: $font-bl; 
+	text-transform: uppercase;
+	color:$trang;
+	background-color: $tim;
+	padding: 7px 15px;
+	position: relative;
+}
+.liontext h5:before, .liontext h5:after{
+	content: '';
+	position: absolute;
+	left: -4px;
+	top: -4px;
+	// background-image: -webkit-linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00,#ff0000,#fb0094, #0000ff, #00ff00, #ffff00,#ff0000);
+	background-image: -webkit-linear-gradient(45deg, $tim,$trang,$tim,$trang,$tim,$trang,$tim,$trang);
+	width: calc(100% + 8px);
+	height: calc(100% + 8px);
+	background-size: 400%;
+	z-index: -1;
+	animation: animate 10s linear infinite;
+}
+@-webkit-keyframes animate {
+	0%{background-position: 0 0;}
+	50%{background-position: 200% 0;}
+	100%{background-position: 400% 0;}
+}
+.liontext h5:after{
+	filter: blur(15px);
+	opacity: .5;
+}
 // ===========================================nút lên trên
 .nutlentren{
 	position: fixed;
 	bottom: 20px;
 	right: 10px;
+	z-index: 5000;
 	a {
 		display: none;
 		padding: 5px 10px;
@@ -499,6 +552,29 @@ body{ background-image: url(../image20/bg.png); }
 }
 .flickity-prev-next-button.next{right: -100px;}
 .flickity-prev-next-button.previous{left: -100px;}
+// ===========================================phần chi tiet san pham
+.chitiet{padding-top: 15px;background-color: $trang;}
+.chitiet .khoichitiet{position: relative;margin-bottom: 5px;display: block;}
+.chitiet img{width: 100%; z-index: 1;overflow: hidden;}
+.chitiet .khoichitiet p{position: absolute;
+	text-transform: uppercase;
+	font-family: $font-bl;
+	color: $trang;
+	z-index: 2;
+	width: 100%;
+	padding: 5px 0;
+	background-color: rgba($tim, .7);
+	text-align: center;
+	bottom: 15px;
+	margin: 0;
+	}
+	// ===========================================phần spbc
+
+.spbc img{width: 100%;}
+.spbc .card{box-shadow: -1rem 0 3rem rgba($den, .2);border: 1px solid rgba($tim,.125);border-radius: 15px;}
+.spbc button{
+	border: none;
+}
 @-webkit-keyframes before{
 	0%{transform: translate(0);}
 	50%{transform: translate(50%);}
@@ -570,6 +646,9 @@ body{ background-image: url(../image20/bg.png); }
 .flickity-prev-next-button.previous{left: 10px;}
 .flickity-button{background: transparent; color: $trang;}
 .flickity-button:hover{color:$tim;}
+//====================================== 2con sư tử
+.liontext h5{font-size: 25px;}
+
 }
 @media screen and (min-width: 992px){
 	.top{
@@ -814,14 +893,6 @@ body{ background-image: url(../image20/bg.png); }
 		#user .nd {
 			padding: 15px;
 		}
-		// .nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li .item2 {
-		// 	transform: translateX(-220px);
-		// 	width: 180px;
-		// }
-		// .nav nav ul.top1 li.li1:nth-child(3) .abc ul.top2 li ul li a.item3 {
-		// 	transform: translateX(-220px);
-		// 	width: 180px;
-		// }
 
 .nav > nav > ul {
 	li:nth-child(3), li:nth-child(4) {
@@ -865,9 +936,20 @@ body{ background-image: url(../image20/bg.png); }
 .footer .phan2 ul li:nth-child(1) a:before{background-color: #3b5999;}
 .footer .phan2 ul li:nth-child(2) a:before{background-color: #55acee;}
 .footer .phan2 ul li:nth-child(3) a:before{background-color: #dd4b39;}
-.footer .phan2 ul li:last-child a:before{background-color: #e4405f;}
+.footer .phan2 ul li:last-child a:before{background-image: -webkit-linear-gradient(-45deg,#333AF7 20%,#BA17AC 40%,#FDDB68)} /* #e4405f */
 
 .footer .phan1 h5, .footer .phan2 h5{font-size: 20px;}
+// =================phần con sư tử
+.slide .khoislide{background-color: transparent;}
+.liontext{margin:0 0 20px 0;}
+.liontext h5{font-size: 30px;}
+.boslide{padding-left: 0;}
+// ============================= phần sản phẩm chi tiết
+.chitiet .khoichitiet{overflow: hidden;}
+.chitiet .khoichitiet p{
+	transition: bottom .2s;
+	}
+.chitiet .khoichitiet:hover p{bottom: 0;}
 }
 
 
