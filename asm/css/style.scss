@@ -481,6 +481,22 @@ body{ background-image: url(../image20/bg.png); }
 		height: 100% !important;
 	}
 }
+// ===========================================nút lên trên
+.nutlentren{
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	a {
+		display: none;
+		padding: 5px 10px;
+		border-radius: 20px;
+		background-color: rgba($trang, .8);
+		i{
+			color: $tim;
+			font-size: 30px;
+		}
+	}
+}
 .flickity-prev-next-button.next{right: -100px;}
 .flickity-prev-next-button.previous{left: -100px;}
 @-webkit-keyframes before{

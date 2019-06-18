@@ -46,6 +46,8 @@ nenden.addEventListener('click', e => {
 	bavach.classList.remove('xoay');
 })
 //phần form
+var nutlentren = document.querySelector('.nutlentren a');
+console.log(nutlentren);
 var header = document.getElementById('top');
 var trangthai = 1;
 var logo = document.getElementById('logo');
@@ -53,6 +55,7 @@ var src = logo.getAttribute('src');
 window.addEventListener('scroll', function() {
 		if(window.pageYOffset >= 100) {
 			if (trangthai == 1) {
+				nutlentren.style.display = 'block';
 				header.classList.add('cuon');
 				trangthai = 2;
 				var body = document.body.offsetWidth;
@@ -62,6 +65,7 @@ window.addEventListener('scroll', function() {
 				}
 			}
 		} else if(trangthai == 2) {
+			nutlentren.style.display = 'none';
 			header.classList.remove('cuon');
 			trangthai = 1;
 			// logo.setAttribute('src', src)
@@ -69,6 +73,16 @@ window.addEventListener('scroll', function() {
 		}
 });
 // cuộn header
+nutlentren.addEventListener('click', e => {
+	e.preventDefault();
+
+	window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+	})
+})
+// nút lên trên
 var items = document.querySelectorAll('.item1');
 
 items.forEach(function(item, idx) {
@@ -89,7 +103,7 @@ items.forEach(function(item, idx) {
 })
 var itemu2 = document.querySelectorAll('.item2');
 
-console.log(itemu2);
+// console.log(itemu2);
 itemu2.forEach(function(itemu, idx) {
 	itemu.addEventListener('click', e => {
 		e.preventDefault();
