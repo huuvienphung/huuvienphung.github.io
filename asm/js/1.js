@@ -1,3 +1,4 @@
+
 var bavach = document.getElementById('bavach');
 var nav = document.querySelector('.nav');
 bavach.addEventListener('click', e => {
@@ -166,5 +167,15 @@ delete2.addEventListener('click', e => {
 
 })
 // phần giỏ hàng
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  // contain: true,
+  wrapAround: true,
+  autoPlay: true
+});
+
+// var flkty = new Flickity( '.main-carousel', {});
 
 
