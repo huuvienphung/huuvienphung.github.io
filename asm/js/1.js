@@ -99,7 +99,9 @@ itemu2.forEach(function(itemu, idx) {
 		for (var i = 0; i < top3.length; i++) {
 			top3[i].style.display = 'none';
 		}
-		e.target.nextElementSibling.style.display = 'block';
+		if (e.target.nextElementSibling != null) {
+			e.target.nextElementSibling.style.display = 'block';
+		}
 	})
 });
 // phần itemlet 
