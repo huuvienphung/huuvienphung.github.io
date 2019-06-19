@@ -148,7 +148,7 @@ body{ background-image: url(../image20/bg.png); }
 				font-size: 25px;
 			}
 			small{
-				width: 15px;
+				width: 20px;
 				height: 20px;
 				line-height: 20px;
 				text-align:center;
@@ -488,11 +488,10 @@ body{ background-image: url(../image20/bg.png); }
 	}
 }
 // =========================================đây là slide
-.slide{margin-top: 75px; 
-	
-}
+.slide{margin-top: 75px; }
 .slide .khoislide{background-color: $trang;}
 
+.boslide.col-12{ padding-top: 15px; }
 .carousel-cell {
 	width: 100%;
 	// height: 500px;
@@ -553,7 +552,7 @@ body{ background-image: url(../image20/bg.png); }
 .flickity-prev-next-button.next{right: -100px;}
 .flickity-prev-next-button.previous{left: -100px;}
 // ===========================================phần chi tiet san pham
-.chitiet{padding-top: 15px;background-color: $trang;}
+.chitiet{background-color: $trang;padding-top: 15px;}
 .chitiet .khoichitiet{position: relative;margin-bottom: 5px;display: block;}
 .chitiet img{width: 100%; z-index: 1;overflow: hidden;}
 .chitiet .khoichitiet p{position: absolute;
@@ -575,6 +574,74 @@ body{ background-image: url(../image20/bg.png); }
 .spbc button{
 	border: none;
 }
+// ========================================================
+.sp {
+	.chieucao{height: 150px;}
+	position: relative;
+	margin-bottom: 30px;
+	.day{position: absolute;bottom: 15px;width: calc(100% - 30px);}
+	.motsanpham{height: 100%;}
+	.giatien{font-family: $font-r;font-size: 20px;color: $tim;text-align: right;}
+	h6.card-title{font-family: $font-b;font-size: 21px;text-transform: uppercase;
+		margin: 20px 0;
+	}
+	button.btn{
+		margin-top: 20px;
+		padding: 5px 10px;
+		color: $trang;
+		background-color: $do;
+		font-family: $font-r;
+		text-transform:uppercase;	
+		border-radius: .25rem;
+		&:focus{outline: none;}
+	}
+	button{
+		&:focus{
+				outline: none;
+		}
+		i.fa-cart-arrow-down{
+			color: $trang;padding: 8px;
+			background-color: $tim;
+			font-size: 20px;
+
+			border-radius: .25rem;
+		}
+	}
+	.canh{
+		bottom: 0;
+		display: flex;
+		button.cartpro{margin-left: 10px;
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	.khoinut{
+		display: flex;
+		align-items: center;
+		button{
+				background-color: $xam;
+				border-radius: .25rem;
+			i{
+				width: 29px;
+				height: 29px;
+				border: none;
+				text-align: center;
+				line-height: 29px;
+				color: $trang;
+			}
+			&:focus{
+				outline: none;
+			}
+			
+		}
+		input{margin: 0 5px;width: 80px}
+	}
+	
+}
+	
+
+.spbc .card-body{display: block;}
 @-webkit-keyframes before{
 	0%{transform: translate(0);}
 	50%{transform: translate(50%);}
@@ -950,6 +1017,20 @@ body{ background-image: url(../image20/bg.png); }
 	transition: bottom .2s;
 	}
 .chitiet .khoichitiet:hover p{bottom: 0;}
+// =========================================phần sản phẩm bán chạy
+.sp .khoinut input{width: 60px;}
+.sp h6.card-title{font-size: 25px;}
+.khoinut{
+	button{
+		&:hover{
+			background-color: rgba($xam, .8);
+			}outline: none;
+		}
+
+	}
+	.sp .canh button.cartpro:hover i {background-color: rgba($tim, .7)}
+	.sp .canh button.cartpro:hover i {background-color: rgba($tim, .7)}
+	.sp button.btn:hover{box-shadow: 2px 2px 2px rgba($do, .5)}
 }
 
 
