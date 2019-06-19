@@ -455,7 +455,7 @@ body {
   position: absolute;
   left: -4px;
   top: -4px;
-  background-image: -webkit-linear-gradient(45deg, #6d549d, #fff, #6d549d, #fff, #6d549d, #fff, #6d549d, #fff);
+  background-image: -webkit-linear-gradient(45deg, #6d549d, #fff, #6d549d, #fff, #6d549d, #fff, #6d549d, #fff, #6d549d);
   width: calc(100% + 8px);
   height: calc(100% + 8px);
   background-size: 400%;

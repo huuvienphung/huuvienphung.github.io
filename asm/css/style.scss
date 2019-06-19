@@ -300,7 +300,10 @@ body{ background-image: url(../image20/bg.png); }
 
 // ==============phần css tự do===================
 #dangnhap, #giohang{
-	top:0;position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,.2); z-index: 450; display: none;
+	top:0;position: fixed;
+	 width: 100%; height: 100%;
+	  background-color: rgba(0,0,0,.2);
+	   z-index: 450; display: none;
 }
 #giohang{padding: 20px;}
 #market{
@@ -516,7 +519,7 @@ body{ background-image: url(../image20/bg.png); }
 	left: -4px;
 	top: -4px;
 	// background-image: -webkit-linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00,#ff0000,#fb0094, #0000ff, #00ff00, #ffff00,#ff0000);
-	background-image: -webkit-linear-gradient(45deg, $tim,$trang,$tim,$trang,$tim,$trang,$tim,$trang);
+	background-image: -webkit-linear-gradient(45deg, $tim,$trang,$tim,$trang,$tim,$trang,$tim,$trang,$tim);
 	width: calc(100% + 8px);
 	height: calc(100% + 8px);
 	background-size: 400%;

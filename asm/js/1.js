@@ -199,6 +199,7 @@ delete2.addEventListener('click', e => {
 })
 // phần giỏ hàng
 var elem = document.querySelector('.main-carousel');
+// var elem2 = document.querySelector('.main-carousel2');
 var flkty = new Flickity( elem, {
   // optio
   cellAlign: 'left',
@@ -206,7 +207,6 @@ var flkty = new Flickity( elem, {
   wrapAround: true,
   autoPlay: true
 });
-
 // var flkty = new Flickity( '.main-carousel', {});
 // phan sp
 
