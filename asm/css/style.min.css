@@ -612,9 +612,8 @@ body {
   width: 100%;
 }
 
-.carousel-cell img {
-  width: 100%;
-  height: 100% !important;
+.carousel-cell div img {
+  width: 100% !important;
 }
 
 .lion img {
@@ -1210,6 +1209,9 @@ h5.tieude span:after {
   .liontext h5 {
     font-size: 25px;
   }
+  .slide {
+    margin-top: 140px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1499,6 +1501,9 @@ h5.tieude span:after {
   h5.tieude {
     margin: 35px 0;
     font-size: 30px;
+  }
+  .slide {
+    margin-top: 75px;
   }
   .sp .chieucao {
     height: 135px;

@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Trangchu</title>
+	<title>js</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
-		rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="icon/css/all.min.css">
 	<link rel="stylesheet" href="css/flickity.css" media="screen">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style_lienhe.min.css">
 </head>
 <body>
 	<img id="nen" src="image20/abc.png" alt="">
@@ -148,7 +147,7 @@
 		<div class="nav">
 			<nav>
 				<ul class="top1">
-					<li class="li1"><a class="item1 active" href="index.html">TRANG CHỦ</a></li>
+					<li class="li1"><a class="item1" href="index.html">TRANG CHỦ</a></li>
 					<li class="li1"><a class="item1" href="gioithieu.html">GIỚI THIỆU</a></li>
 					<li class="li1"><a class="item1" href="#">SẢN PHẨM</a>
 						<div class="abc">
@@ -211,7 +210,7 @@
 								</li>
 							</ul>
 						</div>
-						
+					
 					</li>
 					<li class="li1"><a class="item1" href="#">HOẠT ĐỘNG</a>
 						<div class="abc">
@@ -223,284 +222,85 @@
 					<li class="li1"><a class="item1" href="#">TƯ VẤN PHONG THỦY TẠI NHÀ</a></li>
 					<li class="li1"><a class="item1" href="#">TƯ VẤN CHỌN ĐÁ</a></li>
 					<li class="li1"><a class="item1" href="#">TIN TỨC</a></li>
-					<li class="li1"><a class="item1" href="lienhe.html">LIÊN HỆ</a></li>
+					<li class="li1"><a class="item1 active" href="lienhe.html">LIÊN HỆ</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
-	<div class="slide">
-		<div class="container">
+	<div class="phanmota">
+		<div class="container" style="background-color: white">
 			<div class="row">
-				<div class="khoislide col-12 col-lg-6">
-					<div class="row">
-						<div class="boslide col-12 order-2">
-							<div class="main-carousel"  style="overflow: hidden;">
-							  <div class="carousel-cell"><div><img src="image20/slide1.jpg" alt=""></div></div>
-							  <div class="carousel-cell"><div><img src="image20/slide3.jpg" alt=""></div></div>
-							  <div class="carousel-cell"><div><img src="image20/slide2.jpg" alt=""></div></div>
-							  <div class="carousel-cell"><div><img src="image20/slide4.jpg" alt=""></div></div>
-							  <div class="carousel-cell"><div><img src="image20/slide5.jpg" alt=""></div></div>
-							  <div class="carousel-cell"><div><img src="image20/slide6.jpg" alt=""></div></div>
+				<div class="col-12 liontext">
+					<div><h5>liên hệ</h5></div>
+				</div>
+				<div class="ten col-12 text-center">
+					<h4>CÔNG TY TNHH TM & CHẾ TÁC ĐÁ QUÝ NGỌC THẠCH</h4>
+					<p>Showroom 1: 49 Phố Huế - Hai Bà Trưng - Hà Nội <br>Showroom 2: 231 Tam Trinh – Hoàng Mai – Hà Nội</p>
+				</div>
+				<div class="col-12 col-lg-6">
+					
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Sáng</th>
+								<th scope="col">Chiều</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Thứ 2- 6</th>
+								<td>08:00 a.m</td>
+								<td>10:30 p.m.</td>
+							</tr>
+							<tr>
+								<th scope="row">Thứ 7</th>
+								<td>08:00 a.m</td>
+								<td>18:30 p.m.</td>
+							</tr>
+							<tr>
+								<th scope="row">Chủ nhật</th>
+								<td>08:00 a.m</td>
+								<td>14:00 p.m.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-12 col-lg-6">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<input type="text" class="form-control" id="name" placeholder="Tên của bạn">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="email" class="form-control" id="email" placeholder="Email của bạn">
 							</div>
 						</div>
-						<div class="liontext col-12 order-1 d-none d-lg-block">
-							<div><h5>Sản phẩm nổi bật</h5></div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="tieude" placeholder="Tiều đề">
 						</div>
-					</div>
-				</div>
-				<div class="chitiet col-12 col-lg-6">
-					<div class="row">
-						<div class="liontext col-12 d-lg-none">
-							<div><h5>danh mục sản phẩm</h5></div>
+						<div class="form-group">
+							<textarea class="form-control" id="noidung" rows="3"></textarea>
 						</div>
-						<div class="col-12 col-md-6">
-							<a href="#" class="khoichitiet">
-								<img src="image20/chitiet1.jpg" alt="">
-								<p>vật phẩm phong thủy</p>
-							</a>
+						<div class="text-center">
+							<button type="submit" class="btn btn-primary">gửi tin nhắn</button>
 						</div>
-						<div class="col-12  col-md-6">
-							<a href="#" class="khoichitiet">
-								<img src="image20/chitiet2.jpg" alt="">
-								<p>đá phong thủy</p>
-							</a>
-						</div>
-						<div class="col-12 col-md-6">
-							<a href="#" class="khoichitiet">
-								<img src="image20/chitiet3.jpg" alt="">
-								<p>tranh phong thủy</p>
-							</a>
-						</div>
-						<div class="col-12 col-md-6">
-							<a href="#" class="khoichitiet">
-								<img src="image20/chitiet4.jpg" alt="">
-								<p>quà tặng phong thủy</p>
-							</a>
-						</div>
-						<div class="col-12 col-md-6">
-							<a href="#" class="khoichitiet">
-								<img src="image20/chitiet5.jpg" alt="">
-								<p>trang sức đá quý</p>
-							</a>
-						</div>
-						<div class="col-12 col-md-6">
-							<a href="#" class="khoichitiet">
-								<img src="image20/chitiet6.jpg" alt="">
-								<p>hổ phách</p>
-							</a>
-						</div>
-						
-					</div>
+					</form>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="banchay">
-		<div class="container" style="background-color: white;">
 			<div class="row">
 				<div class="col-12">
-					<h5 class="tieude">Sản phẩm bán chạy <span></span></h5>
+					<hr>
+						<h5 class="tieude">bản đồ<span></span></h5>
 				</div>
-				<div class="spbc col-12">
-					<div class="row">
-						<div class="sp col-6 col-md-4 col-lg-3">
-							<div class="motsanpham card">
-								<div class="card-body">
-									<a href="#"><img src="image20/sp1.jpeg" alt=""></a>
-									<h6 class="card-title">Vòng tay đá mắt hổ xanh</h6>
-									<div class="chieucao">
-										<div class="day">
-											<p class="giatien">210000đ- 370000đ</p>
-											<hr><div class="canh ">
-												<div class="d-none d-md-block">
-													<div class="khoinut">
-														<button><i class="fas fa-minus"></i></button>
-														<input type="text" class="form-control" value="0">
-														<button><i class="fas fa-plus"></i></button>
-													</div>
-												</div>
-												<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="sp col-6 col-md-4 col-lg-3">
-							<div class="motsanpham card">
-								<div class="card-body">
-									<a href="#"><img src="image20/sp2.jpg" alt=""></a>
-									<h6 class="card-title">Vòng tay đá thạch anh tím mix lưu linh</h6>
-									<div class="chieucao">
-										<div class="day">
-											<p class="giatien">210000đ- 370000đ</p>
-											<hr><div class="canh ">
-												<div class="d-none d-md-block">
-													<div class="khoinut">
-														<button><i class="fas fa-minus"></i></button>
-														<input type="text" class="form-control" value="0">
-														<button><i class="fas fa-plus"></i></button>
-													</div>
-												</div>
-												<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="sp col-6 col-md-4 col-lg-3">
-							<div class="motsanpham card">
-								<div class="card-body">
-									<a href="#"><img src="image20/sp3.jpg" alt=""></a>
-									<h6 class="card-title">Vòng tay gỗ thủy tùng charm tỳ hưu vàng</h6>
-									<div class="chieucao">
-										<div class="day">
-											<p class="giatien">210000đ- 370000đ</p>
-											<hr><div class="canh ">
-												<div class="d-none d-md-block">
-													<div class="khoinut">
-														<button><i class="fas fa-minus"></i></button>
-														<input type="text" class="form-control" value="0">
-														<button><i class="fas fa-plus"></i></button>
-													</div>
-												</div>
-												<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="sp col-6 col-md-4 col-lg-3">
-							<div class="motsanpham card">
-								<div class="card-body">
-									<a href="#"><img src="image20/sp4.jpg" alt=""></a>
-									<h6 class="card-title">Mặt đá rồng OBSIBIAN</h6>
-									<div class="chieucao">
-										<div class="day">
-											<p class="giatien">210000đ- 370000đ</p>
-											<hr><div class="canh ">
-												<div class="d-none d-md-block">
-													<div class="khoinut">
-														<button><i class="fas fa-minus"></i></button>
-														<input type="text" class="form-control" value="0">
-														<button><i class="fas fa-plus"></i></button>
-													</div>
-												</div>
-												<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="sp col-6 col-md-4 col-lg-3">
-							<div class="motsanpham card">
-								<div class="card-body">
-									<a href="#"><img src="image20/sp5.jpg" alt=""></a>
-									<h6 class="card-title">Đĩa cá chép phong thủy đá SERPENTINE</h6>
-									<div class="chieucao">
-										<div class="day">
-											<p class="giatien">210000đ- 370000đ</p>
-											<hr><div class="canh ">
-												<div class="d-none d-md-block">
-													<div class="khoinut">
-														<button><i class="fas fa-minus"></i></button>
-														<input type="text" class="form-control" value="0">
-														<button><i class="fas fa-plus"></i></button>
-													</div>
-												</div>
-												<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="sp col-6 col-md-4 col-lg-3">
-							<div class="motsanpham card">
-								<div class="card-body">
-									<a href="#"><img src="image20/sp6.jpg" alt=""></a>
-									<h6 class="card-title">Vòng đá JADEITE</h6>
-									<div class="chieucao">
-										<div class="day">
-											<p class="giatien">210000đ- 370000đ</p>
-											<hr><div class="canh ">
-												<div class="d-none d-md-block">
-													<div class="khoinut">
-														<button><i class="fas fa-minus"></i></button>
-														<input type="text" class="form-control" value="0">
-														<button><i class="fas fa-plus"></i></button>
-													</div>
-												</div>
-												<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="sp col-6 col-md-4 col-lg-3">
-							<div class="motsanpham card">
-								<div class="card-body">
-									<a href="#"><img src="image20/sp7.jpg" alt=""></a>
-									<h6 class="card-title">Tỳ hưu SERPENTINE xanh đen</h6>
-									<div class="chieucao">
-										<div class="day">
-											<p class="giatien">210000đ- 370000đ</p>
-											<hr><div class="canh ">
-												<div class="d-none d-md-block">
-													<div class="khoinut">
-														<button><i class="fas fa-minus"></i></button>
-														<input type="text" class="form-control" value="0">
-														<button><i class="fas fa-plus"></i></button>
-													</div>
-												</div>
-												<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="sp col-6 col-md-4 col-lg-3">
-							<div class="motsanpham card">
-								<div class="card-body">
-									<a href="#"><img src="image20/sp8.jpg" alt=""></a>
-									<h6 class="card-title">Đá hồ ly ngọc bích</h6>
-									<div class="chieucao">
-										<div class="day">
-											<p class="giatien">210000đ- 370000đ</p>
-											<hr><div class="canh ">
-												<div class="d-none d-md-block">
-													<div class="khoinut">
-														<button><i class="fas fa-minus"></i></button>
-														<input type="text" class="form-control" value="0">
-														<button><i class="fas fa-plus"></i></button>
-													</div>
-												</div>
-												<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
+				<div class="col-12">
+					<iframe style="width: 100%,;"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3617933528762!2d105.8494733142451!3d21.018204993515987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8d45337477%3A0xed7fa93ff92089b2!2zNDkgSHXhur8sIELDuWkgVGjhu4sgWHXDom4sIEhhaSBCw6AgVHLGsG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1560935882491!5m2!1svi!2s"
+						height="400" width="100%" frameborder="0" style="border:0"></iframe>
 				</div>
 			</div>
 		</div>
 	</div>
-	
 	<div class="footer" style="background-image: url(image20/anh7.jpg);">
 		<div class="nenden">
 			<div class="container" class="mt-5">
@@ -544,6 +344,6 @@
 	</div>
 	<!-- ===================================================== -->
 	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/1.js"></script>
+	<script type="text/javascript" src="js/1_lienhe.js"></script>
 </body>
 </html>
