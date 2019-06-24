@@ -86,19 +86,23 @@ var items = document.querySelectorAll('.item1');
 
 items.forEach(function(item, idx) {
 	item.addEventListener('click', e => {
-		e.preventDefault();
-		for (var i = 0; i < items.length; i++) {
-			items[i].classList.remove('active');
-		}
-		e.target.classList.add('active');
-		var itemu = document.querySelectorAll('.abc');
-		for (var i = 0; i < itemu.length; i++) {
-			itemu[i].style.display = 'none';
-		}
+		var href = item.getAttribute('href');
+		if (href == '#') {
+			for (var i = 0; i < items.length; i++) {
+				items[i].classList.remove('active');
+			}
+			e.target.classList.add('active');
+			var itemu = document.querySelectorAll('.abc');
+			for (var i = 0; i < itemu.length; i++) {
+				itemu[i].style.display = 'none';
+			}
 
-		if (e.target.nextElementSibling != null) {
-			e.target.nextElementSibling.style.display = 'block';
-		}
+			if (e.target.nextElementSibling != null) {
+				e.target.nextElementSibling.style.display = 'block';
+			}
+		} else {
+			window.open(href, '_parent');
+		}	
 	})
 })
 var itemu2 = document.querySelectorAll('.item2');
