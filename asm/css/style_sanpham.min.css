@@ -18,63 +18,26 @@
   font-family: Nunito-b;
 }
 
-.slide {
-  margin-top: 75px;
+.cachtop {
+  margin-top: 60px;
 }
 
-.slide .khoislide {
+.cachtop .container {
   background-color: #fff;
 }
 
-.boslide.col-12 {
-  padding-top: 15px;
-}
-
-.carousel-cell {
-  width: 100%;
-}
-
-.carousel-cell div img {
-  width: 100% !important;
-}
-
-.flickity-prev-next-button.next {
-  right: -100px;
-}
-
-.flickity-prev-next-button.previous {
-  left: -100px;
-}
-
-.chitiet {
+.luachonsp > .container {
   background-color: #fff;
-  padding-top: 15px;
 }
 
-.chitiet .khoichitiet {
-  position: relative;
-  margin-bottom: 5px;
-  display: block;
+.sp {
+  padding-bottom: 30px;
 }
 
-.chitiet img {
-  width: 100%;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.chitiet .khoichitiet p {
-  position: absolute;
-  text-transform: uppercase;
+#thongbao {
   font-family: Nunito-b;
-  color: #fff;
-  z-index: 2;
-  width: 100%;
-  padding: 5px 0;
-  background-color: rgba(109, 84, 157, 0.7);
-  text-align: center;
-  bottom: 15px;
-  margin: 0;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .sp img {
@@ -97,7 +60,6 @@
 
 .sp {
   position: relative;
-  margin-bottom: 30px;
 }
 
 .sp .chieucao {
@@ -213,7 +175,43 @@
   width: 80px;
 }
 
+.khoitimkiem {
+  padding: 15px;
+  -webkit-box-shadow: -1rem 0 3rem rgba(19, 19, 19, 0.125);
+          box-shadow: -1rem 0 3rem rgba(19, 19, 19, 0.125);
+}
+
+.khoitimkiem {
+  color: #333;
+}
+
+.khoitimkiem h4 {
+  font-family: kimberley;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.khoitimkiem h4 i {
+  font-size: 25px;
+}
+
+.khoitimkiem ul li a {
+  display: block;
+  color: #333;
+  font-family: Nunito-r;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.khoitimkiem ul li a.chon {
+  background-color: rgba(109, 84, 157, 0.3);
+}
+
 @media screen and (min-width: 768px) {
+  .cachtop {
+    margin-top: 140px;
+  }
   .sp .chieucao {
     height: 127px;
   }
@@ -252,71 +250,42 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .flickity-prev-next-button.next {
-    right: 10px;
+  .khoitimkiem h4 {
+    font-size: 30px;
   }
-  .flickity-prev-next-button.previous {
-    left: 10px;
+  .khoitimkiem h4 i {
+    font-size: 30px;
   }
-  .flickity-button {
-    background: transparent;
-    color: #fff;
+  .khoitimkiem ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .flickity-button:hover {
-    color: #6d549d;
+  .khoitimkiem ul li {
+    padding: 5px 10px;
   }
-  .liontext h5 {
-    font-size: 25px;
+  .khoitimkiem ul li a {
+    font-size: 18px;
+    padding: 0;
+    border-bottom: 1px solid transparent;
   }
-  .slide {
-    margin-top: 140px;
+  .khoitimkiem ul li a.chon {
+    background-color: transparent;
+    border-bottom: 1px solid #6d549d;
+  }
+  #thongbao {
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .slide .khoislide {
-    background-color: transparent;
-  }
-  .liontext {
-    margin: 0 0 20px 0;
-  }
-  .liontext h5 {
-    font-size: 30px;
-  }
-  .boslide {
-    padding-left: 0;
-  }
-  .chitiet .khoichitiet {
-    overflow: hidden;
-  }
-  .chitiet .khoichitiet p {
-    -webkit-transition: bottom .2s;
-    transition: bottom .2s;
-  }
-  .chitiet .khoichitiet:hover p {
-    bottom: 0;
-  }
-  .khoinut button {
-    outline: none;
-  }
-  .khoinut button:hover {
-    background-color: rgba(51, 51, 51, 0.8);
-  }
-  .sp .canh button.cartpro:hover i {
-    background-color: rgba(109, 84, 157, 0.7);
-  }
-  .sp .canh button.cartpro:hover i {
-    background-color: rgba(109, 84, 157, 0.7);
-  }
-  .bacd {
-    background-color: #131313;
-  }
-  h5.tieude {
-    margin: 35px 0;
-    font-size: 30px;
-  }
-  .slide {
-    margin-top: 75px;
+  .cachtop {
+    margin-top: 60px;
   }
   .sp .chieucao {
     height: 135px;
@@ -350,5 +319,27 @@
   .sp .khoinut input {
     width: 60px;
   }
+  .khoitimkiem h4 {
+    font-size: 32px;
+  }
+  .khoitimkiem h4 i {
+    font-size: 32px;
+  }
+  .khoitimkiem ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .khoitimkiem ul li a {
+    font-family: Nunito-b;
+    font-size: 20px;
+  }
+  .khoitimkiem ul li a:hover {
+    border-bottom: 1px solid #6d549d;
+  }
+  #thongbao {
+    font-size: 25px;
+  }
 }
-/*# sourceMappingURL=style_index.min.css.map */
+/*# sourceMappingURL=style_sanpham.min.css.map */

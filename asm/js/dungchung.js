@@ -49,6 +49,7 @@ nenden.addEventListener('click', e => {
 var nutlentren = document.querySelector('.nutlentren a');
 var header = document.getElementById('top');
 var trangthai = 1;
+var body = document.body.offsetWidth;
 var logo = document.getElementById('logo');
 var src = logo.getAttribute('src');
 window.addEventListener('scroll', function() {
@@ -57,7 +58,6 @@ window.addEventListener('scroll', function() {
 				nutlentren.style.display = 'block';
 				header.classList.add('cuon');
 				trangthai = 2;
-				var body = document.body.offsetWidth;
 				if (body > 992) {
 					// logo.setAttribute('src','image20/logo8.png');
 					nav.classList.add('lentren');
@@ -87,7 +87,7 @@ var items = document.querySelectorAll('.item1');
 items.forEach(function(item, idx) {
 	item.addEventListener('click', e => {
 		var href = item.getAttribute('href');
-		if (href == '#') {
+		if (href == '#' || (href == 'sanpham.html' && body < 768)) {
 			for (var i = 0; i < items.length; i++) {
 				items[i].classList.remove('active');
 			}
@@ -101,7 +101,7 @@ items.forEach(function(item, idx) {
 				e.target.nextElementSibling.style.display = 'block';
 			}
 		} else {
-			window.open(href,'_parent');
+				window.open(href, '_parent');
 		}	
 	})
 })

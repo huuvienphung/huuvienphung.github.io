@@ -43,25 +43,6 @@
   font-family: Nunito-r;
 }
 
-.form-control {
-  border: 1px solid rgba(109, 84, 157, 0.25);
-}
-
-.form-control:focus {
-  color: #6d549d;
-  background-color: #fff;
-  border-color: #6d549d;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(109, 84, 157, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(109, 84, 157, 0.25);
-}
-
-button.btn-primary {
-  border-color: #6d549d;
-  background-color: #6d549d;
-  font-family: Nunito-b;
-  text-transform: uppercase;
-}
-
 @media screen and (min-width: 768px) {
   .phanmota {
     margin-top: 140px;
@@ -86,10 +67,6 @@ button.btn-primary {
   }
   .phanmota {
     margin-top: 80px;
-  }
-  button.btn-primary:hover {
-    border-color: #6d549d;
-    background-color: rgba(109, 84, 157, 0.9);
   }
 }
 /*# sourceMappingURL=style_lienhe.min.css.map */

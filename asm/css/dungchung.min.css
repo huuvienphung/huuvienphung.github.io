@@ -810,6 +810,25 @@ h5.tieude span:after {
   opacity: .5;
 }
 
+.form-control {
+  border: 1px solid rgba(109, 84, 157, 0.25);
+}
+
+.form-control:focus {
+  color: #333;
+  background-color: #fff;
+  border-color: #6d549d;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(109, 84, 157, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(109, 84, 157, 0.25);
+}
+
+button.btn-primary {
+  border-color: #6d549d;
+  background-color: #6d549d;
+  font-family: Nunito-b;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   .top .search {
     -webkit-transform: translateX(0);
@@ -1236,6 +1255,10 @@ h5.tieude span:after {
   }
   .liontext h5, h5.tieude {
     font-size: 30px;
+  }
+  button.btn-primary:hover {
+    border-color: #6d549d;
+    background-color: rgba(109, 84, 157, 0.9);
   }
 }
 /*# sourceMappingURL=dungchung.min.css.map */

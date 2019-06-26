@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>js</title>
+	<title>san pham</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="icon/css/all.min.css">
 	<link rel="stylesheet" href="css/flickity.css" media="screen">
 	<link rel="stylesheet" href="css/dungchung.min.css">
@@ -85,7 +84,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="top" id="top">
 		<div class="container">
 			<div class="row">
@@ -231,10 +230,337 @@
 	<div class="cachtop">
 		<div class="container">
 			<div class="row">
-
+				<div class="col-12 my-3">
+					<div class="khoitimkiem">
+						<h4><i class="fas fa-caret-right"></i><span><span id="thaydoi">Đá phong thủy </span><span id="menh"></span></span></h4>
+						<form action="">
+							<div class="form-row">
+								<div class="form-group col-md-6 offset-lg-4 col-lg-4">
+									<input type="search" class="form-control" id="tk" placeholder="Nhập tên sản phẩm">
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<select class="form-control" id="luachon">
+										<option>Lựa chọn theo mệnh</option>
+										<option>Kim</option>
+										<option>Mộc</option>
+										<option>Thủy</option>
+										<option>Hỏa</option>
+										<option>Thổ</option>
+									</select>
+								</div>
+							</div>
+						</form>
+						<ul>
+							<li><a data-chon="khong" class="choosen chon" href="#">Tất cả</a></li>
+							<li><a data-chon="mot" class="choosen" href="#">Vòng tay phong thủy</a></li>
+							<li><a data-chon="hai" class="choosen" href="#">Đá hồ ly</a></li>
+							<li><a data-chon="ba" class="choosen" href="#">Tỳ hưu phong thủy</a></li>
+							<li><a data-chon="bon" class="choosen" href="#">Phật bản mệnh</a></li>
+							<li><a data-chon="nam" class="choosen" href="#">Tranh phong thủy</a></li>
+							<li><a data-chon="sau" class="choosen" href="#">Mặt đá quý</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 text-center">
+					<h3 id="thongbao"></h3>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="luachonsp">
+		<div class="container">
+			<div class="khoisp row">
+				<div class="sp col-6 col-md-4 col-lg-3 mot">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp1.jpeg" alt=""></a>
+							<h6 class="card-title">Vòng tay đá mắt hổ xanh</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 mot">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp2.jpg" alt=""></a>
+							<h6 class="card-title">Vòng tay đá thạch anh tím mix lưu linh</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 mot">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp3.jpg" alt=""></a>
+							<h6 class="card-title">Vòng tay gỗ thủy tùng charm tỳ hưu vàng</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 sau">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp4.jpg" alt=""></a>
+							<h6 class="card-title">Mặt đá rồng OBSIBIAN</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 sau">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp5.jpg" alt=""></a>
+							<h6 class="card-title">Đĩa cá chép phong thủy đá SERPENTINE</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 sau">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp6.jpg" alt=""></a>
+							<h6 class="card-title">Vòng đá JADEITE</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 bon">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp7.jpg" alt=""></a>
+							<h6 class="card-title">Tỳ hưu SERPENTINE xanh đen</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 hai">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp8.jpg" alt=""></a>
+							<h6 class="card-title">Đá hồ ly ngọc bích</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 hai">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp8.jpg" alt=""></a>
+							<h6 class="card-title">Đá hồ ly ngọc bích</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 hai">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp8.jpg" alt=""></a>
+							<h6 class="card-title">Đá hồ ly ngọc bích</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 hai">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp8.jpg" alt=""></a>
+							<h6 class="card-title">Đá hồ ly ngọc bích</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp col-6 col-md-4 col-lg-3 hai">
+					<div class="motsanpham card">
+						<div class="card-body">
+							<a href="#"><img src="image20/sp8.jpg" alt=""></a>
+							<h6 class="card-title">Đá hồ ly ngọc bích</h6>
+							<div class="chieucao">
+								<div class="day">
+									<p class="giatien">210000đ- 370000đ</p>
+									<hr>
+									<div class="canh ">
+										<div class="d-none d-md-block">
+											<div class="khoinut">
+												<button><i class="fas fa-minus"></i></button>
+												<input type="text" class="form-control" value="0">
+												<button><i class="fas fa-plus"></i></button>
+											</div>
+										</div>
+										<button class="cartpro"><i class="fas fa-cart-arrow-down"></i> Giỏ hàng</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	
 	<div class="footer" style="background-image: url(image20/anh7.jpg);">
 		<div class="nenden">
 			<div class="container" class="mt-5">
@@ -270,6 +596,7 @@
 			</div>
 			<div class="cuoicung text-center"><p>Bản quyền <i class="fas fa-copyright"></i> thuộc về công ty TM & chế tác đá quý Ngọc Thạch Co, Ltd</p></div>
 		</div>
+		</div>
 	</div>
 	<div class="nutlentren">
 		<div class="container-fluid">
@@ -277,7 +604,7 @@
 		</div>
 	</div>
 	<!-- ===================================================== -->
-	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/dungchung.js"></script>
+	<script type="text/javascript" src="js/sanpham.js"></script>
 </body>
 </html>
