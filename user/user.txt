@@ -1,7 +1,4 @@
-﻿huuvienphung
-123456Time@ // cái này là mật khẩu đăng nhập
-
-b32_24130200_phptintuc // database
+﻿
 
 
 
@@ -10,20 +7,23 @@ Your Account Details
 Your account is now active.
 Main Hosting Details
 Control panel username
-b32_24130200
+b7_24131450
 Control panel password	**********
 Control panel URL
-cpanel.byethost32.com // cái này dùng để link đến đăng nhập
-MySQL username: b32_24130200 // cái này là user đăng nhập
-MySQL password: 123456Time@
-MySQL hostname:  sql205.byethost32.com
+cpanel.byethost7.com
+MySQL username
+b7_24131450
+MySQL password
+**********
+MySQL hostname
+sql209.byethost7.com
 FTP username
-b32_24130200
+b7_24131450
 FTP password
 **********
-FTP host name	ftp.byethost32.com
-https://www.youtube.com/watch?v=2A96nJ766-Q
+FTP host name	ftp.byethost7.com
+
 
 Your Website URL's
 Home page
-http://huuvienphung.byethost32.com
+http://vienvv27.byethost7.com
