@@ -14,7 +14,7 @@ cpanel.byethost7.com
 MySQL username
 b7_24131450
 MySQL password
-**********
+123456Time@
 MySQL hostname
 sql209.byethost7.com
 FTP username
