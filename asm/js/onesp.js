@@ -38,3 +38,21 @@ function mouse(e) {
     }
 }
 
+var as = document.querySelectorAll('.size a');
+var khoinut = document.querySelectorAll('.khoinut a');
+
+function click(phantus, lop) {
+    phantus.forEach(function (phantu) {
+        phantu.addEventListener('click', e => {
+            e.preventDefault();
+            for (let i = 0; i < phantus.length; i++) {
+                phantus[i].classList.remove(lop);
+            }
+            e.target.classList.add(lop);
+        })
+    })
+}
+click(as, 'si');
+click(khoinut, 'tt');
+
+
