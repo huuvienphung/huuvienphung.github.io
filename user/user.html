@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tài liệu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="">
+	<style>
+		*{margin: 0;}
+		body{
+			font-family: segoe ui;
+		}
+		#khoi .col-12{margin-bottom: 30px;}
+		form{box-shadow: -1rem 0 3rem rgba(0,0,0,.3);padding: 15px;border-radius: 10px;}
+		ul li.con{list-style: none; padding: 15px;width: 100%}
+		ul{padding: 0}
+		@media screen and (min-width: 768px){ul li.con{width: 33.33%}}
+		@media screen and (min-width: 992px){ul li.con{width: 25%}}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-6 offset-lg-3">
+				<hr>
+				<form>
+					<div class="form-group">
+						<label for="search">Tìm kiếm tiêu đề</label>
+						<input type="search" class="form-control" id="search" placeholder="tìm kiếm">
+					</div>
+				</form>
+				<hr>
+			</div>
+		</div>
+		<!-- ======================================================== -->
+		<div class="row">
+			<div class="col-12">
+				<ul id="khoi" style="display: flex;flex-wrap: wrap;">
+					<li class="con">
+						<ul class="list-group">
+							<li class="list-group-item text-center list-group-item-info"><strong>Udemy</strong></li>
+							<li class="list-group-item"><a href="https://ftuforum.com/">https://ftuforum.com/</a> -> link tải .torrent</li>
+							<li class="list-group-item"><a href="https://www.youtube.com/watch?v=Sv1CfgUk1D4">link youtube</a> -> setup utorrent như video</li>
+						</ul>
+					</li>
+					
+					<!-- ============================== -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script>
+		var iso = new Isotope( '#khoi', {
+		  itemSelector: '.con',
+		  layoutMode: 'masonry'
+		});
+
+		var form = document.getElementById('search');
+
+		form.addEventListener('keyup', e => {
+		var elem = document.querySelector('#khoi');
+
+			var key = e.target.value.toUpperCase();
+
+			var lis = elem.querySelectorAll('.con');
+			lis.forEach(function(li) {
+				if (key == '') {
+					li.style.display = 'block';
+					li.style.visibilty = 'visible';
+					li.style.position = 'absolute';
+				} else {
+					var strong = li.firstElementChild.firstElementChild.firstElementChild;
+
+					if (strong.innerHTML.toUpperCase().indexOf(key) > -1) {
+						li.style.display = 'block';
+						li.style.visibilty = 'visible';
+						li.style.position = 'static';
+					} else {
+						li.style.display = 'none';
+						li.style.visibilty = 'hidden';
+						li.style.position = 'absolute';
+					}
+				}
+				
+			});
+		})
+	</script>
+</body>
+</html>
