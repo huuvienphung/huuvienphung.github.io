@@ -35,6 +35,13 @@ function addItem(e) {
 
     khoiul.insertBefore(li, khoiul.childNodes[0]);
 
+    let ul = document.querySelector('.nhanxet ul');
+
+    if (ul.children.length != 0) {
+        var h3 = ul.getElementsByTagName('h3')[0];
+        h3.remove();
+    }
+
 };
 
 
@@ -175,7 +182,7 @@ document.body.addEventListener('click', e => {
         if (confirm('Bạn chắc muốn xóa')) {
             e.target.parentElement.remove();
 
-            var ul = document.querySelector('.nhanxet ul');
+            let ul = document.querySelector('.nhanxet ul');
 
             if (ul.children.length == 0) {
                 ul.innerHTML = none;
