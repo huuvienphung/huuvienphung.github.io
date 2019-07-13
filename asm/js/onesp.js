@@ -40,19 +40,36 @@ function mouse(e) {
 
 var as = document.querySelectorAll('.size a');
 var khoinut = document.querySelectorAll('.khoinut a');
+var khoind = document.querySelectorAll('.khoind');
 
-function click(phantus, lop) {
-    phantus.forEach(function (phantu) {
+
+function noidung(noidung, lop, namelop, vitri) {
+    if (lop == namelop) {
+
+        for (let i = 0; i < khoind.length; i++) {
+            noidung[i].style.display = 'none';
+        }
+        noidung[vitri].style.display = 'block';
+    }
+}
+
+function click(phantus, lop, khoind) {
+    phantus.forEach(function (phantu, vitri) {
         phantu.addEventListener('click', e => {
             e.preventDefault();
+            
             for (let i = 0; i < phantus.length; i++) {
                 phantus[i].classList.remove(lop);
             }
             e.target.classList.add(lop);
+
+            noidung(khoind, lop, 'tt', vitri);
+            
         })
     })
 }
-click(as, 'si');
-click(khoinut, 'tt');
+
+click(as, 'si', null); // chọn phần kích cỡ
+click(khoinut, 'tt', khoind); // chọn phần nội dung đặc điểm/ đánh giá
 
 

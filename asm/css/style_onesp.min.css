@@ -249,6 +249,27 @@ ul.size li a.si {
   color: #fff;
 }
 
+.khoind p {
+  font-family: Nunito-r;
+  text-indent: 25px;
+}
+
+th {
+  font-family: Nunito-r;
+}
+
+td {
+  font-family: Nunito-r;
+}
+
+.khoinoidung .khoind {
+  display: none;
+}
+
+.khoinoidung .khoind:nth-child(1) {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .cachtop > .container {
     margin-top: 140px;
