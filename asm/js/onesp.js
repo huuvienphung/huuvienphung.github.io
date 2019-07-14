@@ -1,4 +1,5 @@
 var add = document.getElementById('addItem');
+var alert = document.getElementById('thongbao');
 
 
 add.addEventListener('click', addItem);
@@ -10,14 +11,22 @@ function addItem(e) {
     var star_nd = document.getElementById('inputStar').value;
     var body_nd = document.getElementById('inputBody').value;
 
-    document.getElementById('inputName').value = '';
-    document.getElementById('inputStar').value = '';
-    document.getElementById('inputBody').value = '';
+    if (name_nd == '' || star_nd == '' || body_nd == '') {
+        alert.style.display = 'block';
+        alert.innerHTML = '<h5 class=" alert alert-danger">Sao chưa nhập đầy đủ đã gửi</h5>';
+        setTimeout(() => {
+            alert.style.display = 'none';
+        }, 2000);
+        
+    } else {
+        document.getElementById('inputName').value = '';
+        document.getElementById('inputStar').value = '';
+        document.getElementById('inputBody').value = '';
 
-    var percent = (star_nd / 5) * 100;
+        var percent = (star_nd / 5) * 100;
 
-    var output ='';
-    output = `
+        var output = '';
+        output = `
             <button class="delete btn btn-danger float-right">X</button>
             <h5 class="na_me">${name_nd}</h5>
             <div class="khoisao">
@@ -30,17 +39,22 @@ function addItem(e) {
             </div>
             <div class="body">${body_nd}</div>
     `;
-    var li = document.createElement('li');
-    li.innerHTML = output;
+        var li = document.createElement('li');
+        li.innerHTML = output;
 
-    khoiul.insertBefore(li, khoiul.childNodes[0]);
+        let ul = document.querySelector('.nhanxet ul');
 
-    let ul = document.querySelector('.nhanxet ul');
+        khoiul.insertBefore(li, khoiul.childNodes[0]);
 
-    if (ul.children.length != 0) {
         var h3 = ul.getElementsByTagName('h3')[0];
-        h3.remove();
+
+        if (ul.children.length != 0 && h3 != null) {
+
+
+            h3.remove();
+        }
     }
+    
 
 };
 
