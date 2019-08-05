@@ -16,8 +16,15 @@
 		form{box-shadow: -1rem 0 3rem rgba(0,0,0,.3);padding: 15px;border-radius: 10px;}
 		ul li.con{list-style: none; padding: 15px;width: 100%}
 		ul{padding: 0}
-		@media screen and (min-width: 768px){ul li.con{width: 33.33%}}
-		@media screen and (min-width: 992px){ul li.con{width: 25%}}
+		ul li.con2 img{width: 100%}
+		@media screen and (min-width: 768px){
+			ul li.con{width: 33.33%}
+			ul li.con2{width: 66.66%}
+		}
+		@media screen and (min-width: 992px){
+			ul li.con{width: 25%}
+			ul li.con2{width: 50%}
+		}
 	</style>
 </head>
 <body>
@@ -51,7 +58,50 @@
 							<li class="list-group-item"><a href="https://drive.google.com/drive/folders/0B0vWsbgxzDLEX3FrZ3BSVGQ1cFU">Click vào đây</a> -> link tải adobe</li>
 						</ul>
 					</li>
-					
+					<li class="con con2">
+						<ul class="list-group">
+							<li class="list-group-item text-center list-group-item-info"><strong>VS Code</strong></li>
+							<li class="list-group-item"><img src="images/vs1.png" alt=""></li>
+						</ul>
+					</li>
+					<li class="con con2">
+						<ul class="list-group">
+							<li class="list-group-item text-center list-group-item-info"><strong>VS Code</strong></li>
+							<li class="list-group-item"><img src="images/vs2.png" alt=""></li>
+							<li class="list-group-item">
+								{
+									"editor.fontSize": 17,
+									"editor.mouseWheelZoom": true,
+									"editor.autoIndent": true,
+									"liveSassCompile.settings.formats" : [
+									{
+										// "format":"compressed",
+										"extensionName": ".min.css",
+										"savePath": "/css"
+									}
+									],
+									"liveSassCompile.settings.generateMap": false,
+									"css.remoteStyleSheets": [
+									"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+									],
+									"editor.formatOnPaste": true,
+									"editor.multiCursorModifier": "ctrlCmd",
+									"editor.snippetSuggestions": "top",
+									"workbench.colorTheme": "Monokai",
+									"window.zoomLevel": 0,
+									"workbench.sideBar.location": "left",
+									"workbench.activityBar.visible": true,
+									"emmet.showSuggestionsAsSnippets": true,
+									"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+									"explorer.confirmDelete": false,
+									"liveServer.settings.donotShowInfoMsg": true
+									// "files.associations": {
+									//     "*.ejs": "html"
+									// }
+								}
+							</li>
+						</ul>
+					</li>
 					<!-- ============================== -->
 				</ul>
 			</div>
