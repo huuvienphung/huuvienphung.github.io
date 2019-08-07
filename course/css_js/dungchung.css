@@ -8,6 +8,7 @@ ul{
     	ul li{
     		list-style: none;
 			width: 50%;
+            margin-bottom: 15px
     	}
     	.card{
     		height: 100%;
@@ -49,9 +50,12 @@ ul{
         }
     	@media screen and (min-width: 768px){
     		ul li{
-				width: 33.33%
-				margin: 15px
+				width: 33.33%;
+                margin-bottom: 20px
 	    	}
+            li > .card{
+                margin: 10px
+            }
 	    	.noidung{padding: 50px 0}
             .logo{
                 width: 80px;
