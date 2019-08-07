@@ -7,7 +7,7 @@ const form = document.querySelector('.form-control')
 buttons.forEach(function(button) {
 	button.addEventListener('click', (e) => {
 		e.target.parentElement.previousElementSibling.classList.add('xuathien');
-
+		document.body.style.overflow = 'hidden';
 		e.preventDefault();
 	})
 })
@@ -15,6 +15,7 @@ noidungs.forEach(function(noidung) {
 	noidung.addEventListener('click', (e) => {
 		if (e.target.classList.contains('noidung')) {
 			e.target.classList.remove('xuathien');
+			document.body.style.overflow = 'auto';
 		}
 	})
 })
