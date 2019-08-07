@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?fbclid=IwAR2SujHCDJKJjOQ_yFH3q8yZmeCQzmMxZTVzctCQZiZ8wGHdEnnNN7XVkZ8">
+    <title>Indesign</title>
+    <style>
+    	ul{
+    		padding: 0;
+    		width: 100%;
+    		display: flex;
+    		flex-wrap: wrap;
+    	}
+    	ul li{
+    		list-style: none;
+			width: 50%;
+    	}
+    	.card{
+    		height: 100%;
+    		margin: 7.5px
+    	}
+    	.khung{
+    		padding: 15px;
+    		box-shadow: 0 0 15px rgba(0,0,0,.3);
+    		border-radius: 20px
+    	}
+    	.noidung{
+    		position: fixed;
+    		left: 0;
+    		top: 0;
+    		width: 100%;
+    		height: 100%;
+    		background-color: rgba(0,0,0,.1);
+    		transition: transform .3s;
+    		transform: scale(0.5);
+    		visibility: hidden;
+    		overflow-x: hidden;
+    		opacity: 0;
+    		padding: 50px 0;
+    		z-index: 100
+    	}
+    	.noidung.xuathien{
+    		transform: scale(1);
+    		visibility: visible;
+    		opacity: 1;
+    	}
+    	@media screen and (min-width: 768px){
+    		ul li{
+				width: 33.33%
+				margin: 15px
+	    	}
+	    	.noidung{padding: 0}
+    	}
+    	@media screen and (min-width: 992px){
+    		ul li{
+			width: 25%
+    	}
+    	}
+    </style>
+</head>
+<body>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+				<div class="khung">
+					<form action="">
+						<input type="search" class="form-control" name="" id="" placeholder="nhập nội dung muốn tìm vào đây">
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="container khoito">
+		<ul>
+			<li>
+				<div class="card">
+					<h5 class="card-header">Featured</h5>
+					<div class="card-body">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="noidung">
+						<div class="container">
+							<div class="card khoi2">
+								<div class="card-body">
+									<h5 class="card-title">Special title treatment</h5>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. At accusantium molestiae rerum laboriosam atque adipisci mollitia ex voluptate quo quia soluta, dolorem eos ea distinctio debitis temporibus quod quaerat maxime error! Maxime qui magnam ipsam distinctio! Doloribus dolorem, ex doloremque tempore atque odio cum perferendis hic sunt nulla aut sit, totam quod nostrum labore consectetur. Voluptatum quod omnis incidunt aperiam provident iusto ducimus exercitationem nisi quidem facere, fugiat tempora magnam sit, assumenda quasi autem minus blanditiis expedita iure! Soluta enim quidem nostrum amet quisquam laborum nobis deserunt molestiae velit quod earum aliquam accusamus odio adipisci cum iure quae sapiente aliquid, id quaerat officia aperiam similique. Explicabo eum aut magnam odio nostrum reprehenderit adipisci dignissimos ut placeat, cum architecto, possimus, perspiciatis eos temporibus natus quia deleniti ab numquam, sunt illum. Minus, itaque commodi quidem, quibusdam blanditiis, a neque molestiae eaque est, adipisci unde facilis nesciunt odio officiis enim? Sit laboriosam reiciendis culpa alias voluptatem veniam commodi quos aliquid id eligendi odio eaque repellendus iure corrupti modi molestiae magni, iusto ut, quis aliquam! Quod, possimus unde autem, voluptatem eaque atque vitae commodi quis molestias distinctio adipisci magnam iure consequatur expedita aliquid provident dolore molestiae nostrum vero, enim repellat mollitia? Exercitationem, vel ex molestias quaerat? Eaque aspernatur distinctio rem accusantium fugit, assumenda dolore consequuntur ea, hic enim cupiditate similique, repellat illum delectus dolores libero aliquam placeat laboriosam ipsum. Nemo ipsum odio, hic corporis. Quaerat vel rerum officia adipisci, corporis obcaecati atque odio, ducimus recusandae reprehenderit eius repudiandae? Sequi quidem, ex illo dolore eveniet, ullam unde voluptas voluptatibus, incidunt, non error ut soluta. Magni temporibus ducimus, id! Autem dolorum itaque similique repellendus cupiditate iste ratione explicabo. Provident quasi, laborum facilis nulla, asperi</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-muted">
+						<a href="#" class="btn btn-dark nut">Xem thêm</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="card">
+					<h5 class="card-header">Featured</h5>
+					<div class="card-body">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="noidung">
+						<div class="container">
+							<div class="card khoi2">
+								<div class="card-body">
+									<h5 class="card-title">Special title treatment</h5>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. At accusantium molestiae rerum laboriosam atque adipisci mollitia ex voluptate quo quia soluta, dolorem eos ea distinctio debitis temporibus quod quaerat maxime error! Maxime qui magnam ipsam distinctio! Doloribus dolorem, ex doloremque tempore atque odio cum perferendis hic sunt nulla aut sit, totam quod nostrum labore consectetur. Voluptatum quod omnis incidunt aperiam provident iusto ducimus exercitationem nisi quidem facere, fugiat tempora magnam sit, assumenda quasi autem minus blanditiis expedita iure! Soluta enim quidem nostrum amet quisquam laborum nobis deserunt molestiae velit quod earum aliquam accusamus odio adipisci cum iure quae sapiente aliquid, id quaerat officia aperiam similique. Explicabo eum aut magnam odio nostrum reprehenderit adipisci dignissimos ut placeat, cum architecto, possimus, perspiciatis eos temporibus natus quia deleniti ab numquam, sunt illum. Minus, itaque commodi quidem, quibusdam blanditiis, a neque molestiae eaque est, adipisci unde facilis nesciunt odio officiis enim? Sit laboriosam reiciendis culpa alias voluptatem veniam commodi quos aliquid id eligendi odio eaque repellendus iure corrupti modi molestiae magni, iusto ut, quis aliquam! Quod, possimus unde autem, voluptatem eaque atque vitae commodi quis molestias distinctio adipisci magnam iure consequatur expedita aliquid provident dolore molestiae nostrum vero, enim repellat mollitia? Exercitationem, vel ex molestias quaerat? Eaque aspernatur distinctio rem accusantium fugit, assumenda dolore consequuntur ea, hic enim cupiditate similique, repellat illum delectus dolores libero aliquam placeat laboriosam ipsum. Nemo ipsum odio, hic corporis. Quaerat vel rerum officia adipisci, corporis obcaecati atque odio, ducimus recusandae reprehenderit eius repudiandae? Sequi quidem, ex illo dolore eveniet, ullam unde voluptas voluptatibus, incidunt, non error ut soluta. Magni temporibus ducimus, id! Autem dolorum itaque similique repellendus cupiditate iste ratione explicabo. Provident quasi, laborum facilis nulla, asperi</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-muted">
+						<a href="#" class="btn btn-dark nut">Xem thêm</a>
+					</div>
+				</div>
+			</li>
+			
+			<!-- ============================================ -->
+		</ul>
+	</div>
+	<script>
+		const buttons = document.querySelectorAll('.nut');
+		const noidungs = document.querySelectorAll('.noidung');
+		console.log(noidungs);
+		buttons.forEach(function(button) {
+			button.addEventListener('click', (e) => {
+				e.target.parentElement.previousElementSibling.classList.add('xuathien');
+
+				e.preventDefault();
+			})
+		})
+		noidungs.forEach(function(noidung) {
+			noidung.addEventListener('click', (e) => {
+				if (e.target.classList.contains('noidung')) {
+					e.target.classList.remove('xuathien');
+				}
+			})
+		})
+	</script>
+</body>
+</html>
