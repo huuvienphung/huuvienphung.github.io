@@ -39,8 +39,8 @@ ul{
     		opacity: 1;
     	}
         .logo{
-            width: 100px;
-            height: 100px;
+            width: 60px;
+            height: 60px;
             overflow: hidden;
             margin: auto;
         }
@@ -52,10 +52,18 @@ ul{
 				width: 33.33%
 				margin: 15px
 	    	}
-	    	.noidung{padding: 0}
+	    	.noidung{padding: 50px 0}
+            .logo{
+                width: 80px;
+                height: 80px;
+            }
     	}
     	@media screen and (min-width: 992px){
     		ul li{
-			width: 25%
-    	}
+			 width: 25%
+    	   }
+           .logo{
+                width: 100px;
+                height: 100px;
+            }
     	}
