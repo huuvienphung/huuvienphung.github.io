@@ -26,7 +26,7 @@ noidungs.forEach(function(noidung) {
 	})
 })
 
-lis = ul.querySelectorAll('li');
+lis = ul.querySelectorAll('li.con');
 
 form.addEventListener('keyup', e => {
 	var text = e.target.value.toUpperCase();
@@ -38,6 +38,31 @@ form.addEventListener('keyup', e => {
 		} else {
 			li.style.display = 'none';
 		}
+	})
+})
+
+const apps = document.querySelectorAll('.app');
+
+apps.forEach(function(app) {
+	const luachons = app.querySelectorAll('.choosen a');
+	const chons = app.querySelectorAll('.appear .chon');
+	
+	for (var i = 1; i < chons.length; i++) {
+		chons[i].style.display = 'none';
+	}
+
+	luachons.forEach(function(luachon, ind) {
+		luachon.addEventListener('click', e => {
+			for (var i = 0; i < chons.length; i++) {
+				luachons[i].classList.remove('active');
+			}
+			e.target.classList.add('active');
+			for (var i = 0; i < chons.length; i++) {
+				chons[i].style.display = 'none';
+			}
+			chons[ind].style.display = 'block';
+			e.preventDefault();
+		})
 	})
 })
 		
