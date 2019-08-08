@@ -48,6 +48,9 @@ li .card{
 .logo img{
     width: 100%
 }
+.card-body img{
+  width: 100%;
+}
 @media screen and (min-width: 768px){
   ul li{
     width: 33.33%;
