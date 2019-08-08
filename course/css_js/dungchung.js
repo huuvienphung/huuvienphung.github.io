@@ -6,7 +6,13 @@ const form = document.querySelector('.form-control')
 
 buttons.forEach(function(button) {
 	button.addEventListener('click', (e) => {
-		e.target.parentElement.previousElementSibling.classList.add('xuathien');
+
+		if(e.target.classList.contains('nut')) {
+			e.target.parentElement.previousElementSibling.classList.add('xuathien');
+		} else {
+			e.target.parentElement.parentElement.previousElementSibling.classList.add('xuathien');
+		}
+		
 		document.body.style.overflow = 'hidden';
 		e.preventDefault();
 	})
