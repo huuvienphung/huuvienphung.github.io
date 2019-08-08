@@ -4,6 +4,8 @@ const noidungs = document.querySelectorAll('.noidung');
 const ul = document.querySelector('ul');
 const form = document.querySelector('.form-control')
 
+
+// click vào hiện ra nội dung
 buttons.forEach(function(button) {
 	button.addEventListener('click', (e) => {
 
@@ -17,6 +19,7 @@ buttons.forEach(function(button) {
 		e.preventDefault();
 	})
 })
+// click vào nền đen
 noidungs.forEach(function(noidung) {
 	noidung.addEventListener('click', (e) => {
 		if (e.target.classList.contains('noidung')) {
@@ -26,6 +29,7 @@ noidungs.forEach(function(noidung) {
 	})
 })
 
+// nhập form
 lis = ul.querySelectorAll('li.con');
 
 form.addEventListener('keyup', e => {
@@ -41,6 +45,8 @@ form.addEventListener('keyup', e => {
 	})
 })
 
+
+// tạo các nút chọn
 const apps = document.querySelectorAll('.app');
 
 apps.forEach(function(app) {
@@ -65,5 +71,30 @@ apps.forEach(function(app) {
 		})
 	})
 })
+
+// ajax
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'css_js/fours.json', true);
+xhr.onload = function() {
+	if(this.status == 200) {
+		var card = JSON.parse(this.responseText);
+
+		var output = '';
+
+		for (var i = 0; i < card.length; i++) {
+			output += `
+			<div class="card">
+				<h5 class="card-header">${card[i].td}</h5>
+				<div class="card-body">
+					<p class="card-text">${card[i].nd}</p>
+				</div>
+			</div>
+		`;
+		}
+		document.getElementById('fours').innerHTML = output;
+		
+	}
+}
+xhr.send();
 		
 	
