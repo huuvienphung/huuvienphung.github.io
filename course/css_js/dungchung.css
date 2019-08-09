@@ -35,7 +35,7 @@ body{
   overflow-x: hidden;
   opacity: 0;
   padding: 50px 0;
-  z-index: 100
+  z-index: 100;
 }
 .noidung.xuathien{
   transform: scale(1);
@@ -87,6 +87,7 @@ figure{
     padding: 1.5rem;
     margin-bottom: 1rem;
 }
+.chon{display: none}
 @media screen and (min-width: 768px){
  #data > ul > li{
     width: 33.33%;
