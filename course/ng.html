@@ -8,7 +8,7 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?fbclid=IwAR2SujHCDJKJjOQ_yFH3q8yZmeCQzmMxZTVzctCQZiZ8wGHdEnnNN7XVkZ8">
-    <title>Audition</title>
+    <title>Angular</title>
    	<link rel="stylesheet" href="css_js/dungchung.css">
 </head>
 <body>
@@ -35,7 +35,7 @@
 					<h5 class="card-header">Tạo Component</h5>
 					<div class="card-body">
 						<h5 class="card-title">014</h5>
-						<p class="card-text">...</p>
+						<p class="card-text">... setup file</p>
 					</div>
 					<div class="card-footer text-muted">
 						<a href="#" class="btn btn-dark nut"><i class="far fa-folder-open"></i> Chi tiết</a>
@@ -44,10 +44,22 @@
 			</li>
 			<li class="con">
 				<div class="card">
-					<h5 class="card-header">Buổi 4</h5>
+					<h5 class="card-header">data</h5>
 					<div class="card-body">
-						<h5 class="card-title">${days[i].tieude}</h5>
-						<p class="card-text">${days[i].noidung}</p>
+						<h5 class="card-title">015</h5>
+						<p class="card-text">Nội quy chuỗi ràng buộc dữ liệu</p>
+					</div>
+					<div class="card-footer text-muted">
+						<a href="#" class="btn btn-dark nut"><i class="far fa-folder-open"></i> Chi tiết</a>
+					</div>
+				</div>
+			</li>
+			<li class="con">
+				<div class="card">
+					<h5 class="card-header">Kiểu dữ liệu</h5>
+					<div class="card-body">
+						<h5 class="card-title">016</h5>
+						<p class="card-text">Thêm các loại thuộc tính</p>
 					</div>
 					<div class="card-footer text-muted">
 						<a href="#" class="btn btn-dark nut"><i class="far fa-folder-open"></i> Chi tiết</a>
@@ -64,39 +76,24 @@
 				<div class="card khoi2">
 					<div class="card-body app">
 						<!-- ========================= -->
-						<h5 class="card-title">Thao tác cơ bản với audition</h5>
+						<h5 class="card-title">Tạo Component</h5>
 						<ul class="choosen">
-							<li><a href="#" class="active">Mở audio</a></li>
-							<li><a href="#">Cắt audio</a></li>
-							<li><a href="#">Tạo & Cài đặt audio</a></li>
+							<li><a href="#" class="active">tạo component</a></li>
+							<li><a href="#">sửa html</a></li>
+							<li><a href="#">sửa module</a></li>
 						</ul>
 						<div class="appear">
 							<div class="chon">
-								<figure class="text">click 2 lần chuột để mở file</figure>
-								<div class="card-text"><img src="audition/3a.png" alt="ảnh minh họa"></div>
+								<figure class="text">tạo mới 1 file</figure>
+								<div class="card-text"><img src="angular/014a.png" alt="ảnh minh họa"></div>
 							</div>
 							<div class="chon">
-								<figure class="text">Để cắt đoạn audio từ 1 đoạn có trước, bôi đen vào vùng chọn sau đó click chuột phải chọn:</figure>
-								<img src="audition/3b.png" alt="ảnh minh họa">
+								<figure class="text">sửa lại file html đặt thêm vào thẻ sandbox</figure>
+								<img src="angular/014b.png" alt="ảnh minh họa">
 							</div>
 							<div class="chon">
-								<figure class="text">Tạo 1 file audio mới:</figure>
-								<img src="audition/3c.png" alt="ảnh minh họa">
-								<figure class="text">
-									<div class="card">
-										<div class="card-header">Set up một file audio mới:</div>
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">Sample Rate: tần suất lấy mẫu(Hz):
-												<p>48.000Hz <br> 44.100Hz -> CD</p>
-											</li>
-											<li class="list-group-item">Channel: số kênh âm thanh
-												<p>Mono -> 1 kênh<br>Stereo -> 2 kênh(bài nhạc) <br>5.1 -> 6 kênh(Film) <br>7.1 -> 8 kênh</p>
-											</li>
-											<li class="list-group-item">Bit depth: <a href="https://adammuzic.vn/bit-depth-la-gi/">link xem chi tiết</a></li>
-										</ul>
-									</div>
-								</figure>
-								<img src="audition/3d.png" alt="ảnh minh họa">
+								<figure class="text">Thêm theo hình:</figure>
+								<img src="angular/014c.png" alt="ảnh minh họa">
 							</div>
 						</div>
 						<!-- ========================= -->
@@ -109,8 +106,45 @@
 				<div class="card khoi2">
 					<div class="card-body app">
 						<!-- =========================== -->
-						<figure class="card-text">click 2 lần chuột để mở file</figure>
-						<img src="audition/3a.png" alt="ảnh minh họa">
+						<h5 class="card-title">Nội quy chuỗi ràng buộc dữ liệu</h5>
+						<ul class="choosen">
+							<li><a href="#" class="active">dữ liệu</a></li>
+							<li><a href="#">constructor</a></li>
+							<li><a href="#">hàm</a></li>
+							<li><a href="#">{{  }}</a></li>
+						</ul>
+						<div class="appear">
+							<div class="chon">
+								<figure class="text">các biến sẽ được dặt trong {{ biến }}, cách viết giống với js</figure>
+								<div class="card-text"><img src="angular/015a.png" alt="ảnh minh họa"></div>
+							</div>
+							<div class="chon">
+								<figure class="text">this.age = 36 (this là sandboxComponet) sẽ làm thay đổi giá trị</figure>
+								<img src="angular/015b.png" alt="ảnh minh họa">
+							</div>
+							<div class="chon">
+								<figure class="text">có thể dùng hàm thay đổi giá trị và gọi lại trong constructor</figure>
+								<img src="angular/015c.png" alt="ảnh minh họa">
+							</div>
+							<div class="chon">
+								<figure class="text">một số cách in data của {{ }}</figure>
+								<img src="angular/015d.png" alt="ảnh minh họa">
+							</div>
+
+						</div>
+						<!-- ========================= -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="noidung">
+			<div class="container">
+				<div class="card khoi2">
+					<div class="card-body app">
+						<!-- =========================== -->
+						<h5 class="card-title">Thêm các loại thuộc tính</h5>
+						<figure class="text">Quy định kiểu dữ liệu cho các biến của nó</figure>
+						<img src="angular/016a.png" alt="ảnh minh họa">
 						<!-- ========================= -->
 					</div>
 				</div>
