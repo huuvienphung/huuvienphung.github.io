@@ -113,7 +113,8 @@ figure{
     width: 100px;
     height: 100px;
 }
-.logo:hover .duoi{opacity: 1}
+.logo .duoi{transition: 1s;}
+.logo:hover .duoi{opacity: 1;z-index: 10;}
 .logo:hover .tren{
   transform-origin: 50% 50%;
   animation: 15s xoay linear infinite;
