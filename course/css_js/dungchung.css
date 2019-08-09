@@ -43,13 +43,22 @@ body{
   opacity: 1;
 }
 .logo{
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    margin: auto;
+  position: relative;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: auto;
 }
 .logo img{
     width: 100%
+}
+.logo .duoi{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
 }
 .card-body img{
   width: 100%;
@@ -103,5 +112,24 @@ figure{
 .logo{
     width: 100px;
     height: 100px;
+}
+.logo:hover .duoi{opacity: 1}
+.logo:hover .tren{
+  transform-origin: 50% 50%;
+  animation: 15s xoay linear infinite;
+}
+@keyframes xoay {
+  0%{
+    transform: translateX(0) rotate(0deg);
+  }
+  25%{
+    transform: translateX(500px) rotate(360deg);
+  }
+  75%{
+    transform: translateX(-500px) rotate(-360deg);
+  }
+  100%{
+    transform: translateX(0px) rotate(0deg);
+  }
 }
 }
