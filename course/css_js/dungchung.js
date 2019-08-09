@@ -56,6 +56,7 @@ apps.forEach(function(app) {
 	luachons.forEach(function (luachon, ind) {
 		luachon.addEventListener('click', e => {
 			
+			
 			for (var i = 0; i < chons.length; i++) {
 				luachons[i].classList.remove('active');
 			}
