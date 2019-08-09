@@ -55,12 +55,12 @@ apps.forEach(function(app) {
 	
 	luachons.forEach(function (luachon, ind) {
 		luachon.addEventListener('click', e => {
-			chons[0].style.display = 'block';
 			
 			for (var i = 0; i < chons.length; i++) {
 				luachons[i].classList.remove('active');
 			}
 			e.target.classList.add('active');
+
 			for (var i = 0; i < chons.length; i++) {
 				chons[i].style.display = 'none';
 			}
