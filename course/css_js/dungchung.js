@@ -39,9 +39,6 @@ form.addEventListener('keyup', e => {
 	})
 })
 
-
-
-
 // tạo các nút chọn
 const apps = document.querySelectorAll('.app');
 
@@ -49,6 +46,10 @@ apps.forEach(function(app) {
 	const luachons = app.querySelectorAll('.choosen a');
 	const chons = app.querySelectorAll('.appear .chon');
 	
+	showData(luachons, chons);
+})
+
+function showData(luachons, chons) {
 	for (var i = 1; i < chons.length; i++) {
 		chons[0].style.display = 'block';
 	}
@@ -70,11 +71,7 @@ apps.forEach(function(app) {
 			e.preventDefault();
 		})
 	})
-	
-	
-})
-
-
+}
 
 
 
