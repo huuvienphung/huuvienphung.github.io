@@ -63,6 +63,11 @@ body{
 .card-body img{
   width: 100%;
 }
+.card-body img.ngoaile{
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
 .choosen{
   display: flex;
   flex-wrap: wrap;
