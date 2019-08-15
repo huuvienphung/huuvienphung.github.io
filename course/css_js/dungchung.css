@@ -2,20 +2,24 @@
 body{
   font-family: segoe ui;
 }
-#data > ul{
+ul#data{
   padding: 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-#data > ul > li{
+ul#data > li{
   list-style: none;
   width: 50%;
   margin-bottom: 15px
 }
-#data > ul > li > .card{
+ul#data > li > .card{
   height: 100%;
   margin: 7.5px
+}
+
+ul#data > li > .card{
+    margin: 10px
 }
 .khung{
   padding: 15px;
@@ -94,12 +98,9 @@ figure{
 }
 .chon{display: none}
 @media screen and (min-width: 768px){
- #data > ul > li{
+ul#data > li{
     width: 33.33%;
     margin-bottom: 20px
-}
-#data > ul > li > .card{
-    margin: 10px
 }
 .noidung{padding: 50px 0}
 .logo{
@@ -108,7 +109,7 @@ figure{
 }
 }
 @media screen and (min-width: 992px){
- #data > ul > li{
+ul#data > li{
     width: 25%
 }
 .choosen li a:hover{
