@@ -51,46 +51,6 @@ form.addEventListener('keyup', e => {
 	})
 })
 
-// tạo các nút chọn
-
-const luachons = document.querySelectorAll('.choosen a');
-
-luachons.forEach(function (luachon, ind) {
-	luachon.addEventListener('click', e => {
-
-		for (var i = 0; i < luachons.length; i++) {
-			luachons[i].classList.remove('active');
-		}
-		e.target.classList.add('active');
-
-		var xhr = new XMLHttpRequest();
-
-			xhr.open('GET', 'css_js/angulardata2.json', true);
-			xhr.onload = function() {
-				if(this.status == 200) {
-
-					var data = JSON.parse(this.responseText);
-
-					var output = '';
-					for (var i = 0; i < data[ind].noidung.length; i++) {
-						output += `
-							<div class="chon">
-								<figure class="text">${data[ind].noidung[i].td}</figure>
-								<div class="card-text"><img src="angular/${data[ind].noidung[i].anh}" alt="ảnh minh họa"></div>
-							</div>
-						`;	
-					};
-
-					e.target.parentElement.parentElement.nextElementSibling.innerHTML = output;
-
-				}
-			}
-			xhr.send();
-
-
-		e.preventDefault();
-	})
-})
 
 
 
