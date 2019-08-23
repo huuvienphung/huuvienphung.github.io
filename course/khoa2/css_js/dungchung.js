@@ -1,36 +1,38 @@
-
-
-const noidungs = document.querySelectorAll('.noidung');
 const form = document.querySelector('.form-control');
-const data = document.getElementById('data');
 const text = document.querySelectorAll('.text');
 const card_text = document.querySelectorAll('.card-text');
+const nd = document.getElementById('nd');
 
 
-data.addEventListener('mousedown', e => {
-	const buttons = document.querySelectorAll('.nut');
-
-		// click vào hiện ra nội dung
-		buttons.forEach(function(button, index) {
-			button.addEventListener('click', e => {
-
-				noidungs[index].classList.add('xuathien');
-				document.body.style.overflow = 'hidden';
-
-				
-				e.preventDefault();
-			});
-		});
-	});
 
 // click vào nền đen
-noidungs.forEach(function(noidung) {
-	noidung.addEventListener('click', (e) => {
-		if (e.target.classList.contains('noidung')) {
-			e.target.classList.remove('xuathien');
-			document.body.style.overflow = 'auto';
+nd.addEventListener('mousedown', (e) => {
+
+	if (e.target.classList.contains('xuathien')) {
+		e.target.classList.remove('xuathien');
+		document.body.style.overflow = 'auto';
+	}
+	if(e.target.classList.contains('abc')) {
+
+		var vt = e.target.getAttribute('data-vt');
+
+		const luachons = document.querySelectorAll('.abc');
+		const thongtins = document.querySelectorAll('.chon');
+
+		
+		for (var i = 0; i < luachons.length; i++) {
+			luachons[i].classList.remove('active');
 		}
-	})
+		e.target.classList.add('active')
+		
+
+		
+		for (var i = 0; i < thongtins.length; i++) {
+			thongtins[i].style.display = 'none';
+		}
+		thongtins[vt].style.display = 'block';
+	}
+	
 })
 
 // nhập form
@@ -50,6 +52,7 @@ form.addEventListener('keyup', e => {
 		}
 	})
 })
+
 
 
 

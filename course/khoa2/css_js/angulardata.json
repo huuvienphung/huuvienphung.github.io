@@ -1,24 +1,29 @@
 [
 	{
-		"phan": [
+		"tda":"11.Creating a Component",
+		"nd":"HTML/Css",
+		"nut": ["array1", "mảng1"],
+		"noidung": [
 			{
-				"td":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ipsa!",
-				"nd":"Bài1"
+				"noidun":[
+					{"td": "đây là tiêu đề", "anh": "014a.png"},
+					{"td": "đây là tiêu đề", "anh": "014a.png"}
+				]
 			},
 			{
-				"td":"Bài2",
-				"nd":"Bài2"
-			},
-			{
-				"td":"Bài3",
-				"nd":"Bài3"
+				"noidun":[
+					{"td": "đây là tiêu đề", "anh": "014a.png"}
+				]
 			}
 		]
 	},
 	{
-		"phan": [
+		"tda":"11.Creating a Component",
+		"nd":"HTML/Css",
+		"nut": ["array2", "mảng2", "ajax2"],
+		"noidung": [
 			{
-				"noidung":[
+				"noidun":[
 					{"td": "đây là tiêu đề", "anh": "014a.png"},
 					{"td": "đây là tiêu đề", "anh": "014b.png"},
 					{"td": "đây là tiêu đề", "anh": "014c.png"},
@@ -29,106 +34,14 @@
 				]
 			},
 			{
-				"noidung":[
+				"noidun":[
 					{"td": "đây là tiêu đề", "anh": "014a.png"},
 					{"td": "đây là tiêu đề", "anh": "014b.png"},
 					{"td": "đây là tiêu đề", "anh": "014c.png"}
 				]
 			},
 			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			}
-			,
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"}
-				]
-			},
-			{
-				"noidung":[
+				"noidun":[
 					{"td": "đây là tiêu đề", "anh": "014a.png"},
 					{"td": "đây là tiêu đề", "anh": "014b.png"},
 					{"td": "đây là tiêu đề", "anh": "014c.png"}
@@ -136,5 +49,5 @@
 			}
 		]
 	}
-	
+
 ]
