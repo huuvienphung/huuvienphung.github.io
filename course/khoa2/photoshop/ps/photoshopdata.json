@@ -2,7 +2,7 @@
 	{
 		"tda":"Phím tắt cơ bản",
 		"nd":"...",
-		"nut": ["tạo layer mới","chọn vật thể","tô màu","đổi opacity","sắp xếp layer","thay đổi kích thước"],
+		"nut": ["tạo layer mới","chọn vật thể","tô màu","đổi opacity","sắp xếp layer","thay đổi kích thước","Layer"],
 		"noidung": [
 			{
 				"noidun":[
@@ -33,14 +33,7 @@
 				"noidun":[
 					{"td": "Chọn đối tượng hoặc layer:<ul><li>tích vào show Transforms Controls</li><li>sử dụng Ctrl + T</li></ul>Lưu ý: khi thay đổi kích thước bằng lệnh này giữ phím shift để đồng dạng, và shift + alt để được đồng tâm", "anh": "0.png"}
 				]
-			}
-		]
-	},
-	{
-		"tda":"Phím tắt nâng cao",
-		"nd":"...",
-		"nut": ["vs layer"],
-		"noidung": [
+			},
 			{
 				"noidun":[
 					{"td": "<ul><li>Ctrl + D: bỏ vùng chọn trong layer</li><li>Ctrl + J: nhân đôi layer</li><li>Ctrl + I: đảo màu vùng chọn</li></ul>", "anh": "0.png"}
