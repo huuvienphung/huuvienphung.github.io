@@ -2,7 +2,7 @@ const datax = document.getElementById('data');
 
 var xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'css_js/angulardata.json', true);
+xhr.open('GET', 'angular/ng/angulardata.json', true);
 xhr.onload = function() {
 	if(this.status == 200) {
 		
@@ -43,7 +43,7 @@ data.addEventListener('click', e => {
 function loadData(index) {
 	var xhr = new XMLHttpRequest();
 
-		xhr.open('GET', 'css_js/angulardata.json', true);
+		xhr.open('GET', 'angular/ng/angulardata.json', true);
 
 		xhr.onload = function() {
 			if(this.status == 200) {
