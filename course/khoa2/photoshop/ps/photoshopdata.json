@@ -2,7 +2,7 @@
 	{
 		"tda":"Phím tắt cơ bản",
 		"nd":"...",
-		"nut": ["tạo layer mới","chọn vật thể","tô màu","đổi opacity","sắp xếp layer","thay đổi kích thước","Layer"],
+		"nut": ["tạo layer mới","chọn vật thể","tô màu","đổi opacity","sắp xếp layer","thay đổi kích thước","Layer","clipping mask"],
 		"noidung": [
 			{
 				"noidun":[
@@ -36,7 +36,12 @@
 			},
 			{
 				"noidun":[
-					{"td": "<ul><li>Ctrl + D: bỏ vùng chọn trong layer</li><li>Ctrl + J: nhân đôi layer</li><li>Ctrl + I: đảo màu vùng chọn</li></ul>", "anh": "0.png"}
+					{"td": "<ul><li>Ctrl + D: bỏ vùng chọn trong layer</li><li>Ctrl + J: nhân đôi layer</li><li>Ctrl + I: đảo màu vùng chọn</li><li>Ctrl + E: ép tất cả layer thành 1 layer</li></ul>", "anh": "0.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "<ul><li>Chuột phải chọn create clipping mask</li><li>Ctrl + Alt + G</li><li>Giữ phím Alt đưa chuột vào mép dưới của layer trên muốn tạo mặt nạ với layer dưới</li></ul>", "anh": "0.png"}
 				]
 			}
 		]
@@ -61,7 +66,7 @@
 		"noidung": [
 			{
 				"noidun":[
-					{"td": "Khi người ta quảng cáo thì người ta có tổng quan và trích đoạn<ul><li>Tổng quan: là một chàng trai hay một cô gái giới thiệu sản phẩm rất là đẹp, chàng trai và cô gái đó cũng phải đẹp, người đó phải nổi tiếng, quảng cáo là phải dùng hình ảnh đẹp, người nổi tiếng -> có thể là fan hâm mộ người ta sẽ tò mò và người ta xem </li></ul>", "anh": "0.png"}
+					{"td": "Khi người ta quảng cáo thì người ta có tổng quan và trích đoạn<ul><li>Tổng quan: là một chàng trai hay một cô gái giới thiệu sản phẩm rất là đẹp, chàng trai và cô gái đó cũng phải đẹp, người đó phải nổi tiếng, quảng cáo là phải dùng hình ảnh đẹp, người nổi tiếng -> có thể là fan hâm mộ người ta sẽ tò mò và người ta xem </li></ul>", "anh": "anh1c.jpg"}
 				]
 			}
 		]
