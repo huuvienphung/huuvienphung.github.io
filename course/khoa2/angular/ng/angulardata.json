@@ -41,7 +41,7 @@
 	{
 		"tda":"Template Syntax",
 		"nd":"17, 18, 19, 20, 21, 22, 23, 24",
-		"nut": ["Loops With ngFor","Conditionals With ngIf1","Conditionals With ngIf2","Conditionals With ngIf3","Adding Bootstrap","Property Binding"],
+		"nut": ["Loops With ngFor","Conditionals With ngIf1","Conditionals With ngIf2","Conditionals With ngIf3","Adding Bootstrap","Property Binding","Class Binding & ngClass","Style Binding &amp; ngStyle","Pipes & ngNonBindable"],
 		"noidung": [
 			{
 				"noidun":[
@@ -77,7 +77,27 @@
 			},
 			{
 				"noidun":[
-					{"td": "để thêm Bootstrap ta gõ lệnh npm install bootstrap, vào file angular.json để thêm vào styles chạy lại lệnh ng serve", "anh": "019a.png"}
+					{"td": "binding sử dụng bằng [src], {{}}, bind-src", "anh": "020a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "sử dụng [class.bg-primary] gán cho user.isActive nếu trả về true thì màu nền sẽ thành xanh, [ngClass] được gán cho currentClasses là một object có 2 class bên trong, 1 cái là dựa vào enableAdd:boolean để đổi màu nút thành xanh lục, 1 cái là gán một showEtended:boolean dựa vào class big-text được css ở bên ngoài mà thành chữ in", "anh": "021a.png"},
+					{"td": "thêm isActive:boolean vào và css class big-text", "anh": "021b.png"},
+					{"td": "viết thêm currentClasses: object, và chứa 2 class dựa theo boolean để hiển thị gọi lại vào ngOnInit", "anh": "021c.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "sử dụng [style.border-color] gán cho user.isActive ? 'green' : '' nếu true thì màu border của nó sẽ đổi màu sang xanh, [ngStyle] gán cho object có 2 property css", "anh": "022a.png"},
+					{"td": "2 dòng css nằm trong object currentStyles", "anh": "022b.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "thêm các {{ user.name | ? }} thêm các định dạng vào đây", "anh": "023a.png"},
+					{"td": "hiển thị", "anh": "023b.png"},
+					{"td": "thêm vào các kiểu giá trị", "anh": "023c.png"}
 				]
 			}
 		]
