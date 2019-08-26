@@ -71,7 +71,7 @@ function loadData(index) {
 					output +=`<div class="chon">`;
 					for (var j = 0; j < data[index].noidung[i].noidun.length; j++) {
 						output += `
-							<figure class="text">${data[index].noidung[i].noidun[j].td}</figure>
+							<figure class="text"><h5>${data[index].noidung[i].noidun[j].td}</h5></figure>
 							<div class="card-text"><img src="angular/${data[index].noidung[i].noidun[j].anh}" alt="ảnh minh họa"></div>
 						
 					`

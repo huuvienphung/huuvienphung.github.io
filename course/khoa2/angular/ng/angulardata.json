@@ -41,7 +41,7 @@
 	{
 		"tda":"Template Syntax",
 		"nd":"17, 18, 19, 20, 21, 22, 23, 24",
-		"nut": ["Loops With ngFor","Conditionals With ngIf"],
+		"nut": ["Loops With ngFor","Conditionals With ngIf1","Conditionals With ngIf2","Conditionals With ngIf3","Adding Bootstrap","Property Binding"],
 		"noidung": [
 			{
 				"noidun":[
@@ -51,8 +51,33 @@
 			},
 			{
 				"noidun":[
-					{"td": "ngFor trong file html", "anh": "017a.png"},
-					{"td": "thiết lập lại file Component", "anh": "017b.png"}
+					{"td": "ngIf trong file html", "anh": "018a.png"},
+					{"td": "Kiểm tra độ dài của users", "anh": "018b.png"},
+					{"td": "ngIf2 có sử dụng if else dùng thẻ ng-template để hiển thị phần nội fasle", "anh": "018c.png"},
+					{"td": "thay đổi lại data", "anh": "018d.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "ngIf3 sử dụng setTimeout kèm biến loaded boolean", "anh": "018e.png"},
+					{"td": "thêm setTimeout", "anh": "018f.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "Khi thông tin sử dụng addUsers chỉ cần có tên các thông số còn lại có thể không có, thêm các thông số không có vào ngIf để kiểm tra", "anh": "018g.png"},
+					{"td": "sửa lại user muốn thêm chỉ có tên", "anh": "018i.png"},
+					{"td": "sửa lại giao diện Interfaces, những thành phần không bắt buộc phải có đặt dấu chấm hỏi trước đó", "anh": "018h.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "để thêm Bootstrap ta gõ lệnh npm install bootstrap, vào file angular.json để thêm vào styles chạy lại lệnh ng serve", "anh": "019a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "để thêm Bootstrap ta gõ lệnh npm install bootstrap, vào file angular.json để thêm vào styles chạy lại lệnh ng serve", "anh": "019a.png"}
 				]
 			}
 		]
