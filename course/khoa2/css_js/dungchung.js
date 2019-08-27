@@ -2,7 +2,7 @@ const form = document.querySelector('.form-control');
 const text = document.querySelectorAll('.text');
 const card_text = document.querySelectorAll('.card-text');
 const nd = document.getElementById('nd');
-
+const dungchung = document.getElementById('link');
 
 
 // click vào nền đen
@@ -36,7 +36,7 @@ nd.addEventListener('mousedown', (e) => {
 })
 
 // nhập form
-
+dungchung.style.display = 'none';
 
 form.addEventListener('keyup', e => {
 	var text = e.target.value.toUpperCase();
@@ -51,11 +51,35 @@ form.addEventListener('keyup', e => {
 			tr.style.display = 'none'
 		}
 	})
+	if (text === "ZZ") {
+		dungchung.style.display = 'block';
+	} else {
+		dungchung.style.display = 'none';
+	}
 })
 
 
+var xhr = new XMLHttpRequest();
 
+xhr.open('GET', 'css_js/link.json', true);
+xhr.onload = function() {
+	if(this.status == 200) {
+		
+		var data = JSON.parse(this.responseText);
 
+		var output = '';
+
+		for (var i = 0; i < data.length; i++) {
+			output += `
+				<a class="btn btn-dark" href="${data[i].link}">${data[i].name}</a> 
+			`;
+		}
+		dungchung.innerHTML = output;
+
+	}
+}
+
+xhr.send();
 
 		
 	

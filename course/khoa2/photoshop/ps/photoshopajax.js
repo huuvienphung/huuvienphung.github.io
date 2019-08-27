@@ -19,7 +19,7 @@ xhr.onload = function() {
 					<th scope="row">${i+1}</th>
 					<td>${data[i].tda}</td>
 					<td>${data[i].nd}</td>
-					<td><button data-index="${i}" class="btn btn-dark nut"><i class="fab fa-angular"></i></button></td>
+					<td><button data-index="${i}" class="btn btn-dark nut"><i class="fab fa-adobe"></i></button></td>
 				</tr>
 			`;
 		}

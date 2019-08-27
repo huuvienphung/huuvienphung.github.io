@@ -1,0 +1,74 @@
+[
+	{
+		"tda":"Diving Into Components",
+		"nd":"11, 12, 13, 14, 15, 16",
+		"nut": ["Creating a Component","Properties & Methods","String Interpolation","Using Types","Cleanup & Interfaces","Generating Components &amp; OnInit"],
+		"noidung": [
+			{
+				"noidun":[
+					{"td": "sửa lại Component ", "anh": "011b.png"},
+					{"td": "tạo một Component HTMl, Css", "anh": "011a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "012a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "013a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "014a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "tạo Interfaces nằm trong file Component", "anh": "015a.png"},
+					{"td": "tạo file User.ts chứa Interfaces nằm bên ngoài sao đó import vào Component", "anh": "015b.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "gán dữ liệu theo ngOnInit không thông qua constructor", "anh": "016a.png"}
+				]
+			}
+		]
+	},
+	{
+		"tda":"Template Syntax",
+		"nd":"17, 18, 19, 20, 21, 22, 23, 24",
+		"nut": ["array2", "mảng2", "ajax2"],
+		"noidung": [
+			{
+				"noidun":[
+					{"td": "đây là tiêu đề", "anh": "014a.png"},
+					{"td": "đây là tiêu đề", "anh": "014b.png"},
+					{"td": "đây là tiêu đề", "anh": "014c.png"},
+					{"td": "đây là tiêu đề", "anh": "014a.png"},
+					{"td": "đây là tiêu đề", "anh": "014b.png"},
+					{"td": "đây là tiêu đề", "anh": "014c.png"},
+					{"td": "đây là tiêu đề", "anh": "014a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "đây là tiêu đề", "anh": "014a.png"},
+					{"td": "đây là tiêu đề", "anh": "014b.png"},
+					{"td": "đây là tiêu đề", "anh": "014c.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "đây là tiêu đề", "anh": "014a.png"},
+					{"td": "đây là tiêu đề", "anh": "014b.png"},
+					{"td": "đây là tiêu đề", "anh": "014c.png"}
+				]
+			}
+		]
+	}
+
+]

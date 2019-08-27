@@ -40,7 +40,7 @@
 	},
 	{
 		"tda":"Template Syntax",
-		"nd":"17, 18, 19, 20, 21, 22, 23, 24",
+		"nd":"17, 18, 19, 20, 21, 22, 23",
 		"nut": ["Loops With ngFor","Conditionals With ngIf1","Conditionals With ngIf2","Conditionals With ngIf3","Adding Bootstrap","Property Binding","Class Binding & ngClass","Style Binding &amp; ngStyle","Pipes & ngNonBindable"],
 		"noidung": [
 			{
@@ -98,6 +98,23 @@
 					{"td": "thêm các {{ user.name | ? }} thêm các định dạng vào đây", "anh": "023a.png"},
 					{"td": "hiển thị", "anh": "023b.png"},
 					{"td": "thêm vào các kiểu giá trị", "anh": "023c.png"}
+				]
+			}
+		]
+	},
+	{
+		"tda":"5.Events & Forms",
+		"nd":"25, 26, 27, 28, 29, 30, 31",
+		"nut": ["Mouse Events & Manipulating State","Toggling Values with an Event"],
+		"noidung": [
+			{
+				"noidun":[
+					{"td": "sự kiện click", "anh": "025a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "sự kiện click", "anh": "025a.png"}
 				]
 			}
 		]

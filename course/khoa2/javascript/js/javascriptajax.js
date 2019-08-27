@@ -1,5 +1,5 @@
-var url = 'illustrator/ai/illustrator'; // link file data
-var url2 = 'illustrator/'; // link ảnh
+var url = 'javascript/js/javascript'; // link file data
+var url2 = 'javascript/'; // link ảnh
 
 const datax = document.getElementById('data');
 
@@ -19,7 +19,7 @@ xhr.onload = function() {
 					<th scope="row">${i+1}</th>
 					<td>${data[i].tda}</td>
 					<td>${data[i].nd}</td>
-					<td><button data-index="${i}" class="btn btn-dark nut"><i class="fab fa-adobe"></i></button></td>
+					<td><button data-index="${i}" class="btn btn-dark nut"><i class="fab fa-js-square"></i></button></td>
 				</tr>
 			`;
 		}
