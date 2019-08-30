@@ -2,7 +2,7 @@
 	{
 		"tda":"Bài 1",
 		"nd":"...",
-		"nut": ["alert prompt","str => number","===","switch"],
+		"nut": ["alert prompt","str => number","===","switch","function","prompt+function","IIFE function","arrow function","create object","array","array2","filter array"],
 		"noidung": [
 			{
 				"noidun":[
@@ -22,6 +22,46 @@
 			{
 				"noidun":[
 					{"td": "...", "anh": "001d.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "001e.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "001f.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "001g.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "001h.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "001i.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "001j.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "001k.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "001l.png"}
 				]
 			}
 		]
