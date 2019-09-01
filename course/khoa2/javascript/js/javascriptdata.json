@@ -2,66 +2,74 @@
 	{
 		"tda":"Bài 1",
 		"nd":"...",
-		"nut": ["alert prompt","str => number","===","switch","function","prompt+function","IIFE function","arrow function","create object","array","array2","filter array"],
+		"nut": ["alert prompt","str => number","===","switch","function","prompt+function","IIFE function","arrow function","create object","array","array2","filter array","map","parent","create El","tab new image","Math.random"],
 		"noidung": [
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001a.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001b.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001c.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001d.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001e.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001f.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001g.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001h.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001i.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001j.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001k.png"}
 				]
 			},
-			{
-				"noidun":[
+			{"noidun":[
 					{"td": "...", "anh": "001l.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001m.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001n.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001o.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001p.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001q.png"}
 				]
 			}
 		]
