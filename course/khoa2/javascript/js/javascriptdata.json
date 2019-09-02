@@ -2,7 +2,7 @@
 	{
 		"tda":"Bài 1",
 		"nd":"...",
-		"nut": ["alert prompt","str => number","===","switch","function","prompt+function","IIFE function","arrow function","create object","array","array2","filter array","map","parent","create El","tab new image","Math.random"],
+		"nut": ["alert prompt","str => number","===","switch","function","prompt+function","IIFE function","arrow function","create object","array","array2","filter array","map","parent","create El","tab new image","Math.random","key","mouse event","bubble-capturing","string method","includes","random ms","DOM"],
 		"noidung": [
 			{"noidun":[
 					{"td": "...", "anh": "001a.png"}
@@ -70,7 +70,37 @@
 			},
 			{"noidun":[
 					{"td": "...", "anh": "001q.png"},
-					{"td": "...", "anh": "001q2.png"}
+					{"td": "...", "anh": "001q2.png"},
+					{"td": "...", "anh": "001q3.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001r.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001s.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "-với bubble, sự kiện đầu tiên được nắm bắt và xử lý bởi phần tử trong cùng và sau đó được truyền đến các phần tử bên ngoài.-với capturing, sự kiện này được bắt trước bởi phần tử ngoài cùng và được truyền đến các phần tử bên trong", "anh": "001t.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001u.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001v.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "random array", "anh": "001w.png"},
+					{"td": "random color", "anh": "001w2.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001x.png"}
 				]
 			}
 		]
@@ -89,6 +119,23 @@
 					{"td": "đây là tiêu đề", "anh": "014b.png"},
 					{"td": "đây là tiêu đề", "anh": "014c.png"},
 					{"td": "đây là tiêu đề", "anh": "014a.png"}
+				]
+			}
+		]
+	},
+	{
+		"tda":"Project",
+		"nd":"...",
+		"nut": ["add Item","mover"],
+		"noidung": [
+			{
+				"noidun":[
+					{"td": "...", "anh": "009a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "009b.png"}
 				]
 			}
 		]
