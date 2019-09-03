@@ -2,7 +2,7 @@
 	{
 		"tda":"Bài 1",
 		"nd":"...",
-		"nut": ["alert prompt","str => number","===","switch","function","prompt+function","IIFE function","arrow function","create object","array","array2","filter array","map","parent","create El","tab new image","Math.random","key","mouse event","bubble-capturing","string method","includes","random ms","DOM"],
+		"nut": ["alert prompt","str => number","===","switch","function","prompt+function","IIFE function","arrow function","create object","array","array2","filter array","map","parent","create El","tab new image","Math.random","key","mouse event","bubble-capturing","string method","includes","random ms","DOM","Date","Json parse stringify"],
 		"noidung": [
 			{"noidun":[
 					{"td": "...", "anh": "001a.png"}
@@ -102,23 +102,61 @@
 			{"noidun":[
 					{"td": "...", "anh": "001x.png"}
 				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001y.png"}
+				]
+			},
+			{"noidun":[
+					{"td": "...", "anh": "001z.png"}
+				]
 			}
 		]
 	},
 	{
 		"tda":"Bài 2",
 		"nd":"...",
-		"nut": ["array2"],
+		"nut": ["local storeage","getBoundingClientRect","timer","encode, decode URI","RegExp","prototype","try and catch","xHR and fetch"],
 		"noidung": [
 			{
 				"noidun":[
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"},
-					{"td": "đây là tiêu đề", "anh": "014a.png"},
-					{"td": "đây là tiêu đề", "anh": "014b.png"},
-					{"td": "đây là tiêu đề", "anh": "014c.png"},
-					{"td": "đây là tiêu đề", "anh": "014a.png"}
+					{"td": "...", "anh": "002a.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "002b.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "002c.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "002d.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "hàm tạo RegExp tạo một đối tượng biểu thức chính quy để khớp văn bản với một mẫu <ul><li>* zero or more times(không hoặc nhiều lần)</li><li>+ một hoặc nhiều lần</li><li>{n} chính xác n lần</li><li>{n,} ít nhất n lần</li><li>{n,m} ít nhất n lần không hơn m lần</li><li>[0,9]+ (và tương đương của nó /d+) phù hợp với bất kỳ số nguyên không âm</li><li>/d{4}-/d{2}-/d{2} khớp các ngày được định dạng như 2019-01-01</li><li>/d bất kỳ ký tự chữ số</li><li>/w ký tự số</li><li>/s bất kỳ ký tự khoảng trắng</li><li>/D một ký tự không phải là một chữ số</li><li>/W một nhân vật nonalphanumeric</li><li>/S một nhân vật không phải không gian</li></ul>", "anh": "002e.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "002f.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "002g.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "sử dụng ajax", "anh": "002h.png"},
+					{"td": "sử dụng fetch", "anh": "002h1.png"}
 				]
 			}
 		]
@@ -126,7 +164,7 @@
 	{
 		"tda":"Project",
 		"nd":"...",
-		"nut": ["add Item","mover"],
+		"nut": ["add Item","mover","fetch"],
 		"noidung": [
 			{
 				"noidun":[
@@ -136,6 +174,11 @@
 			{
 				"noidun":[
 					{"td": "...", "anh": "009b.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "009c.png"}
 				]
 			}
 		]
