@@ -162,9 +162,34 @@
 		]
 	},
 	{
+		"tda":"project small",
+		"nd":"...",
+		"nut": ["Date","fetch","lựa chọn với máy"],
+		"noidung": [
+			{
+				"noidun":[
+					{"td": "...", "anh": "003a.png"},
+					{"td": "Các hàm xuất của Date()", "anh": "003a1.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "003b.png"},
+					{"td": "...", "anh": "003b1.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "003c.png"},
+					{"td": "...", "anh": "003c1.png"}
+				]
+			}
+		]
+	},
+	{
 		"tda":"Project",
 		"nd":"...",
-		"nut": ["add Item","mover","fetch"],
+		"nut": ["add Item","mover","kéo, búa, bao"],
 		"noidung": [
 			{
 				"noidun":[
