@@ -116,7 +116,7 @@
 	{
 		"tda":"Bài 2",
 		"nd":"...",
-		"nut": ["local storeage","getBoundingClientRect","timer","encode, decode URI","RegExp","prototype","try and catch","xHR and fetch"],
+		"nut": ["local storeage","getBoundingClientRect","timer","encode, decode URI","RegExp","prototype","try and catch","xHR and fetch","sound"],
 		"noidung": [
 			{
 				"noidun":[
@@ -158,13 +158,18 @@
 					{"td": "sử dụng ajax", "anh": "002h.png"},
 					{"td": "sử dụng fetch", "anh": "002h1.png"}
 				]
+			},
+			{
+				"noidun":[
+					{"td": "sử dụng ajax", "anh": "002i.png"}
+				]
 			}
 		]
 	},
 	{
 		"tda":"project small",
 		"nd":"...",
-		"nut": ["Date","fetch","lựa chọn với máy"],
+		"nut": ["Date","fetch","lựa chọn với máy","tạo súc sắc","sound"],
 		"noidung": [
 			{
 				"noidun":[
@@ -182,6 +187,16 @@
 				"noidun":[
 					{"td": "...", "anh": "003c.png"},
 					{"td": "Phần mở rộng", "anh": "003c1.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "003d.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "003e.png"}
 				]
 			}
 		]
@@ -209,7 +224,8 @@
 			},
 			{
 				"noidun":[
-					{"td": "...", "anh": "009d.png"}
+					{"td": "kiểu 1: xúc xắc được tạo ra từ font table", "anh": "009d.png"},
+					{"td": "Kiểu 2: xúc xắc tự tạo không dùng font table", "anh": "009d1.png"}
 				]
 			}
 		]
