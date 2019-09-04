@@ -204,7 +204,7 @@
 	{
 		"tda":"Project",
 		"nd":"...",
-		"nut": ["add Item","mover","kéo, búa, bao","xúc xắc"],
+		"nut": ["add Item","mover","kéo, búa, bao","xúc xắc","Tính tốc độ gõ phím"],
 		"noidung": [
 			{
 				"noidun":[
@@ -226,6 +226,12 @@
 				"noidun":[
 					{"td": "kiểu 1: xúc xắc được tạo ra từ font table", "anh": "009d.png"},
 					{"td": "Kiểu 2: xúc xắc tự tạo không dùng font table", "anh": "009d1.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "009e.png"},
+					{"td": "...", "anh": "009e1.png"}
 				]
 			}
 		]
