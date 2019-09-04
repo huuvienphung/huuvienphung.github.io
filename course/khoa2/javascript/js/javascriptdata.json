@@ -204,7 +204,7 @@
 	{
 		"tda":"Project",
 		"nd":"...",
-		"nut": ["add Item","mover","kéo, búa, bao","xúc xắc","Tính tốc độ gõ phím"],
+		"nut": ["add Item","mover","kéo, búa, bao","xúc xắc","Tính tốc độ gõ phím","Điều khiển theo hướng có sẵn"],
 		"noidung": [
 			{
 				"noidun":[
@@ -232,6 +232,13 @@
 				"noidun":[
 					{"td": "...", "anh": "009e.png"},
 					{"td": "...", "anh": "009e1.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "009f.png"},
+					{"td": "...", "anh": "009f1.png"},
+					{"td": "...", "anh": "009f2.png"}
 				]
 			}
 		]
