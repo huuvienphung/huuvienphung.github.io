@@ -204,7 +204,7 @@
 	{
 		"tda":"Project",
 		"nd":"...",
-		"nut": ["add Item","mover","kéo, búa, bao","xúc xắc","Tính tốc độ gõ phím","Điều khiển theo hướng có sẵn"],
+		"nut": ["add Item","mover","kéo, búa, bao","xúc xắc","Tính tốc độ gõ phím","move theo lập trình sẵn"],
 		"noidung": [
 			{
 				"noidun":[
