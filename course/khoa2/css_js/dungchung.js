@@ -81,5 +81,11 @@ xhr.onload = function() {
 
 xhr.send();
 
+const link = document.createElement('link');
+link.setAttribute('rel','shortcut icon');
+link.setAttribute('href','css_js/icon.png');
+link.setAttribute('type','image/x-icon');
+
+document.head.appendChild(link);
 		
 	
