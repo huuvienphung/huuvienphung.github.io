@@ -16,50 +16,6 @@
   		padding: 15px;
   		background-color: white;
   	}
-	ul{
-		display: flex;
-		flex-wrap: wrap;
-		padding: 0;
-	}
-	li{
-		width: 33.33%;
-		list-style: none;
-		padding: 2.5px;
-	}
-	li .con{
-		padding: 5px;
-		border-radius: 0.25rem;
-		background-color: white;
-		box-sizing: border-box;
-		font-size: 30px;
-		height: 100%
-
-	}
-	.cssbot{
-		position: fixed;
-		right: 10px;
-		bottom: 20px;
-	}
-	.cssbot a{
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 50px;
-		display: block;
-	    background-color: rgba(255,255,255,.4);
-	    font-size: 40px;
-	    color: black;
-	}
-	.cssbot a:hover{
-		text-decoration: none;
-	}
-	@media screen and (min-width: 768px){
-		li{width: 25%}
-	}
-	@media screen and (min-width: 992px){
-		li{width: 12.5%;}
-	}
   </style>
 </head>
 <body class="bg-dark">
@@ -67,44 +23,8 @@
 		<div class="row">
 			<div class="col-md-8 col-lg-6 mx-auto">
 				<div class="box-pro">
-					<div class="form-row">
-						<div class="form-group col-6">
-							<label>Cỡ chữ</label>
-							<input type="number" name="" id="size1" class="form-control" min="10" placeholder="cỡ chữ px">
-						</div>
-						<div class="form-group col-6">
-							<label>Cỡ khung %</label>
-							<input type="number" name="" id="size2" class="form-control" min="10" placeholder="kích thước khung > 10%">
-						</div>
-						
-					</div>
-					<button id="reset" class="btn btn-dark btn-block">Reset</button><hr>
-					<div class="form-row">
-						<div class="form-group col-6">
-							<label>Mã font bắt đầu</label>
-							<input type="number" name="" id="size3" class="form-control" min="0" placeholder="font start">
-						</div>
-						<div class="form-group col-6">
-							<label>Mã font kết thúc</label>
-							<input type="number" name="" id="size4" class="form-control" min="0" placeholder="font end">
-						</div>
-						<div class="form-group col-lg-6">
-							<button id="tim" class="btn-block btn btn-info">Tìm</button>
-						</div>
-						<div class="form-group col-lg-6">
-							<button id="xoa" class="btn-block btn btn-danger">Xóa tất cả</button>
-						</div>
-					</div>
 				</div>
 			</div>
-			<div class="col-12">
-				<ul></ul>
-			</div>
-		</div>
-	</div>
-	<div class="cssbot">
-		<div class="container">
-			<a id="lentren" href="">&#9818;</a>
 		</div>
 	</div>
 	<script src="app.js"></script>

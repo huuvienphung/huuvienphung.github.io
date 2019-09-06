@@ -1,83 +1,112 @@
-const size1 = document.getElementById('size1');
-const size2 = document.getElementById('size2');
-const size3 = document.getElementById('size3');
-const size4 = document.getElementById('size4');
-const reset = document.getElementById('reset');
-const xoa = document.getElementById('xoa');
-const tim = document.getElementById('tim');
-const ul = document.querySelector('ul');
-
-size1.addEventListener('keyup', kichCoChu);
-size2.addEventListener('keyup', kichCoKhung);
-reset.addEventListener('click', resetClick);
-xoa.addEventListener('click', xoaClick);
-tim.addEventListener('click', timClick);
-
-function kichCoChu(e) {
-	let lis = document.querySelectorAll('.con');
-	for (var i = 0; i < lis.length; i++) {
-			lis[i].style.fontSize = e.target.value+'px';
-	}
-}
-function kichCoKhung(e) {
-	let lis = document.querySelectorAll('.con');
-
-	for (var i = 0; i < lis.length; i++) {
-		lis[i].parentElement.style.width = e.target.value+'%';
-	}
-}
-function resetClick() {
-	let lis = document.querySelectorAll('.con');
-	for (var i = 0; i < lis.length; i++) {
-			lis[i].style.fontSize = '';
-			lis[i].parentElement.style.width = '';
-	}
-	size1.value = '';
-	size2.value = '';
-	size3.value = '';
-	size4.value = '';
-}
-function timClick() {
-	if (size3.value >= 0 && size4.value >= 0 && size4.value >= size3.value) {
-		num1 = Number(size3.value);
-		num2 = Number(size4.value);
-		while(num1 <= num2){
-			let li = document.createElement('li');
-			let div = document.createElement('div');
-			let char = '&#'+num1+';';
-			div.className = 'con';
-			div.innerHTML = char+'- '+num1;
-			li.appendChild(div);
-			ul.appendChild(li)
-			num1++;
-		}
-	}
-}
-function xoaClick() {
-	while(ul.children[0]) {
-		ul.children[0].remove();
-	}
-}
-const lenTren = document.getElementById('lentren');
-lenTren.addEventListener('click', e => {
-	e.preventDefault();
-	window.scrollTo({
-			top: 0,
-			left: 0,
-			behavior: 'smooth'
-	})
+const box = document.querySelector('.box-pro');
+const funlist = [];
+let myBlock, myButton;
+const randomArray = ['left','top','right','down'];
+document.addEventListener('DOMContentLoaded', function() {
+	myBlock = document.createElement('div');
+	myBlock.textContent = 'Hello world';
+	myBlock.setAttribute('style','width: 100px;height:100px;background-color:red;color:white;line-height:100px;text-align:center;position:absolute;');
+	myBlock.style.top = '100px';
+	myBlock.style.left = '150px';
+	myButton = document.createElement('div');
+	myButton.setAttribute('style','display:flex;flex-wrap:wrap');
+	document.body.appendChild(myBlock);
+	box.appendChild(myButton);
 })
-
-var trangthai = 1;
-lenTren.style.display = 'none';
-window.addEventListener('scroll', function() {
-		if(window.pageYOffset >= 100) {
-			if (trangthai == 1) {
-				lenTren.style.display = 'block';
-				trangthai = 2;
-			}
-		} else if(trangthai == 2) {
-			lenTren.style.display = 'none';
-			trangthai = 1;
+document.addEventListener('keydown', function(e) {
+	e.preventDefault();
+	let el = e.keyCode;
+	console.log(el);
+	switch (el) {
+		case 37: addFun('left'); break; // left
+		case 38: addFun('top'); break; // top
+		case 39: addFun('right'); break; // right
+		case 40: addFun('down'); break; // down
+		case 82:{  // r
+			let ran = Math.floor(Math.random() * randomArray.length);
+			let temp = randomArray[ran];
+			addFun(temp);
+			break;
 		}
-});
+		case 67: myBlock.style.backgroundColor = randomColor(); break;
+		default: break;
+	}
+	if (el === 13 || el === 32) { // backspace or enter
+		mover();
+	}
+})
+function mover() {
+	if (funlist.length > 0) {
+		let cur = myBlock.getBoundingClientRect();
+		let el = funlist.shift();
+		let item = el.textContent.replace('+','');
+		myButton.removeChild(el);
+		myBlock.textContent = 'Move: '+item;
+		
+		switch (item) {
+			case 'left':
+				myBlock.style.left = cur.left-cur.width+"px";
+				break;
+			case 'right':
+				myBlock.style.left = cur.left+cur.width+"px";
+				break;
+			case 'top':
+				myBlock.style.top = (cur.top-cur.height)+"px";
+				break;
+
+			case 'down':
+				myBlock.style.top = (cur.top+cur.height)+"px";
+				break;
+		}
+		setTimeout(mover, 1000);
+	} else {
+		myBlock.textContent = 'hello world';
+		return;
+	}
+}
+function addFun(val) {
+	let span = document.createElement('span');
+	span.textContent = "+"+val;
+	span.style.padding = '10px';
+	span.style.border = '1px solid black';
+	span.addEventListener('mouseover', function() {
+		this.style.backgroundColor = randomColor();
+		this.style.color = randomColor();
+	})
+	span.addEventListener('mouseout', function() {
+		this.style.backgroundColor = 'white';
+		this.style.color = 'black';
+	})
+	span.addEventListener('click', function() {
+		let curIndex = funlist.indexOf(this);
+		let tempRemove = funlist.splice(curIndex, 1);
+		myButton.removeChild(this);
+	})
+	myButton.appendChild(span);
+	funlist.push(span);
+	console.log(funlist);
+
+}
+function randomColor() {
+	return "#"+Math.random().toString(16).substr(-6);
+}
+function goLeft() {
+	let temp = myBlock.offsetLeft;
+	temp -= 50;
+	myBlock.style.left = temp+'px';
+}
+function goRight() {
+	let temp = myBlock.offsetLeft;
+	temp += 50;
+	myBlock.style.left = temp+'px';
+}
+function goTop() {
+	let temp = myBlock.offsetTop;
+	temp -= 50;
+	myBlock.style.top = temp+'px';
+}
+function goDown() {
+	let temp = myBlock.offsetTop;
+	temp += 50;
+	myBlock.style.top = temp+'px';
+}
