@@ -1,0 +1,82 @@
+[
+	{
+		"tda":"Phím tắt cơ bản",
+		"nd":"...",
+		"nut": ["tạo layer mới","chọn vật thể","tô màu","đổi opacity","sắp xếp layer","thay đổi kích thước","Layer","clipping mask"],
+		"noidung": [
+			{
+				"noidun":[
+					{"td": "Ctrl + shift + N để tạo ra layer mới", "anh": "0.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "<ul><li>chọn layer rồi chọn vào đối tượng</li><li>click vào auto-select</li><li>giữ phím ctrl</li><li>click chuột phải vào đối tượng</li></ul>", "anh": "0.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "Chọn đối tượng hoặc layer:<ul><li>Alt + Backspace chọn màu trên tô </li><li>Ctrl + Backspace chọn màu dưới tô</li></ul>", "anh": "0.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "Chọn đối tượng hoặc layer:<ul><li>chọn 2 số bất kì 00 - 99 -> 0% - 99% opacity</li><li>Để chọn 100% ta chọn 1 sau đó chờ một lát nhấn thêm phím 0</li></ul>", "anh": "0.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "Chọn đối tượng hoặc layer:<ul><li>dùng chuột để di chuyển layer</li><li>sử dụng Ctrl + [ để đưa một layer xuống dưới 1 và ngược lại Ctrl + ] để đưa một layer lên trên 1</li><li>sử dụng Ctrl + shift + [ để đưa một layer xuống dưới tất cả và ngược lại Ctrl + shift + ] để đưa một layer lên trên tất cả</li></ul>", "anh": "0.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "Chọn đối tượng hoặc layer:<ul><li>tích vào show Transforms Controls</li><li>sử dụng Ctrl + T</li></ul>Lưu ý: khi thay đổi kích thước bằng lệnh này giữ phím shift để đồng dạng, và shift + alt để được đồng tâm", "anh": "0.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "<ul><li>Ctrl + D: bỏ vùng chọn trong layer</li><li>Ctrl + J: nhân đôi layer</li><li>Ctrl + I: đảo màu vùng chọn</li><li>Ctrl + E: ép tất cả layer thành 1 layer</li></ul>", "anh": "0.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "<ul><li>Chuột phải chọn create clipping mask</li><li>Ctrl + Alt + G</li><li>Giữ phím Alt đưa chuột vào mép dưới của layer trên muốn tạo mặt nạ với layer dưới</li></ul>", "anh": "0.png"}
+				]
+			}
+		]
+	},
+	{
+		"tda":"Kỹ năng",
+		"nd":"...",
+		"nut": ["chia không gian"],
+		"noidung": [
+			{
+				"noidun":[
+					{"td": "Chọn theo hình", "anh": "001a.png"},
+					{"td": "Để quay lại ban đầu, xem hình", "anh": "001b.png"}
+				]
+			}
+		]
+	},
+	{
+		"tda":"Bài học thiết kế",
+		"nd":"...",
+		"nut": ["bài 1"],
+		"noidung": [
+			{
+				"noidun":[
+					{"td": "Thiết kế theo nhịp độ opacity", "anh": "anh1c.jpg"
+					},
+					{"td": "continue", "anh": "anh1d.jpg"
+					},
+					{"td": "continue", "anh": "anh1e.jpg"
+					},
+					{"td": "continue - sử dụng feather làm nhòe viền vùng chọn để delete", "anh": "anh1f.jpg"
+					}
+				]
+			}
+		]
+	}
+
+]
