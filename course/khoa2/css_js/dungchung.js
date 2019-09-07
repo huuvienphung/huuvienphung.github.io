@@ -88,8 +88,5 @@ link.setAttribute('type','image/x-icon');
 
 document.head.appendChild(link);
 
-const ima = document.querySelector('.duoi');
-ima.setAttribute('src','css_js/iconx.png');
-
 
 	
