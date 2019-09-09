@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://huuvienphung.github.io/course/khoa2/css_js/icon.png" type="image/x-icon">
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?fbclid=IwAR2SujHCDJKJjOQ_yFH3q8yZmeCQzmMxZTVzctCQZiZ8wGHdEnnNN7XVkZ8">
+    <title>Document</title>
+    <style>
+        ul{padding: 0}
+        li{
+            list-style: none
+        }
+        a{
+            position: relative;
+            display: block;
+            padding: 0.8rem 1.2rem;
+            color: white;
+            text-transform: uppercase;
+            background-color: gray;
+            border-bottom: 1px solid black;
+            z-index: 2
+        }
+        a i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: red;
+            transition: transform .5s;
+        }
+        a i.xoay{
+            transform: translateY(-50%) rotate(180deg)
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        ul > li > ul{
+            visibility: hidden;
+            transform: scale(.5);
+            transition: transform .5s;
+            height: 0px;
+            z-index: -1;
+        }
+        ul > li > ul.xuathien{
+            visibility: visible;
+            height: 100%;
+            transform:  scale(1);
+        }
+        ul > li > ul > li > a{
+            padding: 0.8rem 1.2rem 0.8rem 3rem;
+            text-transform: lowercase;
+            background-color: red
+        }
+        ul > li > ul > li > a > i{color: white;}
+        ul > li > ul > li > ul > li > a{
+            padding: 0.8rem 1.2rem 0.8rem 5rem;
+            background-color: white;
+            color: black;
+
+        }
+        ul > li > ul > li > a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <ul class="cordian">
+           <li><a href="#">item 1 <i class="fas fa-angle-up"></i></a>
+                <ul>
+                    <li><a href="#">no item 1 <i class="fas fa-angle-up"></i></a>
+                        <ul>
+                            <li><a href="https://huuvienphung.github.io/course/khoa2/js">no item 1</a></li>
+                            <li><a href="">no item 2</a></li>
+                            <li><a href="">no item 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">no item 2 <i class="fas fa-angle-up"></i></a>
+                        <ul>
+                            <li><a href="">no item 1</a></li>
+                            <li><a href="">no item 2</a></li>
+                            <li><a href="">no item 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">no item 3</a></li>
+                </ul>
+           </li>
+           <li><a href="#">item 2 <i class="fas fa-angle-up"></i></a>
+                 <ul>
+                    <li><a href="">no item 1</a></li>
+                    <li><a href="">no item 2</a></li>
+                    <li><a href="">no item 3</a></li>
+                </ul>
+           </li>
+           <li><a href="#">item 3 <i class="fas fa-angle-up"></i></a>
+                 <ul>
+                    <li><a href="">no item 1</a></li>
+                    <li><a href="">no item 2</a></li>
+                    <li><a href="">no item 3</a></li>
+                </ul>
+           </li>
+           <li><a href="#">item 4 <i class="fas fa-angle-up"></i></a>
+                 <ul>
+                    <li><a href="">no item 1</a></li>
+                    <li><a href="">no item 2</a></li>
+                    <li><a href="">no item 3</a></li>
+                </ul>
+           </li>
+           <li><a href="#">item 5 <i class="fas fa-angle-up"></i></a>
+                 <ul>
+                    <li><a href="">no item 1</a></li>
+                    <li><a href="">no item 2</a></li>
+                    <li><a href="">no item 3</a></li>
+                </ul>
+           </li>
+       </ul>
+    </div>
+    <script>
+        const a = document.querySelectorAll('.cordian li > a[href="#"]');
+        // gọi a là những thẻ có href[#] được click
+
+        for (var i = 0; i < a.length; i++) {
+            a[i].addEventListener('click', function(e) {
+                e.preventDefault();
+
+                
+                if (!this.nextElementSibling.classList.contains('xuathien')) {
+                    let ul = this.parentElement.parentElement
+                    // tìm đến thẻ ul cha của cái được click
+
+                    for (var i = 0; i < ul.children.length; i++) {
+                        let li = ul.children[i];
+                        // dùng vòng lặp duyệt những thẻ con của ul cùng cấp đầu tiên
+
+                        if (li.lastElementChild.classList.contains('xuathien')) {
+                            // kiểm tra những thẻ đồng cấp nếu có con cuối ul có class là d-block thì thực hiện remove d-block và remove thẻ con có class xoay
+                            li.lastElementChild.classList.remove('xuathien');
+                            li.firstElementChild.firstElementChild.classList.remove('xoay');
+                        }
+                    }
+                }
+                this.nextElementSibling.classList.toggle('xuathien');
+                this.firstElementChild.classList.toggle('xoay');
+
+            })
+        }
+    </script>
+</body>
+</html>
