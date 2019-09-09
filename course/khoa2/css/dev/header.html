@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://huuvienphung.github.io/course/khoa2/css_js/icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?fbclid=IwAR2SujHCDJKJjOQ_yFH3q8yZmeCQzmMxZTVzctCQZiZ8wGHdEnnNN7XVkZ8"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,500,500i,600,600i&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Sarabun', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #777;
+        padding: 15px
+      }
+      header {
+        height: 95vh;
+        background-image: linear-gradient(
+            to right bottom,
+            #7ed56fc7,
+            #55c57ae3,
+            #28b485c5
+          ),
+          url(https://huuvienphung.github.io/course/khoa2/css_js/000.png);
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        position: relative;
+      }
+      .logo-box{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 90px;
+        height: 90px;
+      }
+      .logo-box:hover img{
+        animation: moveInRight 1s forwards;
+      }
+      .logo-box img{
+        width: 100%
+      }
+      .text-box{
+        color: #fff;
+        text-transform: uppercase;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        text-align: center;
+      }
+      .text-main{
+        display: block;
+        font-size: 70px;
+        font-weight: 400;
+        letter-spacing: 31px;
+        animation: moveLeft 1.2s forwards;
+        animation-iteration-count: 2;
+        opacity: 0;
+
+        /*
+          animation-name: moveLeft;
+          animation-duration: 3s;
+          animation-timing-function: ease-in;
+        */
+      }
+      .text-sub{
+        display: block;
+        margin: 30px 10px 0 0;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 19.5px;
+        animation: moveRight 1.2s forwards;
+        animation-delay: 1.2s;
+        animation-iteration-count: 1;
+        opacity: 0
+      }
+      @keyframes moveLeft {
+        0%{
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        70%{
+          transform: translateX(20px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateX(0);
+        }
+        
+      }
+      @keyframes moveRight {
+        0%{
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        70%{
+          transform: translateX(-20px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateX(0);
+        }
+        
+      }
+      @keyframes moveBotttom {
+        0%{
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100%{
+          opacity: 1;
+          transform: translate(0);
+        }
+        
+      }
+      @keyframes moveInRight {
+        0%{
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        20%{
+          opacity: 1;
+          
+        }
+        70%{
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateX(0);
+        }
+        
+      }
+      a:link, a:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 100px;
+        position: relative;
+        z-index: 1;
+      }
+      .btn{
+        transition: all .2s;
+      }
+      .btn-white{
+        background-color: #fff;
+        color: #777;
+      }
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+      }
+      .btn:active {
+        transform: translateY(-1px);
+      }
+      .btn::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        z-index: -1;
+        transform: scale(1);
+        opacity: .2;
+        transition: all .3s;
+      }
+      .btn-white:after {
+        background-color: #fff;
+      }
+      .btn:hover::after{
+        transform: scale(2);
+        opacity: 0;
+      }
+      .btn-animated{
+        animation: moveBotttom .5s ease-out .5s;
+        animation-fill-mode: backwards;
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+        <div class="logo-box"><img src="https://huuvienphung.github.io/course/khoa2/css_js/logo.png" alt=""></div>
+        <div class="text-box">
+          <h1 class="heading">
+            <span class="text-main">Pan Pan</span>
+            <span class="text-sub">web cá nhân phv</span>
+          </h1>
+          <a href="#" class="btn btn-white btn-animated">Xem ngay</a>
+        </div>
+      </header>
+
+    <script></script>
+  </body>
+</html>
