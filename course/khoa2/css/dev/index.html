@@ -33,7 +33,8 @@
     </div>
     <script>
         const url = 'data.json';
-        const btnArray = ['btn-dark','btn-primary','btn-secondary','btn-info','btn-success','btn-danger','btn-light',,'btn-warning'];
+        const btnArray = ['btn-dark','btn-outline-dark','btn-primary','btn-outline-primary','btn-secondary','btn-outline-secondary','btn-info','btn-outline-info','btn-success','btn-outline-success','btn-danger','btn-outline-danger','btn-light','btn-outline-light',,'btn-warning','btn-outline-warning'];
+        const btnSize = ['btn-lg','btn-sm',''];
 
         const ul1 = document.getElementById('phan1');
         const ul2 = document.getElementById('phan2');
@@ -44,36 +45,36 @@
                 return res.json()
             })
             .then(function(data) {
+
                 for (var i = 0; i < data[0].phan1.length; i++) {
-                    let li = document.createElement('li');
-                    let a = document.createElement('a');
-
-                    let text = document.createTextNode(data[0].phan1[i].name)
-                    a.setAttribute('href', data[0].phan1[i].link);
-                    a.setAttribute('class', 'btn '+btnArray[indexColor()]);
-                    a.appendChild(text);
-                    li.appendChild(a);
-
+                    let diachi = data[0].phan1[i];
+                    let li = createLi(diachi);
                     ul1.appendChild(li)
                 }
 
                 for (var i = 0; i < data[0].phan2.length; i++) {
-                    let li = document.createElement('li');
-                    let a = document.createElement('a');
-
-                    let text = document.createTextNode(data[0].phan2[i].name)
-                    a.setAttribute('href', data[0].phan2[i].link);
-                    a.setAttribute('class', 'btn '+btnArray[indexColor()]);
-                    a.appendChild(text);
-                    li.appendChild(a);
-
+                    let diachi = data[0].phan2[i];
+                    let li = createLi(diachi);
                     ul2.appendChild(li)
                 }
             })
         })
 
-        function indexColor() {
-            return Math.floor(Math.random() * btnArray.length)
+        function indexColor(num) {
+            return Math.floor(Math.random() * num)
+        }
+
+        function createLi(diachi) {
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+
+            let text = document.createTextNode(diachi.name)
+            a.setAttribute('href', diachi.link);
+            a.setAttribute('class', btnSize[indexColor(3)]+' btn '+btnArray[indexColor(14)]);
+            a.appendChild(text);
+            li.appendChild(a);
+
+            return li;
         }
 
 
