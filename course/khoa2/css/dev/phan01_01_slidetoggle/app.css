@@ -1,0 +1,56 @@
+ul{padding: 0}
+li{
+  list-style: none
+}
+a{
+  position: relative;
+  display: block;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  background-color: gray;
+  border-bottom: 1px solid black;
+  z-index: 2
+}
+a i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: red;
+  transition: transform .5s;
+}
+a i.xoay{
+  transform: translateY(-50%) rotate(180deg)
+}
+a:hover{
+  text-decoration: none;
+}
+ul > li > ul{
+  visibility: hidden;
+  transform: scale(.5);
+  transition: transform .5s;
+  height: 0px;
+  z-index: -1;
+}
+ul > li > ul.xuathien{
+  visibility: visible;
+  height: 100%;
+  transform:  scale(1);
+}
+ul > li > ul > li > a{
+  padding: 0.8rem 1.2rem 0.8rem 3rem;
+  text-transform: lowercase;
+  background-color: red
+}
+ul > li > ul > li > a > i{color: white;}
+ul > li > ul > li > ul > li > a{
+  padding: 0.8rem 1.2rem 0.8rem 5rem;
+  background-color: white;
+  color: black;
+
+}
+ul > li > ul > li > a:hover{
+  text-decoration: none;
+}

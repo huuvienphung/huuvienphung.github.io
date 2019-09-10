@@ -2,41 +2,13 @@
 	{
 		"phan1": [
 			{
-				"link":"slidetoggle.html",
-				"name":"cordian"
-			},
-			{
-				"link":"slidetoggle.html",
-				"name":"cordian"
-			},
-			{
-				"link":"slidetoggle.html",
-				"name":"cordian"
-			},
-			{
-				"link":"slidetoggle.html",
-				"name":"cordian"
-			},
-			{
-				"link":"slidetoggle.html",
-				"name":"cordian"
-			},
-			{
-				"link":"slidetoggle.html",
-				"name":"cordian"
-			},
-			{
-				"link":"slidetoggle.html",
-				"name":"cordian"
-			},
-			{
-				"link":"slidetoggle.html",
+				"link":"phan01_01_slidetoggle",
 				"name":"cordian"
 			}
 		],
 		"phan2": [
 			{
-				"link":"header.html",
+				"link":"phan02_01_header",
 				"name":"Css header not bootstrap"
 			}
 		]
