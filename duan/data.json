@@ -1,0 +1,32 @@
+[
+	{
+		"phan1": [
+			{
+				"link":"devjs",
+				"name":"javascript"
+			},
+			{
+				"link":"devcss",
+				"name":"css3"
+			}
+		],
+		"phan2": [
+			{
+				"link":"thuchanh-01",
+				"name":"font table"
+			},
+			{
+				"link":"thuchanh-02",
+				"name":"đổi màu nút"
+			},
+			{
+				"link":"thuchanh-03",
+				"name":"đổi màu gradient"
+			},
+			{
+				"link":"thuchanh-04",
+				"name":"đặt câu hỏi?"
+			}
+		]
+	}
+]
