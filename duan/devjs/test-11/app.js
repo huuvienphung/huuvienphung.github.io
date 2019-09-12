@@ -2,10 +2,11 @@ const game = document.querySelector('.game');
 const button = document.querySelector('button');
 const mes = document.querySelector('.mes');
 let boo = false;
-let score = 0;
+let score;
 
 button.addEventListener('click', function() {
 	if (!boo) {
+		score = 0;
 		boo = true;
 		game.innerHTML = '';
 		make();
