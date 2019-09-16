@@ -71,12 +71,16 @@
 	{
 		"tda":"Kỹ năng",
 		"nd":"...",
-		"nut": ["chia không gian"],
+		"nut": ["Chuyển đổi sang const"],
 		"noidung": [
 			{
 				"noidun":[
-					{"td": "Chọn theo hình", "anh": "001a.png"},
-					{"td": "Để quay lại ban đầu, xem hình", "anh": "001b.png"}
+					{"td": "..,", "anh": "010a.png"},
+					{"td": "..,", "anh": "010b.png"},
+					{"td": "..,", "anh": "010c.png"},
+					{"td": "..,", "anh": "010d.png"},
+					{"td": "..,", "anh": "010e.png"},
+					{"td": "..,", "anh": "010f.png"}
 				]
 			}
 		]
