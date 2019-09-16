@@ -2,7 +2,7 @@
 	{
 		"tda":"Bài 1",
 		"nd":"...",
-		"nut": ["tạo danh sách item","thay đổi class => const","rút gọn props","axios và fetch api","form search fetch api"],
+		"nut": ["tạo danh sách item","thay đổi class => const","rút gọn props","axios và fetch api","form search fetch api","xóa user"],
 		"noidung": [
 			{
 				"noidun":[
@@ -38,6 +38,12 @@
 					{"td": "..,", "anh": "005e.png"},
 					{"td": "..,", "anh": "005f.png"},
 					{"td": "..,", "anh": "005g.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "..,", "anh": "006a.png"},
+					{"td": "..,", "anh": "006b.png"}
 				]
 			}
 		]
