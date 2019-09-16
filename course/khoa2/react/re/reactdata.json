@@ -2,7 +2,7 @@
 	{
 		"tda":"Bài 1",
 		"nd":"...",
-		"nut": ["tạo danh sách item","thay đổi class => const","rút gọn props","axios và fetch api","form search fetch api","xóa user","tạo alert setTimeout","tạo router định hướng"],
+		"nut": ["tạo danh sách item","thay đổi class => const","rút gọn props","axios và fetch api","form search fetch api","xóa user","tạo alert setTimeout","tạo router định hướng","tạo trang 1 user"],
 		"noidung": [
 			{
 				"noidun":[
@@ -57,6 +57,13 @@
 					{"td": "Cài thêm npm i react-router-dom", "anh": "008a.png"},
 					{"td": "..,", "anh": "008b.png"},
 					{"td": "..,", "anh": "008c.png"}
+				]
+			},
+			{
+				"noidun":[
+					{"td": "...", "anh": "009a.png"},
+					{"td": "..,", "anh": "009b.png"},
+					{"td": "..,", "anh": "009c.png"}
 				]
 			}
 		]
