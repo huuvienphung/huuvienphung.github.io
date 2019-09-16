@@ -8,6 +8,10 @@
 			{
 				"link":"devcss",
 				"name":"css3"
+			},
+			{
+				"link":"devreact",
+				"name":"react"
 			}
 		],
 		"phan2": [
