@@ -12,6 +12,10 @@
 			{
 				"link":"devreact",
 				"name":"react"
+			},
+			{
+				"link":"devng",
+				"name":"angular"
 			}
 		],
 		"phan2": [
