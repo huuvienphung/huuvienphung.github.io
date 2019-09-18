@@ -3,7 +3,11 @@
 		"phan1": [
 			{
 				"link":"test-01",
-				"name":"Ang1"
+				"name":"bài về github"
+			},
+			{
+				"link":"test-02",
+				"name":"bài về smartphone"
 			}
 		],
 		"phan2": [
