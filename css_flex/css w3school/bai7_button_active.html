@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://raw.githubusercontent.com/huuvienphung/huuvienphung.github.io/master/icon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?fbclid=IwAR2SujHCDJKJjOQ_yFH3q8yZmeCQzmMxZTVzctCQZiZ8wGHdEnnNN7XVkZ8"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary-color: #003699;
+        --info-color: #2196f3;
+        --info-color1: #0b7dda;
+        --dark-color: #333333;
+        --light-color: #f4f4f4;
+        --danger-color: #dc3545;
+        --danger-color1: #f44336;
+        --danger-color2: #da190b;
+        --success-color: #28a745;
+        --success-color1: #4caf50;
+        --success-color2: #46a049;
+        --warning-color: #ff9800;
+        --warning-color: #e68a00;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.4;
+      }
+      .btn {
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+        display: inline-block;
+        outline: none;
+        transition: 0.3s;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+      }
+      .btn-dark {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+      }
+      .btn-dark:hover {
+        background-color: var(--light-color1);
+        color: var(--dark-color);
+      }
+      .btn-danger {
+        background-color: var(--danger-color1);
+        color: var(--light-color);
+      }
+      .btn-danger:hover {
+        background-color: var(--danger-color2);
+      }
+      .btn-info {
+        background-color: var(--info-color);
+        color: var(--light-color);
+      }
+      .btn-info:hover {
+        background-color: var(--info-color1);
+      }
+      .btn-active:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 2px rgba(0, 0, 0, 0.3);
+      }
+      .btn-active:active {
+        transform: translateY(-4px);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+      }
+      /* het nut 1 */
+      .btn-hover {
+        min-width: 100px;
+      }
+      .btn-hover span {
+        position: relative;
+        display: inline-block;
+        transition: 0.3s;
+      }
+      .btn-hover span:after {
+        position: absolute;
+        content: "\f101";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        right: 0;
+        top: 50%;
+        transform: translate(20px, -50%);
+        opacity: 0;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+      }
+      .btn:hover span {
+        padding-right: 15px;
+      }
+      .btn:hover span:after {
+        transform: translate(5px, -50%);
+        opacity: 1;
+      }
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 992px) {
+      }
+    </style>
+
+    <title>Doc</title>
+  </head>
+  <body>
+    <button class="btn btn-dark btn-active">active</button>
+    <button class="btn btn-danger btn-hover"><span>Hover </span></button>
+    <button class="btn btn-info">
+      <i class="fas fa-spinner fa-pulse"></i>
+    </button>
+  </body>
+</html>

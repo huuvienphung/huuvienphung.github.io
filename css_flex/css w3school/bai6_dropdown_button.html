@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://raw.githubusercontent.com/huuvienphung/huuvienphung.github.io/master/icon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?fbclid=IwAR2SujHCDJKJjOQ_yFH3q8yZmeCQzmMxZTVzctCQZiZ8wGHdEnnNN7XVkZ8"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary-color: #003699;
+        --info-color: #2196f3;
+        --info-color1: #0b7dda;
+        --dark-color: #333333;
+        --light-color: #f4f4f4;
+        --light-color1: #ddd;
+        --danger-color: #dc3545;
+        --danger-color1: #f44336;
+        --danger-color2: #da190b;
+        --success-color: #28a745;
+        --success-color1: #4caf50;
+        --success-color2: #46a049;
+        --warning-color: #ff9800;
+        --warning-color: #e68a00;
+      }
+      .btn {
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+        display: inline-block;
+        outline: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+      }
+      .btn-dark {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+      }
+      .btn-dark:hover {
+        background-color: var(--light-color);
+        color: var(--dark-color);
+      }
+      .dropdown {
+        display: inline-block;
+        position: absolute;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.4;
+      }
+      .dropdown-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 150px;
+        background-color: var(--light-color1);
+        display: none;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover i {
+        transform: rotate(180deg);
+      }
+      .dropdown-content li {
+        padding: 0.25rem 1rem;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+      }
+      .dropdown-content li:first-child {
+        border-top: none;
+      }
+      .dropdown-content li a {
+        color: var(--dark-color);
+      }
+      .dropdown-content li:hover {
+        background-color: var(--light-color);
+      }
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 992px) {
+      }
+    </style>
+
+    <title>Dropdown-button</title>
+  </head>
+  <body>
+    <button class="btn btn-dark">dropdown</button>
+    <div class="dropdown">
+      <button class="btn btn-dark btn-down">
+        <i class="fas fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <ul>
+          <li><a href="">link 1</a></li>
+          <li><a href="">link 2</a></li>
+          <li><a href="">link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

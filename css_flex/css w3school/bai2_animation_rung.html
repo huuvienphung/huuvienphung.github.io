@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://raw.githubusercontent.com/huuvienphung/huuvienphung.github.io/master/icon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css?fbclid=IwAR2SujHCDJKJjOQ_yFH3q8yZmeCQzmMxZTVzctCQZiZ8wGHdEnnNN7XVkZ8"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary-color: #003699;
+        --dark-color: #333333;
+        --light-color: #f4f4f4;
+        --danger-color: #dc3545;
+        --success-color: #28a745;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .box {
+        width: 320px;
+        height: 240px;
+        padding: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      .box img {
+        width: 100%;
+      }
+      .box:hover img {
+        animation: rung 0.5s linear infinite;
+      }
+      @keyframes rung {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 992px) {
+      }
+    </style>
+    <title>Animate rung</title>
+  </head>
+  <body>
+    <div class="box">
+      <img src="vd.jpg" alt="hình ảnh" />
+    </div>
+  </body>
+</html>
