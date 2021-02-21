@@ -1,172 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>tài liệu</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="">
-	<style>
-		*{margin: 0;}
-		body{
-			font-family: segoe ui;
-		}
-		#khoi .col-12{margin-bottom: 30px;}
-		form{box-shadow: -1rem 0 3rem rgba(0,0,0,.3);padding: 15px;border-radius: 10px;}
-		ul li.con{list-style: none; padding: 15px;width: 100%}
-		ul{padding: 0}
-		ul li.con2 img{width: 100%}
-		@media screen and (min-width: 768px){
-			ul li.con{width: 33.33%}
-			ul li.con2{width: 66.66%}
-		}
-		@media screen and (min-width: 992px){
-			ul li.con{width: 25%}
-			ul li.con2{width: 50%}
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-lg-6 offset-lg-3">
-				<hr>
-				<form>
-					<div class="form-group">
-						<label for="search">Tìm kiếm tiêu đề</label>
-						<input type="search" class="form-control" id="search" placeholder="tìm kiếm">
-					</div>
-				</form>
-				<hr>
-			</div>
-		</div>
-		<!-- ======================================================== -->
-		<div class="row">
-			<div class="col-12">
-				<ul id="khoi" style="display: flex;flex-wrap: wrap;">
-					<li class="con con2">
-						<ul class="list-group">
-							<li class="list-group-item text-center list-group-item-info"><strong>Udemy</strong></li>
-							<li class="list-group-item"><a target="_blank" href="https://ftuforum.com/">https://ftuforum.com/</a> -> link tải .torrent</li>
-							<li class="list-group-item"><a target="_blank" href="https://freecoursesite.com/react-front-to-back-2019//">https://freecoursesite.com/react-front-to-back-2019//</a> -> link tải .torrent 2</li>
-							<li class="list-group-item"><a target="_blank" href="http://www.ju8.me/torrent/kg4s7/Angular-Front-To-Back-Video.html">http://www.ju8.me/torrent/kg4s7/Angular-Front-To-Back-Video.html</a> -> link tải .torrent 2</li>
-							<li class="list-group-item"><a target="_blank" href="https://desirecourse.net/node-js-api-masterclass-with-express-mongodb/">https://desirecourse.net/node-js-api-masterclass-with-express-mongodb/</a> -> link tải .torrent 3</li>
-							<li class="list-group-item"><a target="_blank" href="https://www.youtube.com/watch?v=Sv1CfgUk1D4">link youtube</a> -> setup utorrent như video</li>
-							<li class="list-group-item"><a target="_blank" href="http://online-courses.club/category/applications/autodesk/maya/">link course</a> -> 3ds</li>
-						</ul>
-					</li>
-					<li class="con">
-						<ul class="list-group">
-							<li class="list-group-item text-center list-group-item-secondary"><strong>ADOBE</strong></li>
-							<li class="list-group-item"><a href="https://drive.google.com/drive/folders/0B0vWsbgxzDLEX3FrZ3BSVGQ1cFU">Click vào đây</a> -> link tải adobe</li>
-						</ul>
-					</li>
-					<li class="con con2">
-						<ul class="list-group">
-							<li class="list-group-item text-center list-group-item-info"><strong>VS Code</strong></li>
-							<li class="list-group-item"><img src="images/vs1.png" alt=""></li>
-						</ul>
-					</li>
-					<li class="con con2">
-						<ul class="list-group">
-							<li class="list-group-item text-center list-group-item-info"><strong>VS Code</strong></li>
-							<li class="list-group-item"><img src="images/vs2.png" alt=""></li>
-							<li class="list-group-item">
-								{
-									"editor.fontSize": 17,
-									"editor.mouseWheelZoom": true,
-									"editor.autoIndent": true,
-									"liveSassCompile.settings.formats" : [
-									{
-										// "format":"compressed",
-										"extensionName": ".min.css",
-										"savePath": "/css"
-									}
-									],
-									"liveSassCompile.settings.generateMap": false,
-									"css.remoteStyleSheets": [
-									"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-									],
-									"editor.formatOnPaste": true,
-									"editor.multiCursorModifier": "ctrlCmd",
-									"editor.snippetSuggestions": "top",
-									"workbench.colorTheme": "Monokai",
-									"window.zoomLevel": 0,
-									"workbench.sideBar.location": "left",
-									"workbench.activityBar.visible": true,
-									"emmet.showSuggestionsAsSnippets": true,
-									"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-									"explorer.confirmDelete": false,
-									"liveServer.settings.donotShowInfoMsg": true
-									// "files.associations": {
-									//     "*.ejs": "html"
-									// }
-								}
-							</li>
-						</ul>
-					</li>
+  <head>
+    <meta charset="UTF-8" />
+    <title>tài liệu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="" />
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        font-family: segoe ui;
+      }
+      #khoi .col-12 {
+        margin-bottom: 30px;
+      }
+      form {
+        box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        border-radius: 10px;
+      }
+      ul li.con {
+        list-style: none;
+        padding: 15px;
+        width: 100%;
+      }
+      ul {
+        padding: 0;
+      }
+      ul li.con2 img {
+        width: 100%;
+      }
+      @media screen and (min-width: 768px) {
+        ul li.con {
+          width: 33.33%;
+        }
+        ul li.con2 {
+          width: 66.66%;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        ul li.con {
+          width: 25%;
+        }
+        ul li.con2 {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3">
+          <hr />
+          <form>
+            <div class="form-group">
+              <label for="search">Tìm kiếm tiêu đề</label>
+              <input
+                type="search"
+                class="form-control"
+                id="search"
+                placeholder="tìm kiếm"
+              />
+            </div>
+          </form>
+          <hr />
+        </div>
+      </div>
+      <!-- ======================================================== -->
+      <div class="row">
+        <div class="col-12">
+          <ul id="khoi" style="display: flex; flex-wrap: wrap">
+            <li class="con con2">
+              <ul class="list-group">
+                <li class="list-group-item text-center list-group-item-info">
+                  <strong>Udemy</strong>
+                </li>
+                <li class="list-group-item">
+                  <a target="_blank" href="https://ftuforum.com/"
+                    >https://ftuforum.com/</a
+                  >
+                  -> link tải .torrent
+                </li>
+                <li class="list-group-item">
+                  <a
+                    target="_blank"
+                    href="https://freecoursesite.com/react-front-to-back-2019//"
+                    >https://freecoursesite.com/react-front-to-back-2019//</a
+                  >
+                  -> link tải .torrent 2
+                </li>
+                <li class="list-group-item">
+                  <a target="_blank" href="https://www.freetutorialsus.com/"
+                    >https://www.freetutorialsus.com/</a
+                  >
+                  -> link tải .torrent 3
+                </li>
+                <li class="list-group-item">
+                  <a
+                    target="_blank"
+                    href="https://desirecourse.net/node-js-api-masterclass-with-express-mongodb/"
+                    >https://desirecourse.net/node-js-api-masterclass-with-express-mongodb/</a
+                  >
+                  -> link tải .torrent fail
+                </li>
+                <li class="list-group-item">
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=Sv1CfgUk1D4"
+                    >link youtube</a
+                  >
+                  -> setup utorrent như video
+                </li>
+                <li class="list-group-item">
+                  <a
+                    target="_blank"
+                    href="http://online-courses.club/category/applications/autodesk/maya/"
+                    >link course</a
+                  >
+                  -> 3ds
+                </li>
+              </ul>
+            </li>
+            <li class="con">
+              <ul class="list-group">
+                <li
+                  class="list-group-item text-center list-group-item-secondary"
+                >
+                  <strong>ADOBE</strong>
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/0B0vWsbgxzDLEX3FrZ3BSVGQ1cFU"
+                    >Click vào đây</a
+                  >
+                  -> link tải adobe
+                </li>
+              </ul>
+            </li>
+            <li class="con con2">
+              <ul class="list-group">
+                <li class="list-group-item text-center list-group-item-info">
+                  <strong>VS Code</strong>
+                </li>
+                <li class="list-group-item">
+                  <img src="images/vs1.png" alt="" />
+                </li>
+              </ul>
+            </li>
+            <li class="con con2">
+              <ul class="list-group">
+                <li class="list-group-item text-center list-group-item-info">
+                  <strong>VS Code</strong>
+                </li>
+                <li class="list-group-item">
+                  <img src="images/vs2.png" alt="" />
+                </li>
+                <li class="list-group-item">
+                  { "editor.fontSize": 17, "editor.mouseWheelZoom": true,
+                  "editor.autoIndent": true, "liveSassCompile.settings.formats"
+                  : [ { // "format":"compressed", "extensionName": ".min.css",
+                  "savePath": "/css" } ],
+                  "liveSassCompile.settings.generateMap": false,
+                  "css.remoteStyleSheets": [
+                  "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                  ], "editor.formatOnPaste": true, "editor.multiCursorModifier":
+                  "ctrlCmd", "editor.snippetSuggestions": "top",
+                  "workbench.colorTheme": "Monokai", "window.zoomLevel": 0,
+                  "workbench.sideBar.location": "left",
+                  "workbench.activityBar.visible": true,
+                  "emmet.showSuggestionsAsSnippets": true,
+                  "terminal.integrated.shell.windows":
+                  "C:\\Windows\\System32\\cmd.exe", "explorer.confirmDelete":
+                  false, "liveServer.settings.donotShowInfoMsg": true //
+                  "files.associations": { // "*.ejs": "html" // } }
+                </li>
+              </ul>
+            </li>
 
-					<li class="con">
-						<ul class="list-group">
-							<li class="list-group-item text-center list-group-item-danger"><strong>After effect - maya</strong></li>
-							<li class="list-group-item"><a href="https://www.artstation.com/3dextrude">link 3D</a></li>
-							<li class="list-group-item"><a href="https://footagecrate.com/magic-powers-categories.html">link VFX</a></li>
-						</ul>
-					</li>
-					<li class="con">
-						<ul class="list-group">
-							<li class="list-group-item text-center list-group-item-primary"><strong>link về fedu</strong></li>
-							<li class="list-group-item"><a href="https://drive.google.com/drive/u/0/folders/1diJPXmmtZHoEBrPeAYszei4lxAllqsXQ">link xem</a></li>
-						</ul>
-					</li>
-					<li class="con">
-						<ul class="list-group">
-							<li class="list-group-item text-center list-group-item-secondary"><strong>link về fedu</strong></li>
-							<li class="list-group-item">V943!P0n8</li>
-						</ul>
-					</li>
-					<!-- ============================== -->
-				</ul>
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-	<script>
-		var iso = new Isotope( '#khoi', {
-		  itemSelector: '.con',
-		  layoutMode: 'masonry'
-		});
+            <li class="con">
+              <ul class="list-group">
+                <li class="list-group-item text-center list-group-item-danger">
+                  <strong>After effect - maya</strong>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://www.artstation.com/3dextrude">link 3D</a>
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://footagecrate.com/magic-powers-categories.html"
+                    >link VFX</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="con">
+              <ul class="list-group">
+                <li class="list-group-item text-center list-group-item-primary">
+                  <strong>link về fedu</strong>
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="https://drive.google.com/drive/u/0/folders/1diJPXmmtZHoEBrPeAYszei4lxAllqsXQ"
+                    >link xem</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="con">
+              <ul class="list-group">
+                <li
+                  class="list-group-item text-center list-group-item-secondary"
+                >
+                  <strong>link về fedu</strong>
+                </li>
+                <li class="list-group-item">V943!P0n8</li>
+              </ul>
+            </li>
+            <!-- ============================== -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script>
+      var iso = new Isotope('#khoi', {
+        itemSelector: '.con',
+        layoutMode: 'masonry',
+      });
 
-		var form = document.getElementById('search');
+      var form = document.getElementById('search');
 
-		form.addEventListener('keyup', e => {
-		var elem = document.querySelector('#khoi');
+      form.addEventListener('keyup', (e) => {
+        var elem = document.querySelector('#khoi');
 
-			var key = e.target.value.toUpperCase();
+        var key = e.target.value.toUpperCase();
 
-			var lis = elem.querySelectorAll('.con');
-			lis.forEach(function(li) {
-				if (key == '') {
-					li.style.display = 'block';
-					li.style.visibilty = 'visible';
-					li.style.position = 'absolute';
-				} else {
-					var strong = li.firstElementChild.firstElementChild.firstElementChild;
+        var lis = elem.querySelectorAll('.con');
+        lis.forEach(function (li) {
+          if (key == '') {
+            li.style.display = 'block';
+            li.style.visibilty = 'visible';
+            li.style.position = 'absolute';
+          } else {
+            var strong =
+              li.firstElementChild.firstElementChild.firstElementChild;
 
-					if (strong.innerHTML.toUpperCase().indexOf(key) > -1) {
-						li.style.display = 'block';
-						li.style.visibilty = 'visible';
-						li.style.position = 'static';
-					} else {
-						li.style.display = 'none';
-						li.style.visibilty = 'hidden';
-						li.style.position = 'absolute';
-					}
-				}
-				
-			});
-		})
-	</script>
-</body>
+            if (strong.innerHTML.toUpperCase().indexOf(key) > -1) {
+              li.style.display = 'block';
+              li.style.visibilty = 'visible';
+              li.style.position = 'static';
+            } else {
+              li.style.display = 'none';
+              li.style.visibilty = 'hidden';
+              li.style.position = 'absolute';
+            }
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
